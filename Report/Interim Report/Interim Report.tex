@@ -16,6 +16,25 @@
 \usepackage{authblk}
 \usepackage{titling}
 
+% \usepackage[backend=bibtex,style=authoryear,natbib=true]{biblatex} % Use the bibtex backend with the authoryear citation style (which resembles APA)
+\usepackage[backend=biber,
+style=authoryear,
+citestyle=apa]{biblatex}
+\addbibresource{Reference.bib} % The filename of the bibliography
+% \usepackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
+\usepackage{enumitem}
+% \makeatletter
+% \newcommand{\setword}[2]{%
+%   \phantomsection
+%   #1\def\@currentlabel{\unexpanded{#1}}\label{#2}%
+% }
+% \newcommand{\citebracks}[2][]{
+%    \citeauthor{#2} (\citeyear[#1]{#2})
+% }
+
+% \makeatother
+% \usepackage{floatrow}
+
 \setlength{\droptitle}{-9em}   % This is your set screw
 
 
@@ -33,12 +52,10 @@
 
 
 \section{Overview of the project}
-The world population is ageing over the next few decades. The rising elderly to working age population ratio is increasing and will continue to do so. This will strain the public and social services of many countries around the world. 
-
-In this project, we aim to examine the relationship between the age distribution within occupations and the degree of automation (both present and future) of those occupations. We might also look into any correlations with the skills/knowledge required for those occupations. This will all be done using a machine learning technique called Gaussian Process.
+The world population is ageing over the next few decades (\cite{science}). The rising elderly to working age population ratio is increasing and will continue to do so (\cite{WHO}). This will strain the public and social services of many countries around the world. 
 
 \section{Key project objectives}
-\label{sec:RBF}
+In this project, we aim to examine the relationship between the age distribution within occupations and the degree of automation (both present and future) of those occupations. We might also look into any correlations with the skills/knowledge required for those occupations. This will all be done using a Bayesian non-parametric machine learning technique called Gaussian Process (\cite{GaussianProcess}).
 
 % \begin{figure}[!htb]
 %     \centering
@@ -49,10 +66,12 @@ In this project, we aim to examine the relationship between the age distribution
 %     \caption{Predicted values}
 %   \end{figure}
   
-  \section{Progress to date}
-%   The data set exhibits periodic behaviour, with a period of roughly 50000 seconds. Hence, we attempt to use a kernel which can model periodicity. 
-  
-%   Figure \ref{fig:fig3} is similar to Figure \ref{fig:fig2} despite not including a White Kernel. However, the former retains the inaccurate predictions at the same points but has a lower RMS error. On the other hand, Figure \ref{fig:fig4} (RMS error of 0.192) gives the best predictions without the same errors present in Figures \ref{fig:fig2} and \ref{fig:fig3} (RMS error of 0.433). Again, including a White Kernel improved performance. These results seem to validate our assumptions that a periodic kernel would be a better model of the data.
+\section{Progress to date}
+Over the summer, I have looked into Gaussian Processes and completed an online laboratory assignment designed by my supervisor. I hae also read past papers looking into similar areas of research.
+
+Potential data sources have already been identified. The distribution of age groups within occupations are published by the US Bureau of Labour Statistics (BLS)\footnote{https://www.bls.gov}. We can find the skills and knowledge associated with the various occupations on O*NET Online\footnote{https://www.onetonline.org}.
+
+A GitHub repository for this project has also been created\footnote{https://github.com/terencetan-c/4YP-The-Future-of-Work}; it contains codes, reports, etc.
 
 
   
@@ -66,7 +85,11 @@ In this project, we aim to examine the relationship between the age distribution
 %     \end{figure}
     
   \section{Immediate tasks}
+  Data wrangling work has already been started on the BLS data in order to standardise the data sets across the years. The differences are mainly due to changes to the Standard Occupational Classification (SOC) system. The SOC codes would allow us to map between the the BLS and the O*NET dataset. Since the changes to the SOC codes are quite complex, it was deemed unrealistic to automate the data wrangling. Instead, it would be done manually, which would still be manageable given that only about a hundred rows of data have been flagged for closer inspection. All the details of the data wrangling process can be found in an excel file on the GitHub repository.
 
   \section{Plan of work to the end of the project}
+  
+    % \setstretch{1.4}
+    \printbibliography[heading=bibintoc]
 
 \end{document}
