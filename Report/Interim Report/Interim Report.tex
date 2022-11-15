@@ -75,20 +75,22 @@ A GitHub repository for this project has also been created\footnote{https://gith
 
 
   
-%   \begin{figure}[!htb]
-%       \centering
-%       \subfloat[Without White Kernel (RMS error = 0.433)]{\includegraphics[width=8cm]{Figures/Graph 3.png}\label{fig:fig3}}
-%         \hfill
-%       \subfloat[With White Kernel (RMS error = 0.192)]{\includegraphics[width=8cm]{Figures/Graph 4.png}\label{fig:fig4}}
-%       \hfill
-%       \caption{Predicted values}
-%     \end{figure}
+
     
   \section{Immediate tasks}
   Data wrangling work has already been started on the BLS data in order to standardise the data sets across the years. The differences are mainly due to changes to the Standard Occupational Classification (SOC) system. The SOC codes would allow us to map between the the BLS and the O*NET dataset. Since the changes to the SOC codes are quite complex, it was deemed unrealistic to automate the data wrangling. Instead, it would be done manually, which would still be manageable given that only about a hundred rows of data have been flagged for closer inspection. All the details of the data wrangling process can be found in an excel file on the GitHub repository.
 
   \section{Plan of work to the end of the project}
-  
+  A high-level Gantt Chart was created to allow us to track our progress over time; the list view of the chart can be seen in Figure \ref{fig:gantt}.
+
+  \begin{figure}[!htb]
+    \centering
+    \includegraphics[width=10cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Gantt List.png}
+    \caption{Gantt Chart in List View}
+    \label{fig:gantt}
+
+  \end{figure}
+
     % \setstretch{1.4}
     \printbibliography[heading=bibintoc]
 
