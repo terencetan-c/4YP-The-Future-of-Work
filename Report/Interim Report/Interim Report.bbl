@@ -141,6 +141,42 @@
       \field{pages}{20110553}
       \range{pages}{1}
     \endentry
+    \entry{publicservicesstrain}{article}{}
+      \name{author}{2}{}{%
+        {{hash=ddcd070e249200c3e1705cdbf0eb4646}{%
+           family={Wiener},
+           familyi={W\bibinitperiod},
+           given={Joshua\bibnamedelima M},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=03432488502a7695439782c905939135}{%
+           family={Tilly},
+           familyi={T\bibinitperiod},
+           given={Jane},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{ac69860af72390f5cf6fe183fc387a7d}
+      \strng{fullhash}{ac69860af72390f5cf6fe183fc387a7d}
+      \strng{bibnamehash}{ac69860af72390f5cf6fe183fc387a7d}
+      \strng{authorbibnamehash}{ac69860af72390f5cf6fe183fc387a7d}
+      \strng{authornamehash}{ac69860af72390f5cf6fe183fc387a7d}
+      \strng{authorfullhash}{ac69860af72390f5cf6fe183fc387a7d}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International journal of epidemiology}
+      \field{number}{4}
+      \field{title}{Population ageing in the United States of America: implications for public programmes}
+      \field{volume}{31}
+      \field{year}{2002}
+      \field{pages}{776\bibrangedash 781}
+      \range{pages}{6}
+    \endentry
     \entry{WHO}{misc}{}
       \name{author}{1}{}{%
         {{hash=531217507bec092b6ec36c0f78f46736}{%
