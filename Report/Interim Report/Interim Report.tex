@@ -52,12 +52,13 @@ citestyle=apa]{biblatex}
 
 
 \section{Overview of the project}
-The world population is ageing over the next few decades (\cite{science}). The rising elderly to working age population ratio is increasing and will continue to do so (\cite{WHO}). This trend is known as an ageing population, and will strain the public and social services of many countries around the world (\cite{publicservicesstrain}). As one of the key social challenges facing the world for the next few decades, it would be interesting to examine how an ageing population will affect the economy, and in particular, the job market, and the interplay with automation in the workplace. 
+The world population is ageing over the next few decades (\cite{science}). The rising elderly to working age population ratio is increasing and will continue to do so (\cite{WHO}). This trend is known as an ageing population, and will strain the public and social services of many countries around the world (\cite{publicservicesstrain}). As one of the key social challenges facing the world for the next few decades, it would be interesting to examine how an ageing population will affect the economy, and in particular, the job market and the interplay with automation in the workplace. As more workers age out of the workforce, automation is expected to make up for it (\cite{futureofemployment}).
+
 
 % In fact, automatability of jobs may affect older workers disproportionately (\cite{twinthreats}).
 
 \section{Key project objectives}
-In this project, we aim to examine the relationship between the age distribution within occupations and the degree of automation (\cite{futureofemployment}) of those occupations. Although similar work has been done on this topic (\cite{twinthreats}), the study only looked at broad categories of employment. In this project, we will zoom in to look at specific occupations. We might also look into any correlations with the skills/knowledge required for those occupations. This will all be done using a Bayesian non-parametric machine learning technique called Gaussian Process (\cite{GaussianProcess}).
+In this project, we aim to examine the relationship between the age distribution within occupations and the degree of automation (\cite{futureofemployment}) of those occupations. Although similar work has been done on this topic (\cite{twinthreats}), the study only looked at broad categories of employment. In this project, we will zoom in to look at specific occupations. We might also look into any correlations with the skills/knowledge required for those occupations. This will all be done using the scikit-learn library\footnote{https://scikit-learn.org/stable/} in Python. Specifically, we will look at a Bayesian non-parametric machine learning technique known as Gaussian Process (\cite{GaussianProcess}); this model was used in previous work (\cite{futureofemployment}), and so, would be a good model to start with. We will test and validate against different models and pick the best performing ones.
 
 The original goal was to extrapolate the changes in distribution of age groups within occupations over the next few years, but this was deemed unfeasible due to the limited amount of time-series data.
 
@@ -71,9 +72,9 @@ The original goal was to extrapolate the changes in distribution of age groups w
 %   \end{figure}
   
 \section{Progress to date}
-Over the summer, I have looked into Gaussian Processes and completed an online laboratory assignment designed by my supervisor. I hae also read past papers looking into similar areas of research.
+Over the summer, I have looked into Gaussian Processes and completed an online laboratory assignment designed by my supervisor. I have also read past papers (\cite{futureofemployment}) looking into similar areas of research.
 
-Potential data sources have already been identified. The distribution of age groups within occupations are published by the US Bureau of Labour Statistics (BLS)\footnote{https://www.bls.gov}, and go back to 2011. We can find the skills and knowledge associated with the various occupations on O*NET Online\footnote{https://www.onetonline.org}.
+Potential data sources have already been identified. The distribution of age groups within occupations are published by the US Bureau of Labour Statistics\footnote{https://www.bls.gov} (BLS), and go back to 2011. We can find the skills and knowledge associated with the various occupations on O*NET Online\footnote{https://www.onetonline.org}.
 
 A GitHub repository for this project has also been created\footnote{https://github.com/terencetan-c/4YP-The-Future-of-Work}; it contains codes, reports, etc.
 

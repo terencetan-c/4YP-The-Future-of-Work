@@ -1,17 +1,17 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
 [0] Config.pm:314> INFO - Logfile is 'Interim Report.blg'
-[65] biber-darwin:340> INFO - === Fri Nov 18, 2022, 01:00:56
+[65] biber-darwin:340> INFO - === Fri Nov 18, 2022, 10:01:54
 [79] Biber.pm:415> INFO - Reading 'Interim Report.bcf'
-[169] Biber.pm:952> INFO - Found 6 citekeys in bib section 0
-[182] Biber.pm:4340> INFO - Processing section 0
-[191] Biber.pm:4531> INFO - Looking for bibtex format file 'Reference.bib' for section 0
-[192] bibtex.pm:1689> INFO - LaTeX decoding ...
-[199] bibtex.pm:1494> INFO - Found BibTeX data source 'Reference.bib'
-[236] Utils.pm:395> WARN - legacy month field 'Oct' in entry 'WHO' is not an integer - this will probably not sort properly.
-[258] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[258] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[258] Biber.pm:4168> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[258] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
-[267] bbl.pm:654> INFO - Writing 'Interim Report.bbl' with encoding 'UTF-8'
-[271] bbl.pm:757> INFO - Output to Interim Report.bbl
-[271] Biber.pm:128> INFO - WARNINGS: 1
+[160] Biber.pm:952> INFO - Found 6 citekeys in bib section 0
+[172] Biber.pm:4340> INFO - Processing section 0
+[181] Biber.pm:4531> INFO - Looking for bibtex format file 'Reference.bib' for section 0
+[182] bibtex.pm:1689> INFO - LaTeX decoding ...
+[189] bibtex.pm:1494> INFO - Found BibTeX data source 'Reference.bib'
+[223] Utils.pm:395> WARN - legacy month field 'Oct' in entry 'WHO' is not an integer - this will probably not sort properly.
+[245] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[245] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[245] Biber.pm:4168> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[245] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[255] bbl.pm:654> INFO - Writing 'Interim Report.bbl' with encoding 'UTF-8'
+[259] bbl.pm:757> INFO - Output to Interim Report.bbl
+[259] Biber.pm:128> INFO - WARNINGS: 1
