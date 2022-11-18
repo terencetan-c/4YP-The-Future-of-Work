@@ -19,6 +19,76 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
+    \entry{twinthreats}{article}{}
+      \name{author}{4}{}{%
+        {{hash=a33c8ff08edacb119119ed9413bf85b0}{%
+           family={Basu},
+           familyi={B\bibinitperiod},
+           given={Meghna},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ea911d4d1284ca612d901b0aa58b5a9d}{%
+           family={Sung},
+           familyi={S\bibinitperiod},
+           given={P},
+           giveni={P\bibinitperiod}}}%
+        {{hash=a1071f5b6698575775d67acf88d31773}{%
+           family={Hedrich},
+           familyi={H\bibinitperiod},
+           given={W},
+           giveni={W\bibinitperiod}}}%
+        {{hash=5ccd91fe7f54a5d1b76548fe06b8d3ec}{%
+           family={Chacko},
+           familyi={C\bibinitperiod},
+           given={L},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{cee312c7d4912f3c8144591e27f4098e}
+      \strng{fullhash}{c4fcdf6c3c7f9a29bd10b6e58c277b0f}
+      \strng{bibnamehash}{cee312c7d4912f3c8144591e27f4098e}
+      \strng{authorbibnamehash}{cee312c7d4912f3c8144591e27f4098e}
+      \strng{authornamehash}{cee312c7d4912f3c8144591e27f4098e}
+      \strng{authorfullhash}{c4fcdf6c3c7f9a29bd10b6e58c277b0f}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Marsch \& McLennan Companies, Mercer}
+      \field{title}{The twin threats of aging and automation}
+      \field{year}{2018}
+    \endentry
+    \entry{futureofemployment}{article}{}
+      \name{author}{2}{}{%
+        {{hash=179dbe9d79354b9c917df61b391dfb88}{%
+           family={Frey},
+           familyi={F\bibinitperiod},
+           given={Carl\bibnamedelima Benedikt},
+           giveni={C\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=18674fc0a13e793a818ad8c861bc1d1d}{%
+           family={Osborne},
+           familyi={O\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford}%
+      }
+      \strng{namehash}{e3e121d7400d5936a55ef9e8d01b4b21}
+      \strng{fullhash}{e3e121d7400d5936a55ef9e8d01b4b21}
+      \strng{bibnamehash}{e3e121d7400d5936a55ef9e8d01b4b21}
+      \strng{authorbibnamehash}{e3e121d7400d5936a55ef9e8d01b4b21}
+      \strng{authornamehash}{e3e121d7400d5936a55ef9e8d01b4b21}
+      \strng{authorfullhash}{e3e121d7400d5936a55ef9e8d01b4b21}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The future of employment}
+      \field{year}{2013}
+    \endentry
     \entry{science}{article}{}
       \name{author}{14}{}{%
         {{hash=88787bcc3c17bfbb6044cebd64ee2e12}{%

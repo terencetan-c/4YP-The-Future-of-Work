@@ -52,10 +52,12 @@ citestyle=apa]{biblatex}
 
 
 \section{Overview of the project}
-The world population is ageing over the next few decades (\cite{science}). The rising elderly to working age population ratio is increasing and will continue to do so (\cite{WHO}). This trend is known as an ageing population, and will strain the public and social services of many countries around the world (\cite{publicservicesstrain}). As one of the key social challenges facing the world for the next few decades, it would be interesting to examine how an ageing population will affect the economy, and in particular, the job market.
+The world population is ageing over the next few decades (\cite{science}). The rising elderly to working age population ratio is increasing and will continue to do so (\cite{WHO}). This trend is known as an ageing population, and will strain the public and social services of many countries around the world (\cite{publicservicesstrain}). As one of the key social challenges facing the world for the next few decades, it would be interesting to examine how an ageing population will affect the economy, and in particular, the job market, and the interplay with automation in the workplace. 
+
+% In fact, automatability of jobs may affect older workers disproportionately (\cite{twinthreats}).
 
 \section{Key project objectives}
-In this project, we aim to examine the relationship between the age distribution within occupations and the degree of automation (both present and future) of those occupations. We might also look into any correlations with the skills/knowledge required for those occupations. This will all be done using a Bayesian non-parametric machine learning technique called Gaussian Process (\cite{GaussianProcess}).
+In this project, we aim to examine the relationship between the age distribution within occupations and the degree of automation (\cite{futureofemployment}) of those occupations. Although similar work has been done on this topic (\cite{twinthreats}), the study only looked at broad categories of employment. In this project, we will zoom in to look at specific occupations. We might also look into any correlations with the skills/knowledge required for those occupations. This will all be done using a Bayesian non-parametric machine learning technique called Gaussian Process (\cite{GaussianProcess}).
 
 The original goal was to extrapolate the changes in distribution of age groups within occupations over the next few years, but this was deemed unfeasible due to the limited amount of time-series data.
 
@@ -83,17 +85,17 @@ A GitHub repository for this project has also been created\footnote{https://gith
   Data wrangling work has already been started on the BLS data in order to standardise the data sets across the years. The differences are mainly due to changes to the Standard Occupational Classification (SOC) system. The SOC codes would allow us to map between the the BLS and the O*NET dataset. Since the changes to the SOC codes are quite complex, it was deemed unrealistic to automate the data wrangling. Instead, it would be done manually, which would still be manageable given that only about a hundred rows of data have been flagged for closer inspection. All the details of the data wrangling process can be found in an excel file on the GitHub repository.
 
   \section{Plan of work to the end of the project}
-  Once the data wrangling is completed, figures and graphs will be produced from the standardised BLS data to give us a clearer picture of the data. We will then move on to selecting an appropriate Gaussian Process and train our model on the BLS data. If things go well, we may then look at the O*NET data and incorporate it into this project. While doing all of these, I will start working on the report and the presentation.
+  Once the data wrangling is completed, figures and graphs will be produced from the standardised BLS data to give us a clearer picture of the data. We will then move on to selecting an appropriate Gaussian Process and train our model on the BLS data. If things go well, we may then look at the skills, knowledge, and abilities data and incorporate it into this project. While doing all of these, I will start working on the report and the presentation.
 
-  A high-level Gantt Chart was created to allow us to track our progress over time; the list view of the chart can be seen in Figure \ref{fig:gantt}.
+  % A high-level Gantt Chart was created to allow us to track our progress over time; the list view of the chart can be seen in Figure \ref{fig:gantt}.
 
-  \begin{figure}[!htb]
-    \centering
-    \includegraphics[width=12.5cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Gantt List.png}
-    \caption{Gantt Chart in List View}
-    \label{fig:gantt}
+  % \begin{figure}[!htb]
+  %   \centering
+  %   \includegraphics[width=10cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Gantt List.png}
+  %   \caption{Gantt Chart in List View}
+  %   \label{fig:gantt}
 
-  \end{figure}
+  % \end{figure}
 
     % \setstretch{1.4}
     \printbibliography[heading=bibintoc]

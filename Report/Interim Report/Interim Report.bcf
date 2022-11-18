@@ -2348,7 +2348,9 @@
     <bcf:citekey order="1">science</bcf:citekey>
     <bcf:citekey order="2">WHO</bcf:citekey>
     <bcf:citekey order="3">publicservicesstrain</bcf:citekey>
-    <bcf:citekey order="4">GaussianProcess</bcf:citekey>
+    <bcf:citekey order="4">futureofemployment</bcf:citekey>
+    <bcf:citekey order="5">twinthreats</bcf:citekey>
+    <bcf:citekey order="6">GaussianProcess</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
