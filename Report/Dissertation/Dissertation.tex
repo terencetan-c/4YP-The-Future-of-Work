@@ -1,0 +1,149 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper, margin=20mm]{geometry}
+ 
+
+\usepackage{amsmath}
+\usepackage{physics}
+
+\usepackage{graphicx}
+\graphicspath{ {./figs/} }
+\usepackage{subfig}
+
+%\renewcommand{\baselinestretch}{2}
+\usepackage{setspace}
+\doublespacing
+\usepackage{titlesec}
+\usepackage{authblk}
+\usepackage{titling}
+\usepackage[backend=biber,
+style=authoryear,
+citestyle=apa]{biblatex}
+\addbibresource{Reference.bib} % The filename of the bibliography
+
+\usepackage{enumitem}
+
+\titlespacing\section{0pt}{0pt plus 0pt minus 0pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{0pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsubsection{0pt}{0pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+
+
+\begin{document}
+
+\begin{titlepage} % Suppresses displaying the page number on the title page and the subsequent page counts as page 1
+	\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for horizontal lines, change thickness here
+	
+	\center % Centre everything on the page
+	
+	%------------------------------------------------
+	%	Headings
+	%------------------------------------------------
+	
+	\textsc{\LARGE University of Oxford}\\[1.5cm] % Main heading such as the name of your university/college
+	
+	\textsc{\Large Engineering Science}\\[0.5cm] % Major heading such as course name
+	
+	\textsc{\large 4YP Interim Report}\\[0.5cm] % Minor heading such as course title
+	
+	%------------------------------------------------
+	%	Title
+	%------------------------------------------------
+	
+	\HRule\\[0.4cm]
+	
+	{\huge\bfseries The Future of Work}\\[0.4cm] % Title of your document
+	
+	\HRule\\[1.5cm]
+	
+	%------------------------------------------------
+	%	Author(s)
+	%------------------------------------------------
+	
+	\begin{minipage}{0.4\textwidth}
+		\begin{flushleft}
+			\large
+			\textit{Author}\\
+			Terence \textsc{Tan} % Your name
+		\end{flushleft}
+	\end{minipage}
+	~
+	\begin{minipage}{0.4\textwidth}
+		\begin{flushright}
+			\large
+			\textit{Supervisor}\\
+			Dr. Michael A \textsc{Osborne} % Supervisor's name
+		\end{flushright}
+	\end{minipage}
+	
+	% If you don't want a supervisor, uncomment the two lines below and comment the code above
+	%{\large\textit{Author}}\\
+	%John \textsc{Smith} % Your name
+	
+	%------------------------------------------------
+	%	Date
+	%------------------------------------------------
+	
+	\vfill\vfill\vfill % Position the date 3/4 down the remaining page
+	
+	{\large\today} % Date, change the \today to a set date if you want to be precise
+	
+	%------------------------------------------------
+	%	Logo
+	%------------------------------------------------
+	
+	\vfill\vfill
+	\includegraphics[width=0.5\textwidth]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/logo.png}\\[1cm] % Include a department/university logo - this will require the graphicx package
+	 
+	%----------------------------------------------------------------------------------------
+	
+	\vfill % Push the date up 1/4 of the remaining page
+	
+\end{titlepage}
+
+
+
+\section{Introduction}
+\label{sec:Introduction}
+The world population is ageing over the next few decades (\cite{science}). The rising elderly to working age population ratio is increasing and will continue to do so (\cite{WHO}). This trend is known as an ageing population, and will strain the public and social services of many countries around the world (\cite{publicservicesstrain}). As one of the key social challenges facing the world for the next few decades, it would be interesting to examine how an ageing population will affect the economy, and in particular, the job market and the interplay with automation in the workplace. As more workers age out of the workforce, automation is expected to make up for it (\cite{futureofemployment}).
+
+In this project, we aim to examine the relationship between the age distribution within occupations and the degree of automation (\cite{futureofemployment}) of those occupations. Although similar work has been done on this topic (\cite{twinthreats}), the study only looked at broad categories of employment. In this project, we will zoom in to look at specific occupations. We might also look into any correlations with the skills/knowledge required for those occupations. This will all be done using the scikit-learn library\footnote{https://scikit-learn.org/stable/} in Python. Specifically, we will look at a Bayesian non-parametric machine learning technique known as Gaussian Process (\cite{GaussianProcess}); this model was used in previous work (\cite{futureofemployment}), and so, would be a good model to start with. We will test and validate against different models and pick the best performing ones.
+
+\section{Dataset}
+\label{sec:Dataset}
+We used two main metrics for this project: the automatability of occupations, and the age distribution within occupations. The dataset for the former is provided in an earlier work by \cite{futureofemployment}. The latter can be found in datasets provided by the US Bureau of Labour Statistics\footnote{https://www.bls.gov} (BLS); there is one dataset for each year from 2011 to 2021. All the datasets mentioned above use the Standard Occupational Classification (SOC) to classify the occupations, which means that we can map from one dataset to the another using the SOC codes. However, it is necessary to perform some data wrangling before we can proceed with the mapping. Additionally, changes were made to the SOC in 2018, so we would have to standardise all the datasets. In the following sections, we shall examine the datasets and the required data wrangling in more detail.
+
+\subsection{BLS Dataset}
+\label{subsec: BLS}
+As mentioned in Chapter \ref{sec:Dataset}, the BLS provides one dataset for each year from 2011 to 2021. The datasets from 2011 to 2019 follow the old SOC while the 2020 and 2021 ones follow the updated version. We want to standardise everything according to the updated SOC. We first label each dataset with the respective year and concatenate  all of them along the row axis; we shall refer to this concatenated dataset as the BLS dataset for the rest of the paper. A section of the BLS dataset can be seen in Figure \ref{fig:df}. Note that the numbers under the \emph{Total} and age group columns are in thousands. Furthermore, the median age is not provided for all occupations, which makes it less useful as a metric.
+
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width=12cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/BLS dataset (before).png}
+    \caption{BLS dataset (before processing)}
+	\label{fig:df}
+\end{figure}
+
+Unfortunately, the changes made to the SOC are too complex for us to automate the standardisation process. Hence, we use the \emph{pandas.DataFrame.join} function to join an old SOC dataset (from 2011 to 2019) with an updated SOC dataset (from 2020 to 2021) using the \emph{Occupation} column. We can then obtain a list of occupations from the old SOC dataset which did not join, and a corresponding list for the updated SOC dataset. We then manually go through both lists and decide on how to standardise the BLS dataset. While this process is tedious, it is reasonably doable since each list only contains about a hundred rows. The changes and rationale for them are listed alongside the occupations in both lists. All of these are placed in an Excel file\footnote{https://github.com/terencetan-c/4YP-The-Future-of-Work/blob/main/Data\%20cleaning/Changes.xlsx}.
+
+The list of actions required are as follows: -, Delete, Change, Combine, Combine but keep. The dash indicates that no action is required. `Delete' means to delete the occupation; this is usually because the particular occupation no longer exists under the new SOC. `Change' indicates a name change. `Combine' indicates that two or more occupations should be combined into the overarching occupation.
+
+Unfortunately, the occupations in the BLS dataset are not labelled with their respective SOC codes. That, along with some other features of the dataset, necessitates some pre-processing before we can proceed with the mapping.
+
+
+
+
+
+  
+%   \begin{figure}[!htb]
+%       \centering
+%       \subfloat[Without White Kernel (RMS error = 0.433)]{\includegraphics[width=8cm]{Figures/Graph 3.png}\label{fig:fig3}}
+%         \hfill
+%       \subfloat[With White Kernel (RMS error = 0.192)]{\includegraphics[width=8cm]{Figures/Graph 4.png}\label{fig:fig4}}
+%       \hfill
+%       \caption{Predicted values}
+%     \end{figure}
+    
+\printbibliography[heading=bibintoc]
+
+
+\end{document}

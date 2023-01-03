@@ -1,0 +1,285 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{twinthreats}{article}{}
+      \name{author}{4}{}{%
+        {{hash=a33c8ff08edacb119119ed9413bf85b0}{%
+           family={Basu},
+           familyi={B\bibinitperiod},
+           given={Meghna},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ea911d4d1284ca612d901b0aa58b5a9d}{%
+           family={Sung},
+           familyi={S\bibinitperiod},
+           given={P},
+           giveni={P\bibinitperiod}}}%
+        {{hash=a1071f5b6698575775d67acf88d31773}{%
+           family={Hedrich},
+           familyi={H\bibinitperiod},
+           given={W},
+           giveni={W\bibinitperiod}}}%
+        {{hash=5ccd91fe7f54a5d1b76548fe06b8d3ec}{%
+           family={Chacko},
+           familyi={C\bibinitperiod},
+           given={L},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{cee312c7d4912f3c8144591e27f4098e}
+      \strng{fullhash}{c4fcdf6c3c7f9a29bd10b6e58c277b0f}
+      \strng{bibnamehash}{cee312c7d4912f3c8144591e27f4098e}
+      \strng{authorbibnamehash}{cee312c7d4912f3c8144591e27f4098e}
+      \strng{authornamehash}{cee312c7d4912f3c8144591e27f4098e}
+      \strng{authorfullhash}{c4fcdf6c3c7f9a29bd10b6e58c277b0f}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Marsch \& McLennan Companies, Mercer}
+      \field{title}{The twin threats of aging and automation}
+      \field{year}{2018}
+    \endentry
+    \entry{futureofemployment}{article}{}
+      \name{author}{2}{}{%
+        {{hash=179dbe9d79354b9c917df61b391dfb88}{%
+           family={Frey},
+           familyi={F\bibinitperiod},
+           given={Carl\bibnamedelima Benedikt},
+           giveni={C\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=18674fc0a13e793a818ad8c861bc1d1d}{%
+           family={Osborne},
+           familyi={O\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford}%
+      }
+      \strng{namehash}{e3e121d7400d5936a55ef9e8d01b4b21}
+      \strng{fullhash}{e3e121d7400d5936a55ef9e8d01b4b21}
+      \strng{bibnamehash}{e3e121d7400d5936a55ef9e8d01b4b21}
+      \strng{authorbibnamehash}{e3e121d7400d5936a55ef9e8d01b4b21}
+      \strng{authornamehash}{e3e121d7400d5936a55ef9e8d01b4b21}
+      \strng{authorfullhash}{e3e121d7400d5936a55ef9e8d01b4b21}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The future of employment}
+      \field{year}{2013}
+    \endentry
+    \entry{science}{article}{}
+      \name{author}{14}{}{%
+        {{hash=88787bcc3c17bfbb6044cebd64ee2e12}{%
+           family={Gerland},
+           familyi={G\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod}}}%
+        {{hash=205b9f60128ee13642fa79b6f1330d63}{%
+           family={Raftery},
+           familyi={R\bibinitperiod},
+           given={Adrian\bibnamedelima E.},
+           giveni={A\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=fc45e3258bed8dcae88f0dc0b3da94df}{%
+           family={Hana},
+           familyi={H\bibinitperiod}}}%
+        {{hash=be33d74fcb297deee4a8f12367baa4de}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Nan},
+           giveni={N\bibinitperiod}}}%
+        {{hash=21b05095f233ddb7743aca60c87e31ca}{%
+           family={Gu},
+           familyi={G\bibinitperiod},
+           given={Danan},
+           giveni={D\bibinitperiod}}}%
+        {{hash=766251898afc739454f4ba1806b6132a}{%
+           family={Spoorenberg},
+           familyi={S\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=34f8236b8ceaebb31cbe2121af06e00e}{%
+           family={Alkema},
+           familyi={A\bibinitperiod},
+           given={Leontine},
+           giveni={L\bibinitperiod}}}%
+        {{hash=4eba9427b2017df6786ae8ea5f021fa5}{%
+           family={Fosdick},
+           familyi={F\bibinitperiod},
+           given={Bailey\bibnamedelima K.},
+           giveni={B\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=e036a953aded9386fa9c9fcf942e34e7}{%
+           family={Chunn},
+           familyi={C\bibinitperiod},
+           given={Jennifer},
+           giveni={J\bibinitperiod}}}%
+        {{hash=624a6997cb3ed7660931b2cd83d93e79}{%
+           family={Lalic},
+           familyi={L\bibinitperiod},
+           given={Nevena},
+           giveni={N\bibinitperiod}}}%
+        {{hash=e6acb597e29e1711a7a616c24ebeab80}{%
+           family={Bay},
+           familyi={B\bibinitperiod},
+           given={Guiomar},
+           giveni={G\bibinitperiod}}}%
+        {{hash=86bde161658b2e078ab084468544ea4e}{%
+           family={Buettner},
+           familyi={B\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=2270b0a8e38ab6d8abdd8bb09d9e0322}{%
+           family={Heilig},
+           familyi={H\bibinitperiod},
+           given={Gerhard\bibnamedelima K.},
+           giveni={G\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=c289ef474cda2cc712e742f2a6ec2918}{%
+           family={Wilmoth},
+           familyi={W\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{7696233b1a30bf30288af9bfeaac58e5}
+      \strng{fullhash}{7530e8271760c4d739d0fddd25520314}
+      \strng{bibnamehash}{7696233b1a30bf30288af9bfeaac58e5}
+      \strng{authorbibnamehash}{7696233b1a30bf30288af9bfeaac58e5}
+      \strng{authornamehash}{7696233b1a30bf30288af9bfeaac58e5}
+      \strng{authorfullhash}{7530e8271760c4d739d0fddd25520314}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Science}
+      \field{number}{6206}
+      \field{title}{World population stabilization unlikely this century}
+      \field{volume}{346}
+      \field{year}{2014}
+      \field{pages}{234\bibrangedash 237}
+      \range{pages}{4}
+    \endentry
+    \entry{GaussianProcess}{article}{}
+      \name{author}{1}{}{%
+        {{hash=bf5cf30deddddad00a6341ad7a414445}{%
+           family={Ghahramani},
+           familyi={G\bibinitperiod},
+           given={Zoubin},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The Royal Society Publishing}%
+      }
+      \strng{namehash}{bf5cf30deddddad00a6341ad7a414445}
+      \strng{fullhash}{bf5cf30deddddad00a6341ad7a414445}
+      \strng{bibnamehash}{bf5cf30deddddad00a6341ad7a414445}
+      \strng{authorbibnamehash}{bf5cf30deddddad00a6341ad7a414445}
+      \strng{authornamehash}{bf5cf30deddddad00a6341ad7a414445}
+      \strng{authorfullhash}{bf5cf30deddddad00a6341ad7a414445}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences}
+      \field{number}{1984}
+      \field{title}{Bayesian non-parametrics and the probabilistic approach to modelling}
+      \field{volume}{371}
+      \field{year}{2013}
+      \field{pages}{20110553}
+      \range{pages}{1}
+    \endentry
+    \entry{publicservicesstrain}{article}{}
+      \name{author}{2}{}{%
+        {{hash=ddcd070e249200c3e1705cdbf0eb4646}{%
+           family={Wiener},
+           familyi={W\bibinitperiod},
+           given={Joshua\bibnamedelima M},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=03432488502a7695439782c905939135}{%
+           family={Tilly},
+           familyi={T\bibinitperiod},
+           given={Jane},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{ac69860af72390f5cf6fe183fc387a7d}
+      \strng{fullhash}{ac69860af72390f5cf6fe183fc387a7d}
+      \strng{bibnamehash}{ac69860af72390f5cf6fe183fc387a7d}
+      \strng{authorbibnamehash}{ac69860af72390f5cf6fe183fc387a7d}
+      \strng{authornamehash}{ac69860af72390f5cf6fe183fc387a7d}
+      \strng{authorfullhash}{ac69860af72390f5cf6fe183fc387a7d}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International journal of epidemiology}
+      \field{number}{4}
+      \field{title}{Population ageing in the United States of America: implications for public programmes}
+      \field{volume}{31}
+      \field{year}{2002}
+      \field{pages}{776\bibrangedash 781}
+      \range{pages}{6}
+    \endentry
+    \entry{WHO}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=531217507bec092b6ec36c0f78f46736}{%
+           family={{World Health Organization}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {World Health Organization: WHO}%
+      }
+      \strng{namehash}{531217507bec092b6ec36c0f78f46736}
+      \strng{fullhash}{531217507bec092b6ec36c0f78f46736}
+      \strng{bibnamehash}{531217507bec092b6ec36c0f78f46736}
+      \strng{authorbibnamehash}{531217507bec092b6ec36c0f78f46736}
+      \strng{authornamehash}{531217507bec092b6ec36c0f78f46736}
+      \strng{authorfullhash}{531217507bec092b6ec36c0f78f46736}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{World Health Organization}
+      \field{month}{10}
+      \field{title}{Ageing and Health}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://www.who.int/news-room/fact-sheets/detail/ageing-and-health
+      \endverb
+      \verb{url}
+      \verb https://www.who.int/news-room/fact-sheets/detail/ageing-and-health
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
