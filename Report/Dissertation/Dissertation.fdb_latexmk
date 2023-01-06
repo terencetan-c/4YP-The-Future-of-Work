@@ -1,14 +1,18 @@
 # Fdb version 3
-["biber Dissertation"] 1672942288 "Dissertation.bcf" "Dissertation.bbl" "Dissertation" 1672942426
-  "Dissertation.bcf" 1672942426 107422 6231e2a6bcd3ae0e78c38b2b45fa9bbe "pdflatex"
+["biber Dissertation"] 1672960693 "Dissertation.bcf" "Dissertation.bbl" "Dissertation" 1672960852
+  "Dissertation.bcf" 1672960851 107422 6231e2a6bcd3ae0e78c38b2b45fa9bbe "pdflatex"
   "Reference.bib" 1672763173 1765 723c8f2eaa9e9fd6edcd4fb5debb468f ""
   (generated)
   "Dissertation.bbl"
   "Dissertation.blg"
-["pdflatex"] 1672942425 "/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Dissertation/Dissertation.tex" "/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Dissertation/Dissertation.pdf" "Dissertation" 1672942426
-  "/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Dissertation/Dissertation.aux" 1672942426 3004 75642f064c39427f2af844c438c6a53e ""
-  "/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Dissertation/Dissertation.tex" 1672942423 12373 7b6ea0fd9fb489792d345594a79b886f ""
+["pdflatex"] 1672960849 "/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Dissertation/Dissertation.tex" "/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Dissertation/Dissertation.pdf" "Dissertation" 1672960852
+  "/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Dissertation/Dissertation.aux" 1672960851 4252 4b27558b2d85246ef3c6d406fec1fd10 ""
+  "/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Dissertation/Dissertation.tex" 1672960847 13030 1ad614426b0a9513192b61199b025176 ""
   "/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/BLS dataset (before).png" 1672766784 238418 859d9077c09fdfdfb5dba635a4cacad2 ""
+  "/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Broad.png" 1672960429 17930 eff56cd520b4cb885ac198ffac03bc5c ""
+  "/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Detailed.png" 1672960376 16594 21cf3e8aed7390b5d38c4e747a278c1a ""
+  "/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Major.png" 1672960398 15370 e25ccce1a666b2ed1a0d16d3d331c40c ""
+  "/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Minor.png" 1672960415 19365 3d40b73332fa9904eb7ff8d30539cf5b ""
   "/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/logo.png" 1667572333 8595 3b5d55cc69373eeab1fb70e0fca56ad3 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -101,15 +105,15 @@
   "/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1616695603 5169178 a2ce6e2d73f603b690db6777d06dbccb ""
   "/usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1644852361 2724739 5bbe6d9fbaf7a5067235f5cb14a4d8cd ""
   "/usr/local/texlive/2021/texmf.cnf" 1616695596 577 4c1911a7228e554c6032256d3cf5567d ""
-  "Dissertation.aux" 1672942426 3004 75642f064c39427f2af844c438c6a53e "pdflatex"
-  "Dissertation.bbl" 1672942290 10978 b423d609cd6be1bcc6b5f8b8c4190b3a "biber Dissertation"
-  "Dissertation.run.xml" 1672942426 2359 85a6c82ef61423aedf02a02b5e7d0295 "pdflatex"
-  "Dissertation.tex" 1672942423 12373 7b6ea0fd9fb489792d345594a79b886f ""
+  "Dissertation.aux" 1672960851 4252 4b27558b2d85246ef3c6d406fec1fd10 "pdflatex"
+  "Dissertation.bbl" 1672960694 10978 b423d609cd6be1bcc6b5f8b8c4190b3a "biber Dissertation"
+  "Dissertation.run.xml" 1672960851 2359 85a6c82ef61423aedf02a02b5e7d0295 "pdflatex"
+  "Dissertation.tex" 1672960847 13030 1ad614426b0a9513192b61199b025176 ""
   (generated)
-  "Dissertation.aux"
-  "/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Dissertation/Dissertation.pdf"
   "Dissertation.pdf"
-  "Dissertation.log"
-  "/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Dissertation/Dissertation.log"
   "Dissertation.run.xml"
+  "/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Dissertation/Dissertation.log"
+  "/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Dissertation/Dissertation.pdf"
+  "Dissertation.log"
   "Dissertation.bcf"
+  "Dissertation.aux"
