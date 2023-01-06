@@ -134,24 +134,38 @@ Having systematically gone through all the inconsistencies and indicating one of
 One more thing to note is that the occupations in the BLS dataset are not labelled with their respective SOC codes. This is easily rectified once the above data wrangling is completed by joining (on \emph{Occupation}) the BLS dataset with the list of SOC codes to map from occupation name to code.
 
 \section{Preliminary Findings}
+In order to make sense of how well the BLS dataset represents the US labour force, we plot the ratio of the total labour numbers provided by the BLS dataset for each year to the total US civilian labour force for that year. We do that for \emph{Major Group}, \emph{Minor Group}, \emph{Broad Group}, and \emph{Detailed Occupation} separately. The resulting plots can be seen in Figure \ref{proportion}. Clearly, \emph{Major Group} occupations are most representative of the US civilian labour force, with \emph{Minor Group} being the least. Looking through the BLS dataset, this makes sense since the BLS tended to mostly collect high-level data (\emph{Major Group}) and low-level data (\emph{Broad Group} and \emph{Detailed Occupation}). Another thing to note is that many \emph{Broad Group} occupations only contain a single \emph{Detailed Occupation} which also shares the same occupation name (for example, \emph{Chief Executives}: 11-1010 and 11-1011). Hence, it is not surprising that the ratios for \emph{Broad Group} and \emph{Detailed Occupation} are so similar.
+
+It is important to consider the fact that the US civilian labour force includes both the employed and the unemployed. In years with usual levels of unemployment rate, the ratios will be distorted and paint a misleading picture. Indeed, we see in Figure \ref{proportion} that there is a considerable dip in the ratios in 2020 relative to other years, coinciding with the onset of the COVID-19 pandemic (\cite{covid2020unemployment})(\cite{congresscovidunemployment}).
 
 
 
-
-
+\begin{figure}[!htb]
+	\centering
+	\subfloat[Major Group]{\includegraphics[width=8.5cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Major.png}\label{fig:promajor}}
+	  \hfill
+	\subfloat[Minor Group]{\includegraphics[width=8.5cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Minor.png}\label{fig:prominor}}
+	\hfill
+	\subfloat[Broad Group]{\includegraphics[width=8.5cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Broad.png}\label{fig:probroad}}
+	\hfill
+	\subfloat[Detailed Occupation]{\includegraphics[width=8.5cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Detailed.png}\label{fig:prodetailed}}
+	\hfill
+	\caption{Ratio of the various SOC categories to the US civilian labour force}
+	\label{proportion}
+  \end{figure}
   
   \begin{figure}[!htb]
       \centering
-      \subfloat[Major Group]{\includegraphics[width=8.5cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Major.png}\label{fig:promajor}}
+      \subfloat[Major Group]{\includegraphics[width=8.5cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Major (employed).png}\label{fig:empmajor}}
         \hfill
-      \subfloat[Minor Group]{\includegraphics[width=8.5cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Minor.png}\label{fig:prominor}}
+      \subfloat[Minor Group]{\includegraphics[width=8.5cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Minor (employed).png}\label{fig:empminor}}
       \hfill
-	  \subfloat[Broad Group]{\includegraphics[width=8.5cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Broad.png}\label{fig:probroad}}
+	  \subfloat[Broad Group]{\includegraphics[width=8.5cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Broad (employed).png}\label{fig:empbroad}}
       \hfill
-	  \subfloat[Detailed Occupation]{\includegraphics[width=8.5cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Detailed.png}\label{fig:prodetailed}}
+	  \subfloat[Detailed Occupation]{\includegraphics[width=8.5cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Detailed (employed).png}\label{fig:empdetailed}}
       \hfill
-      \caption{Ratio of the various SOC categories to the total US working population}
-	  \label{proportion}
+      \caption{Ratio of the various SOC categories to the US civilian labour force (employed)}
+	  \label{proportionemp}
     \end{figure}
     
 \printbibliography[heading=bibintoc]
