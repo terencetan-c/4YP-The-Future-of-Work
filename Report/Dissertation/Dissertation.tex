@@ -104,9 +104,22 @@ citestyle=apa]{biblatex}
 
 \section{Introduction}
 \label{sec:Introduction}
+
+\subsection{Ageing Population}
+\label{subsec:ageingpopulation}
+
 The world population is ageing over the next few decades (\cite{science}). The rising elderly to working age population ratio is increasing and will continue to do so (\cite{WHO}). This trend is known as an ageing population, and will strain the public and social services of many countries around the world (\cite{publicservicesstrain}). As one of the key social challenges facing the world for the next few decades, it would be interesting to examine how an ageing population will affect the economy, and in particular, the job market and the interplay with automation in the workplace. As more workers age out of the workforce, automation is expected to make up for it (\cite{futureofemployment}).
 
+\subsection*{Related Works}
+
+
+\subsection{Project Overview}
+\label{subsec:projectoverview}
 In this project, we aim to examine the relationship between the age distribution within occupations and the degree of automation (\cite{futureofemployment}) of those occupations. Although similar work has been done on this topic (\cite{twinthreats}), the study only looked at broad categories of employment. In this project, we will zoom in to look at specific occupations. We might also look into any correlations with the skills/knowledge required for those occupations. This will all be done using the scikit-learn library\footnote{https://scikit-learn.org/stable/} in Python. Specifically, we will look at a Bayesian non-parametric machine learning technique known as Gaussian Process (\cite{GaussianProcess}); this model was used in previous work (\cite{futureofemployment}), and so, would be a good model to start with. We will test and validate against different models and pick the best performing ones.
+
+We will be using the proportion of elderly people as a metric for measuring the `age' of occupations. We acknowledge that the definition of elderly age varies across different countries and cultures (\cite{ageingculture}), and that the ageing process varies for different people depending on a variety of factors (\cite{levine2013modeling})(\cite{hayflick2007biological}). In fact, there are studies looking into moving beyond using chronological age to define an elderly person (\cite{KotterGrhn2015})(\cite{SOTOPEREZDECELIS2018e305})(\cite{klemera2006new}). However, there are numerous issues surrounding this approach (\cite{jylhava2017biological}), such as validation of such results are often difficult (\cite{biologicalagedifficult}), resulting in little consensus on an alternative metric to chronological age. For this reason, we will stick to the conventional definition of 65 years and older as `elderly' (\cite{who2010definition})(\cite{orimo2006reviewing})(\cite{oecddata}). This definition is also convenient for us since the oldest age group featured in our datasets are 65 years and older. Hence, the metric for measuring the `age' of an occupation will be the ratio of people aged 65 years and older to the total number of people in that particular occupation. For the rest of this paper, we will refer to this metric as the Elderly Ratio.
+
+\subsection*{Related Works}
 
 \section{Dataset}
 \label{sec:Dataset}
@@ -134,9 +147,9 @@ Having systematically gone through all the inconsistencies and indicating one of
 One more thing to note is that the occupations in the BLS dataset are not labelled with their respective SOC codes. This is easily rectified once the above data wrangling is completed by joining (on \emph{Occupation}) the BLS dataset with the list of SOC codes to map from occupation name to code.
 
 \section{Preliminary Findings}
-In order to make sense of how well the BLS dataset represents the US labour force, we plot the ratio of the total labour numbers provided by the BLS dataset for each year to the total US civilian labour force for that year. We do that for \emph{Major Group}, \emph{Minor Group}, \emph{Broad Group}, and \emph{Detailed Occupation} separately. The resulting plots can be seen in Figure \ref{proportion}. Clearly, \emph{Major Group} occupations are most representative of the US civilian labour force, with \emph{Minor Group} being the least. Looking through the BLS dataset, this makes sense since the BLS tended to mostly collect high-level data (\emph{Major Group}) and low-level data (\emph{Broad Group} and \emph{Detailed Occupation}). Another thing to note is that many \emph{Broad Group} occupations only contain a single \emph{Detailed Occupation} which also shares the same occupation name (for example, \emph{Chief Executives}: 11-1010 and 11-1011). Hence, it is not surprising that the ratios for \emph{Broad Group} and \emph{Detailed Occupation} are so similar.
+In order to make sense of how well the BLS dataset represents the US labour force, we plot the ratio of the total labour numbers provided by the BLS dataset for each year to the total US civilian labour force\footnote{https://www.bls.gov/cps/cpsaat01.htm} for that year. We do that for \emph{Major Group}, \emph{Minor Group}, \emph{Broad Group}, and \emph{Detailed Occupation} separately. The resulting plots can be seen in Figure \ref{proportion}. Clearly, \emph{Major Group} occupations are most representative of the US civilian labour force, with \emph{Minor Group} being the least. Looking through the BLS dataset, this makes sense since the BLS tended to mostly collect high-level data (\emph{Major Group}) and low-level data (\emph{Broad Group} and \emph{Detailed Occupation}). Another thing to note is that many \emph{Broad Group} occupations only contain a single \emph{Detailed Occupation} which also shares the same occupation name (for example, \emph{Chief Executives}: 11-1010 and 11-1011). Hence, it is not surprising that the ratios for \emph{Broad Group} and \emph{Detailed Occupation} are so similar.
 
-It is important to consider the fact that the US civilian labour force includes both the employed and the unemployed. In years with usual levels of unemployment rate, the ratios will be distorted and paint a misleading picture. Indeed, we see in Figure \ref{proportion} that there is a considerable dip in the ratios in 2020 relative to other years, coinciding with the onset of the COVID-19 pandemic (\cite{covid2020unemployment})(\cite{congresscovidunemployment}).
+It is important to consider the fact that the US civilian labour force includes both the employed and the unemployed. In years with unusual levels of unemployment rate, the ratios will be distorted and paint a misleading picture. Indeed, we see in Figure \ref{proportion} that there is a considerable dip in the ratios in 2020 relative to other years, coinciding with the onset of the COVID-19 pandemic (\cite{covid2020unemployment})(\cite{congresscovidunemployment}). Plotting the ratios relative to the employed portion of the US civilian labour force accounts for this; as seen in Figure \ref{proportionemp}, the dip in 2020 is no longer present. We can also see that the unemployment rate did not distort the ratios significantly. Hence, our conclusion from before still holds: the \emph{Major Group} is most representative of the US civilian labour force. With that in mind, we will try to use \emph{Major Group} data as much as possible and exercise caution when using \emph{Detailed Occupation} and \emph{Broad Group} data. As for \emph{Minor Group} data, we will neglect it given its low representation of the labour force.
 
 
 
@@ -168,6 +181,28 @@ It is important to consider the fact that the US civilian labour force includes 
 	  \label{proportionemp}
     \end{figure}
     
+	\subsection{General Trends}
+	\label{subsec:generaltrends}
+	We average the Elderly Ratio (refer to Chapter \ref{subsec:projectoverview} for definition) over the Major Groups for each year, and plot the values against the years to obtain Figure \ref{fig:averageelderlyratio}. We see a steady increase over the years, which is not surprising given the ageing population of the US.
+
+	\begin{figure}[!htb]
+		\centering
+		\includegraphics[width=12cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/average major group elderly ratio.png}
+		\caption{Plot of Elderly Ratio (averaged over the Major Groups) against Year}
+		\label{fig:averageelderlyratio}
+	\end{figure}
+
+	We can also calculate the relative change of the Elderly Ratio for each Major Group occupation from 2011 to 2021 to obtain Figure \ref{fig:relativechange}. The `construction and extraction occupations' has the highest relative increase while the `personal care and service occupations' features the least.
+
+
+	\begin{figure}[!htb]
+		\centering
+		\includegraphics[width=15cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Relative change.png}
+		\caption{Relative change of Major Groups from 2011 to 2021}
+		\label{fig:relativechange}
+	\end{figure}
+
+	
 \printbibliography[heading=bibintoc]
 
 

@@ -58,6 +58,64 @@
       \field{title}{The twin threats of aging and automation}
       \field{year}{2018}
     \endentry
+    \entry{biologicalagedifficult}{article}{}
+      \name{author}{3}{}{%
+        {{hash=e9058dc407ea06d1233ee1901f9c375b}{%
+           family={Cho},
+           familyi={C\bibinitperiod},
+           given={Il\bibnamedelima Haeng},
+           giveni={I\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=fb1a5aef81ee664de685b935b2c84745}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Kyung\bibnamedelima S},
+           giveni={K\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=0887398ed6d535c858893ad557952b0b}{%
+           family={Lim},
+           familyi={L\bibinitperiod},
+           given={Chang\bibnamedelima Joo},
+           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{d4f5f84682975a1dd63db4852e6247f6}
+      \strng{fullhash}{d4f5f84682975a1dd63db4852e6247f6}
+      \strng{bibnamehash}{d4f5f84682975a1dd63db4852e6247f6}
+      \strng{authorbibnamehash}{d4f5f84682975a1dd63db4852e6247f6}
+      \strng{authornamehash}{d4f5f84682975a1dd63db4852e6247f6}
+      \strng{authorfullhash}{d4f5f84682975a1dd63db4852e6247f6}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Mechanisms of ageing and development}
+      \field{number}{2}
+      \field{title}{An empirical comparative study on biological age estimation algorithms with an application of Work Ability Index (WAI)}
+      \field{volume}{131}
+      \field{year}{2010}
+      \field{pages}{69\bibrangedash 78}
+      \range{pages}{10}
+    \endentry
+    \entry{oecddata}{misc}{}
+      \list{publisher}{1}{%
+        {OECD}%
+      }
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labeldatesource}{nodate}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{OECD Data}
+      \field{title}{Elderly Population}
+      \verb{urlraw}
+      \verb https://data.oecd.org/pop/elderly-population.htm
+      \endverb
+      \verb{url}
+      \verb https://data.oecd.org/pop/elderly-population.htm
+      \endverb
+    \endentry
     \entry{congresscovidunemployment}{misc}{}
       \name{author}{4}{}{%
         {{hash=21fe922e7a92fbfa7db103cb53b08c35}{%
@@ -260,6 +318,164 @@
       \field{pages}{20110553}
       \range{pages}{1}
     \endentry
+    \entry{hayflick2007biological}{article}{}
+      \name{author}{1}{}{%
+        {{hash=c4740ab4ab7e94e42b54188035f5291e}{%
+           family={Hayflick},
+           familyi={H\bibinitperiod},
+           given={Leonard},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{c4740ab4ab7e94e42b54188035f5291e}
+      \strng{fullhash}{c4740ab4ab7e94e42b54188035f5291e}
+      \strng{bibnamehash}{c4740ab4ab7e94e42b54188035f5291e}
+      \strng{authorbibnamehash}{c4740ab4ab7e94e42b54188035f5291e}
+      \strng{authornamehash}{c4740ab4ab7e94e42b54188035f5291e}
+      \strng{authorfullhash}{c4740ab4ab7e94e42b54188035f5291e}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Annals of the New York academy of Sciences}
+      \field{number}{1}
+      \field{title}{Biological aging is no longer an unsolved problem}
+      \field{volume}{1100}
+      \field{year}{2007}
+      \field{pages}{1\bibrangedash 13}
+      \range{pages}{13}
+    \endentry
+    \entry{jylhava2017biological}{article}{}
+      \name{author}{3}{}{%
+        {{hash=4e691c7e56cee7207e099bbe02a325ec}{%
+           family={Jylhävä},
+           familyi={J\bibinitperiod},
+           given={Juulia},
+           giveni={J\bibinitperiod}}}%
+        {{hash=87cb8f7209668531cb171b04d216d049}{%
+           family={Pedersen},
+           familyi={P\bibinitperiod},
+           given={Nancy\bibnamedelima L},
+           giveni={N\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=3b5b7dc5a284bcb602ec914615529ec8}{%
+           family={Hägg},
+           familyi={H\bibinitperiod},
+           given={Sara},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{8df397713af628ac6fa46050bab1a729}
+      \strng{fullhash}{8df397713af628ac6fa46050bab1a729}
+      \strng{bibnamehash}{8df397713af628ac6fa46050bab1a729}
+      \strng{authorbibnamehash}{8df397713af628ac6fa46050bab1a729}
+      \strng{authornamehash}{8df397713af628ac6fa46050bab1a729}
+      \strng{authorfullhash}{8df397713af628ac6fa46050bab1a729}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{EBioMedicine}
+      \field{title}{Biological age predictors}
+      \field{volume}{21}
+      \field{year}{2017}
+      \field{pages}{29\bibrangedash 36}
+      \range{pages}{8}
+    \endentry
+    \entry{klemera2006new}{article}{}
+      \name{author}{2}{}{%
+        {{hash=1b32f7347433a5a83618f0e76e2ad37f}{%
+           family={Klemera},
+           familyi={K\bibinitperiod},
+           given={Petr},
+           giveni={P\bibinitperiod}}}%
+        {{hash=ceea5d3ffc9ef4763986104443f57161}{%
+           family={Doubal},
+           familyi={D\bibinitperiod},
+           given={Stanislav},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{d5cfa007f938dbd69d74a400df3859c9}
+      \strng{fullhash}{d5cfa007f938dbd69d74a400df3859c9}
+      \strng{bibnamehash}{d5cfa007f938dbd69d74a400df3859c9}
+      \strng{authorbibnamehash}{d5cfa007f938dbd69d74a400df3859c9}
+      \strng{authornamehash}{d5cfa007f938dbd69d74a400df3859c9}
+      \strng{authorfullhash}{d5cfa007f938dbd69d74a400df3859c9}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Mechanisms of ageing and development}
+      \field{number}{3}
+      \field{title}{A new approach to the concept and computation of biological age}
+      \field{volume}{127}
+      \field{year}{2006}
+      \field{pages}{240\bibrangedash 248}
+      \range{pages}{9}
+    \endentry
+    \entry{KotterGrhn2015}{article}{}
+      \name{author}{3}{}{%
+        {{hash=4e09644d6a926ab5282df207692f33aa}{%
+           family={Kotter-Grühn},
+           familyi={K\bibinithyphendelim G\bibinitperiod},
+           given={Dana},
+           giveni={D\bibinitperiod}}}%
+        {{hash=8528dd3f081e8c1ed49cb6008919dfad}{%
+           family={Kornadt},
+           familyi={K\bibinitperiod},
+           given={Anna\bibnamedelima E.},
+           giveni={A\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=d82f6b236b22bf29e1ce437408815f51}{%
+           family={Stephan},
+           familyi={S\bibinitperiod},
+           given={Yannick},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {S. Karger {AG}}%
+      }
+      \strng{namehash}{db50644dd4d43d517465f44fe1e31683}
+      \strng{fullhash}{db50644dd4d43d517465f44fe1e31683}
+      \strng{bibnamehash}{db50644dd4d43d517465f44fe1e31683}
+      \strng{authorbibnamehash}{db50644dd4d43d517465f44fe1e31683}
+      \strng{authornamehash}{db50644dd4d43d517465f44fe1e31683}
+      \strng{authorfullhash}{db50644dd4d43d517465f44fe1e31683}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Gerontology}
+      \field{month}{8}
+      \field{number}{1}
+      \field{title}{Looking Beyond Chronological Age: Current Knowledge and Future Directions in the Study of Subjective Age}
+      \field{volume}{62}
+      \field{year}{2015}
+      \field{pages}{86\bibrangedash 93}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1159/000438671
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1159/000438671
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1159/000438671
+      \endverb
+    \endentry
     \entry{covid2020unemployment}{article}{}
       \name{author}{2}{}{%
         {{hash=c531a30aaa8bfcfc5e396384c699f273}{%
@@ -290,6 +506,198 @@
       \field{labeltitlesource}{title}
       \field{title}{Unemployment rate in Poland and USA during COVID-19 pandemic: a case study}
       \field{year}{2020}
+    \endentry
+    \entry{levine2013modeling}{article}{}
+      \name{author}{1}{}{%
+        {{hash=38a2dbcee896b0d1e654fdc881bc36db}{%
+           family={Levine},
+           familyi={L\bibinitperiod},
+           given={Morgan\bibnamedelima E},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press US}%
+      }
+      \strng{namehash}{38a2dbcee896b0d1e654fdc881bc36db}
+      \strng{fullhash}{38a2dbcee896b0d1e654fdc881bc36db}
+      \strng{bibnamehash}{38a2dbcee896b0d1e654fdc881bc36db}
+      \strng{authorbibnamehash}{38a2dbcee896b0d1e654fdc881bc36db}
+      \strng{authornamehash}{38a2dbcee896b0d1e654fdc881bc36db}
+      \strng{authorfullhash}{38a2dbcee896b0d1e654fdc881bc36db}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journals of Gerontology Series A: Biomedical Sciences and Medical Sciences}
+      \field{number}{6}
+      \field{title}{Modeling the rate of senescence: can estimated biological age predict mortality more accurately than chronological age?}
+      \field{volume}{68}
+      \field{year}{2013}
+      \field{pages}{667\bibrangedash 674}
+      \range{pages}{8}
+    \endentry
+    \entry{who2010definition}{misc}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=8179b1fdebe9235e54501d2878c47e1b}{%
+           family={Organization},
+           familyi={O\bibinitperiod},
+           given={World\bibnamedelima Health},
+           giveni={W\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{b34697b55e931105852323b3db93732d}
+      \strng{fullhash}{b34697b55e931105852323b3db93732d}
+      \strng{bibnamehash}{b34697b55e931105852323b3db93732d}
+      \strng{authorbibnamehash}{b34697b55e931105852323b3db93732d}
+      \strng{authornamehash}{b34697b55e931105852323b3db93732d}
+      \strng{authorfullhash}{b34697b55e931105852323b3db93732d}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Definition of an older or elderly person}
+      \field{year}{2010}
+    \endentry
+    \entry{orimo2006reviewing}{article}{}
+      \name{author}{6}{}{%
+        {{hash=7a0ae56d452c8bec56b0222796ef4d11}{%
+           family={Orimo},
+           familyi={O\bibinitperiod},
+           given={Hajime},
+           giveni={H\bibinitperiod}}}%
+        {{hash=18a80c2ae8017f550635749db0809ff2}{%
+           family={Ito},
+           familyi={I\bibinitperiod},
+           given={Hideki},
+           giveni={H\bibinitperiod}}}%
+        {{hash=215afd646c2d853f32ceea2ba270e3f1}{%
+           family={Suzuki},
+           familyi={S\bibinitperiod},
+           given={Takao},
+           giveni={T\bibinitperiod}}}%
+        {{hash=4698917983fcb5009f778f25c8ade0c8}{%
+           family={Araki},
+           familyi={A\bibinitperiod},
+           given={Atsushi},
+           giveni={A\bibinitperiod}}}%
+        {{hash=6a15acc0c093cf371077848da32f24cd}{%
+           family={Hosoi},
+           familyi={H\bibinitperiod},
+           given={Takayuki},
+           giveni={T\bibinitperiod}}}%
+        {{hash=06e7d3752ed363873423ca04b4f7e0be}{%
+           family={Sawabe},
+           familyi={S\bibinitperiod},
+           given={Motoji},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{b15e0e82e0680226693623bdbb5d0d9a}
+      \strng{fullhash}{9a5bbed2530752b57f5eda250ec1dfaa}
+      \strng{bibnamehash}{b15e0e82e0680226693623bdbb5d0d9a}
+      \strng{authorbibnamehash}{b15e0e82e0680226693623bdbb5d0d9a}
+      \strng{authornamehash}{b15e0e82e0680226693623bdbb5d0d9a}
+      \strng{authorfullhash}{9a5bbed2530752b57f5eda250ec1dfaa}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Geriatrics \& gerontology international}
+      \field{number}{3}
+      \field{title}{Reviewing the definition of “elderly”}
+      \field{volume}{6}
+      \field{year}{2006}
+      \field{pages}{149\bibrangedash 158}
+      \range{pages}{10}
+    \endentry
+    \entry{SOTOPEREZDECELIS2018e305}{article}{}
+      \name{author}{5}{}{%
+        {{hash=40c4c1d1ca7a6313f3c11e697d8490ee}{%
+           family={Soto-Perez-de-Celis},
+           familyi={S\bibinithyphendelim P\bibinithyphendelim C\bibinitperiod},
+           given={Enrique},
+           giveni={E\bibinitperiod}}}%
+        {{hash=8994ed19e8e153d10cd060692de994a8}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Daneng},
+           giveni={D\bibinitperiod}}}%
+        {{hash=e5f09d4dd527bc7dd5835a5ad978fa72}{%
+           family={Yuan},
+           familyi={Y\bibinitperiod},
+           given={Yuan},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=bf5a4dddd54ac426b628477d570b3903}{%
+           family={Lau},
+           familyi={L\bibinitperiod},
+           given={Yat\bibnamedelima Ming},
+           giveni={Y\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=b712380b30e3bc978f7e89a415a572b5}{%
+           family={Hurria},
+           familyi={H\bibinitperiod},
+           given={Arti},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{94edf4589f4936f834864eeb1f8ca45c}
+      \strng{fullhash}{e411dcc71ddfcb17d9cbe311e961e319}
+      \strng{bibnamehash}{94edf4589f4936f834864eeb1f8ca45c}
+      \strng{authorbibnamehash}{94edf4589f4936f834864eeb1f8ca45c}
+      \strng{authornamehash}{94edf4589f4936f834864eeb1f8ca45c}
+      \strng{authorfullhash}{e411dcc71ddfcb17d9cbe311e961e319}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1470-2045}
+      \field{journaltitle}{The Lancet Oncology}
+      \field{number}{6}
+      \field{title}{Functional versus chronological age: geriatric assessments to guide decision making in older patients with cancer}
+      \field{volume}{19}
+      \field{year}{2018}
+      \field{pages}{e305\bibrangedash e316}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/S1470-2045(18)30348-6
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S1470204518303486
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S1470204518303486
+      \endverb
+    \endentry
+    \entry{ageingculture}{book}{}
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labeltitlesource}{title}
+      \field{month}{1}
+      \field{title}{The Oxford Dictionary of Sports Science \& Medicine}
+      \field{year}{2006}
+      \verb{doi}
+      \verb 10.1093/acref/9780198568506.001.0001
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1093/acref/9780198568506.001.0001
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1093/acref/9780198568506.001.0001
+      \endverb
     \endentry
     \entry{publicservicesstrain}{article}{}
       \name{author}{2}{}{%
