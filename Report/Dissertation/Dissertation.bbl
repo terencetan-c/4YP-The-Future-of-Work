@@ -58,6 +58,92 @@
       \field{title}{The twin threats of aging and automation}
       \field{year}{2018}
     \endentry
+    \entry{Cheng2020}{article}{}
+      \name{author}{8}{}{%
+        {{hash=ee346f9e0c250002bc7f3e209fe9385d}{%
+           family={Cheng},
+           familyi={C\bibinitperiod},
+           given={Xunjie},
+           giveni={X\bibinitperiod}}}%
+        {{hash=d9da4a23ca804cbf6aff5760349ec643}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Yang},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=305c0aaba5767698406af9bee41c0e2e}{%
+           family={Schwebel},
+           familyi={S\bibinitperiod},
+           given={David\bibnamedelima C.},
+           giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=a33038424cf805efd21e0fd2c01d5be3}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Zuyun},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=502de95c3193f5c283f4ef712520a97e}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Li},
+           giveni={L\bibinitperiod}}}%
+        {{hash=43fdee299315e8a4e6901f47269dee6f}{%
+           family={Cheng},
+           familyi={C\bibinitperiod},
+           given={Peixia},
+           giveni={P\bibinitperiod}}}%
+        {{hash=a36f5b8fef729059ec51ac8edb9a61fd}{%
+           family={Ning},
+           familyi={N\bibinitperiod},
+           given={Peishan},
+           giveni={P\bibinitperiod}}}%
+        {{hash=2c53cbdd4532382cf66023e4d375590b}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Guoqing},
+           giveni={G\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=e00817d8efb38870f5d183ae61e86f7d}{%
+           family={Basu},
+           familyi={B\bibinitperiod},
+           given={Sanjay},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Public Library of Science ({PLoS})}%
+      }
+      \strng{namehash}{f33c9686abee5912f4b6352cd81dc95d}
+      \strng{fullhash}{663f844abfbaf3205e3efead47a57826}
+      \strng{bibnamehash}{f33c9686abee5912f4b6352cd81dc95d}
+      \strng{authorbibnamehash}{f33c9686abee5912f4b6352cd81dc95d}
+      \strng{authornamehash}{f33c9686abee5912f4b6352cd81dc95d}
+      \strng{authorfullhash}{663f844abfbaf3205e3efead47a57826}
+      \strng{editorbibnamehash}{e00817d8efb38870f5d183ae61e86f7d}
+      \strng{editornamehash}{e00817d8efb38870f5d183ae61e86f7d}
+      \strng{editorfullhash}{e00817d8efb38870f5d183ae61e86f7d}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{PLOS} Medicine}
+      \field{month}{6}
+      \field{number}{6}
+      \field{title}{Population ageing and mortality during 1990{–}2017: A~global decomposition analysis}
+      \field{volume}{17}
+      \field{year}{2020}
+      \field{pages}{e1003138}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1371/journal.pmed.1003138
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1371/journal.pmed.1003138
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1371/journal.pmed.1003138
+      \endverb
+    \endentry
     \entry{biologicalagedifficult}{article}{}
       \name{author}{3}{}{%
         {{hash=e9058dc407ea06d1233ee1901f9c375b}{%
@@ -538,6 +624,113 @@
       \field{pages}{667\bibrangedash 674}
       \range{pages}{8}
     \endentry
+    \entry{manning_2022}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=cd74a6d6ac1ee2a9feddbaba72dc0a44}{%
+           family={Manning},
+           familyi={M\bibinitperiod},
+           given={Jennifer\bibnamedelima E.},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Congressional Research Service}%
+      }
+      \strng{namehash}{cd74a6d6ac1ee2a9feddbaba72dc0a44}
+      \strng{fullhash}{cd74a6d6ac1ee2a9feddbaba72dc0a44}
+      \strng{bibnamehash}{cd74a6d6ac1ee2a9feddbaba72dc0a44}
+      \strng{authorbibnamehash}{cd74a6d6ac1ee2a9feddbaba72dc0a44}
+      \strng{authornamehash}{cd74a6d6ac1ee2a9feddbaba72dc0a44}
+      \strng{authorfullhash}{cd74a6d6ac1ee2a9feddbaba72dc0a44}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Congressional Research Service}
+      \field{month}{12}
+      \field{title}{Membership of the 117th congress: A profile}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://crsreports.congress.gov/product/pdf/R/R46705/2
+      \endverb
+      \verb{url}
+      \verb https://crsreports.congress.gov/product/pdf/R/R46705/2
+      \endverb
+    \endentry
+    \entry{Munger+2022}{book}{}
+      \name{author}{1}{}{%
+        {{hash=a2e475e8d49af408efd1fd82e2354839}{%
+           family={Munger},
+           familyi={M\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York Chichester, West Sussex}%
+      }
+      \list{publisher}{1}{%
+        {Columbia University Press}%
+      }
+      \strng{namehash}{a2e475e8d49af408efd1fd82e2354839}
+      \strng{fullhash}{a2e475e8d49af408efd1fd82e2354839}
+      \strng{bibnamehash}{a2e475e8d49af408efd1fd82e2354839}
+      \strng{authorbibnamehash}{a2e475e8d49af408efd1fd82e2354839}
+      \strng{authornamehash}{a2e475e8d49af408efd1fd82e2354839}
+      \strng{authorfullhash}{a2e475e8d49af408efd1fd82e2354839}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780231553810}
+      \field{title}{Why the Baby Boomers Still Dominate American Politics and Culture}
+      \field{year}{2022}
+      \verb{doi}
+      \verb doi:10.7312/mung20086
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.7312/mung20086
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.7312/mung20086
+      \endverb
+    \endentry
+    \entry{noah_2019}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=70269d00652ceb8569703a26ec967d4b}{%
+           family={Noah},
+           familyi={N\bibinitperiod},
+           given={Timothy},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {POLITICO}%
+      }
+      \strng{namehash}{70269d00652ceb8569703a26ec967d4b}
+      \strng{fullhash}{70269d00652ceb8569703a26ec967d4b}
+      \strng{bibnamehash}{70269d00652ceb8569703a26ec967d4b}
+      \strng{authorbibnamehash}{70269d00652ceb8569703a26ec967d4b}
+      \strng{authornamehash}{70269d00652ceb8569703a26ec967d4b}
+      \strng{authorfullhash}{70269d00652ceb8569703a26ec967d4b}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{POLITICO Magazine}
+      \field{month}{9}
+      \field{title}{America, the gerontocracy}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://www.politico.com/magazine/story/2019/09/03/america-gerontocracy-problem-politics-old-politicians-trump-biden-sanders-227986/
+      \endverb
+      \verb{url}
+      \verb https://www.politico.com/magazine/story/2019/09/03/america-gerontocracy-problem-politics-old-politicians-trump-biden-sanders-227986/
+      \endverb
+    \endentry
     \entry{who2010definition}{misc}{}
       \true{moreauthor}
       \true{morelabelname}
@@ -698,6 +891,71 @@
       \verb{url}
       \verb https://doi.org/10.1093/acref/9780198568506.001.0001
       \endverb
+    \endentry
+    \entry{thompson_2020}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=ce6e4860c7f51e01fe5da48c24df108d}{%
+           family={Thompson},
+           familyi={T\bibinitperiod},
+           given={Derek},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Atlantic Media Company}%
+      }
+      \strng{namehash}{ce6e4860c7f51e01fe5da48c24df108d}
+      \strng{fullhash}{ce6e4860c7f51e01fe5da48c24df108d}
+      \strng{bibnamehash}{ce6e4860c7f51e01fe5da48c24df108d}
+      \strng{authorbibnamehash}{ce6e4860c7f51e01fe5da48c24df108d}
+      \strng{authornamehash}{ce6e4860c7f51e01fe5da48c24df108d}
+      \strng{authorfullhash}{ce6e4860c7f51e01fe5da48c24df108d}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Atlantic}
+      \field{month}{3}
+      \field{title}{Why do such Elderly People Run America?}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://www.theatlantic.com/ideas/archive/2020/03/why-are-these-people-so-freaking-old/607492/
+      \endverb
+      \verb{url}
+      \verb https://www.theatlantic.com/ideas/archive/2020/03/why-are-these-people-so-freaking-old/607492/
+      \endverb
+    \endentry
+    \entry{tinker2002social}{article}{}
+      \name{author}{1}{}{%
+        {{hash=a86c3afc2306608719453e87befdcd04}{%
+           family={Tinker},
+           familyi={T\bibinitperiod},
+           given={Anthea},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{a86c3afc2306608719453e87befdcd04}
+      \strng{fullhash}{a86c3afc2306608719453e87befdcd04}
+      \strng{bibnamehash}{a86c3afc2306608719453e87befdcd04}
+      \strng{authorbibnamehash}{a86c3afc2306608719453e87befdcd04}
+      \strng{authornamehash}{a86c3afc2306608719453e87befdcd04}
+      \strng{authorfullhash}{a86c3afc2306608719453e87befdcd04}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Mechanisms of Ageing and Development}
+      \field{number}{7}
+      \field{title}{The social implications of an ageing population}
+      \field{volume}{123}
+      \field{year}{2002}
+      \field{pages}{729\bibrangedash 735}
+      \range{pages}{7}
     \endentry
     \entry{publicservicesstrain}{article}{}
       \name{author}{2}{}{%
