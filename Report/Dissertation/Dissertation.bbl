@@ -58,6 +58,42 @@
       \field{title}{The twin threats of aging and automation}
       \field{year}{2018}
     \endentry
+    \entry{BeardsonTimothy2021Ag:C}{book}{}
+      \name{author}{2}{}{%
+        {{hash=4feec1ae677a4fb6302fa7a0e67f2748}{%
+           family={Beardson},
+           familyi={B\bibinitperiod},
+           given={Timothy},
+           giveni={T\bibinitperiod}}}%
+        {{hash=71b56cbd4e22fcd62bb8dd360de0a49d}{%
+           family={Fielding},
+           familyi={F\bibinitperiod},
+           given={Nick},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \list{location}{1}{%
+        {Oxford}%
+      }
+      \strng{namehash}{a976cc9c93d104a5b2d1259d0431efa6}
+      \strng{fullhash}{a976cc9c93d104a5b2d1259d0431efa6}
+      \strng{bibnamehash}{a976cc9c93d104a5b2d1259d0431efa6}
+      \strng{authorbibnamehash}{a976cc9c93d104a5b2d1259d0431efa6}
+      \strng{authornamehash}{a976cc9c93d104a5b2d1259d0431efa6}
+      \strng{authorfullhash}{a976cc9c93d104a5b2d1259d0431efa6}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781909930988 (hardback)}
+      \field{title}{Ageing giant : China's looming population collapse}
+      \field{year}{2021}
+      \keyw{Population aging -- China; Population; Population aging; China -- Population; China}
+    \endentry
     \entry{Cheng2020}{article}{}
       \name{author}{8}{}{%
         {{hash=ee346f9e0c250002bc7f3e209fe9385d}{%
@@ -184,6 +220,59 @@
       \field{year}{2010}
       \field{pages}{69\bibrangedash 78}
       \range{pages}{10}
+    \endentry
+    \entry{RePEc:ssa:lembks:dosietal-1988}{book}{}
+      \name{editor}{5}{}{%
+        {{hash=2573c3b260424b37853cdc05b7d977b6}{%
+           family={Dosi},
+           familyi={D\bibinitperiod},
+           given={Giovanni},
+           giveni={G\bibinitperiod}}}%
+        {{hash=d5af87914b16fe9a262b59331a95fd33}{%
+           family={Freeman},
+           familyi={F\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod}}}%
+        {{hash=ca4c4817d9bd17e827b704beba9eec47}{%
+           family={Nelson},
+           familyi={N\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+        {{hash=df4ae5e1cd34f76f1f3d5389b6d71c40}{%
+           family={Silverberg},
+           familyi={S\bibinitperiod},
+           given={Gerald},
+           giveni={G\bibinitperiod}}}%
+        {{hash=798352c04d01cea15877c22f0cf63bb6}{%
+           family={Soete},
+           familyi={S\bibinitperiod},
+           given={Luc},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Laboratory of Economics}%
+        {Management (LEM), Sant'Anna School of Advanced Studies, Pisa, Italy}%
+      }
+      \strng{namehash}{eb3396105f81ea64dc175bf995b0597e}
+      \strng{fullhash}{0ed9e8ab06dc643e17f92631bae9ca2c}
+      \strng{bibnamehash}{eb3396105f81ea64dc175bf995b0597e}
+      \strng{editorbibnamehash}{eb3396105f81ea64dc175bf995b0597e}
+      \strng{editornamehash}{eb3396105f81ea64dc175bf995b0597e}
+      \strng{editorfullhash}{0ed9e8ab06dc643e17f92631bae9ca2c}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{title}{Technical Change and Economic Theory}
+      \field{year}{1988}
+      \verb{urlraw}
+      \verb https://EconPapers.repec.org/RePEc:ssa:lembks:dosietal-1988
+      \endverb
+      \verb{url}
+      \verb https://EconPapers.repec.org/RePEc:ssa:lembks:dosietal-1988
+      \endverb
     \endentry
     \entry{oecddata}{misc}{}
       \list{publisher}{1}{%
@@ -435,6 +524,44 @@
       \field{pages}{1\bibrangedash 13}
       \range{pages}{13}
     \endentry
+    \entry{10.1257/jep.33.2.229}{article}{}
+      \name{author}{1}{}{%
+        {{hash=4841661682a6ef4fa0925868f85ccec2}{%
+           family={Hollander},
+           familyi={H\bibinitperiod},
+           given={Samuel},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{4841661682a6ef4fa0925868f85ccec2}
+      \strng{fullhash}{4841661682a6ef4fa0925868f85ccec2}
+      \strng{bibnamehash}{4841661682a6ef4fa0925868f85ccec2}
+      \strng{authorbibnamehash}{4841661682a6ef4fa0925868f85ccec2}
+      \strng{authornamehash}{4841661682a6ef4fa0925868f85ccec2}
+      \strng{authorfullhash}{4841661682a6ef4fa0925868f85ccec2}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Economic Perspectives}
+      \field{month}{5}
+      \field{number}{2}
+      \field{title}{Retrospectives: Ricardo on Machinery}
+      \field{volume}{33}
+      \field{year}{2019}
+      \field{pages}{229\bibrangedash 42}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1257/jep.33.2.229
+      \endverb
+      \verb{urlraw}
+      \verb https://www.aeaweb.org/articles?id=10.1257/jep.33.2.229
+      \endverb
+      \verb{url}
+      \verb https://www.aeaweb.org/articles?id=10.1257/jep.33.2.229
+      \endverb
+    \endentry
     \entry{jylhava2017biological}{article}{}
       \name{author}{3}{}{%
         {{hash=4e691c7e56cee7207e099bbe02a325ec}{%
@@ -474,6 +601,49 @@
       \field{year}{2017}
       \field{pages}{29\bibrangedash 36}
       \range{pages}{8}
+    \endentry
+    \entry{Keynes2010}{inbook}{}
+      \name{author}{1}{}{%
+        {{hash=612862f6008b8bea8cd4a13783af9a93}{%
+           family={Keynes},
+           familyi={K\bibinitperiod},
+           given={John\bibnamedelima Maynard},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {London}%
+      }
+      \list{publisher}{1}{%
+        {Palgrave Macmillan UK}%
+      }
+      \strng{namehash}{612862f6008b8bea8cd4a13783af9a93}
+      \strng{fullhash}{612862f6008b8bea8cd4a13783af9a93}
+      \strng{bibnamehash}{612862f6008b8bea8cd4a13783af9a93}
+      \strng{authorbibnamehash}{612862f6008b8bea8cd4a13783af9a93}
+      \strng{authornamehash}{612862f6008b8bea8cd4a13783af9a93}
+      \strng{authorfullhash}{612862f6008b8bea8cd4a13783af9a93}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We are suffering just now from a bad attack of economic pessimism. It is common to hear people say that the epoch of enormous economic progress which characterised the nineteenth century is over; that the rapid improvement in the standard of life is now going to slow down---at any rate in Great Britain; that a decline in prosperity is more likely than an improvement in the decade which lies ahead of us.}
+      \field{booktitle}{Essays in Persuasion}
+      \field{isbn}{978-1-349-59072-8}
+      \field{title}{Economic Possibilities for Our Grandchildren}
+      \field{year}{2010}
+      \field{pages}{321\bibrangedash 332}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1007/978-1-349-59072-8_25
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/978-1-349-59072-8_25
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/978-1-349-59072-8_25
+      \endverb
     \endentry
     \entry{klemera2006new}{article}{}
       \name{author}{2}{}{%
@@ -624,6 +794,60 @@
       \field{pages}{667\bibrangedash 674}
       \range{pages}{8}
     \endentry
+    \entry{LuoYanan2021TaCf}{article}{}
+      \name{author}{3}{}{%
+        {{hash=6899635328d3c50ba55da20b9f1c0cc7}{%
+           family={Luo},
+           familyi={L\bibinitperiod},
+           given={Yanan},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=15e95869141341dab7d00435d4cdaaef}{%
+           family={Su},
+           familyi={S\bibinitperiod},
+           given={Binbin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=18c28c409ee8b6716348305c62b09fb7}{%
+           family={Zheng},
+           familyi={Z\bibinitperiod},
+           given={Xiaoying},
+           giveni={X\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \list{location}{1}{%
+        {Changping District}%
+      }
+      \list{organization}{1}{%
+        {Department of Global Health, School of Public Health, Peking University, Beijing, China}%
+      }
+      \list{publisher}{2}{%
+        {Chinese Center for Disease Control}%
+        {Prevention}%
+      }
+      \strng{namehash}{d60e8dba9aab54273a51615a111d3ca6}
+      \strng{fullhash}{d60e8dba9aab54273a51615a111d3ca6}
+      \strng{bibnamehash}{d60e8dba9aab54273a51615a111d3ca6}
+      \strng{authorbibnamehash}{d60e8dba9aab54273a51615a111d3ca6}
+      \strng{authornamehash}{d60e8dba9aab54273a51615a111d3ca6}
+      \strng{authorfullhash}{d60e8dba9aab54273a51615a111d3ca6}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{What is already known about this topic? As the largest country in the world, China experienced a demographic transition at a historic scale during the past 50 years with extraordinarily associated changes in the age structure of the population, declining fertility rates, accelerating process of population aging, and growing population scale. What is added by this report? This study presented future trends of five important population indicators in China. From 2015-2050, China experienced outstanding demographic changes - increases in life expectancy and declines in fertility rate - that have led to population aging. In addition, disability prevalence is growing, and life expectancy with disability is also increasing. What are the implications for public health practice? This study provided evidence of healthy life expectancy improvement and disease burden declining, healthy aging, and active aging. Due to the uncertainties of future trends of population structure changes, dynamic evaluations, timely adjustments, and innovations in population health strategy design and management should be strengthened to ensure quality of life under the background of population aging.}
+      \field{issn}{2096-7071}
+      \field{journaltitle}{CHINA CDC WEEKLY}
+      \field{number}{28}
+      \field{title}{Trends and Challenges for Population and Health During Population Aging - China, 2015-2050}
+      \field{volume}{3}
+      \field{year}{2021}
+      \field{pages}{593\bibrangedash 598}
+      \range{pages}{6}
+      \keyw{Aging ; Challenges ; Health ; Life Sciences & Biomedicine ; Population ; Preplanned Studies ; Public,Environmental & Occupational Health ; Science & Technology ; Trends}
+    \endentry
     \entry{manning_2022}{misc}{}
       \name{author}{1}{}{%
         {{hash=cd74a6d6ac1ee2a9feddbaba72dc0a44}{%
@@ -696,6 +920,40 @@
       \verb{url}
       \verb https://doi.org/10.7312/mung20086
       \endverb
+    \endentry
+    \entry{MunnellAliciaH2013SSRR}{article}{}
+      \name{author}{1}{}{%
+        {{hash=e1b9f86d1b00a0c97c66638c6e0a9815}{%
+           family={Munnell},
+           familyi={M\bibinitperiod},
+           given={Alicia\bibnamedelima H},
+           giveni={A\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \list{location}{1}{%
+        {St. Louis}%
+      }
+      \list{publisher}{1}{%
+        {Federal Reserve Bank of St Louis}%
+      }
+      \strng{namehash}{e1b9f86d1b00a0c97c66638c6e0a9815}
+      \strng{fullhash}{e1b9f86d1b00a0c97c66638c6e0a9815}
+      \strng{bibnamehash}{e1b9f86d1b00a0c97c66638c6e0a9815}
+      \strng{authorbibnamehash}{e1b9f86d1b00a0c97c66638c6e0a9815}
+      \strng{authornamehash}{e1b9f86d1b00a0c97c66638c6e0a9815}
+      \strng{authorfullhash}{e1b9f86d1b00a0c97c66638c6e0a9815}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Social Security was designed to replace income once people could no longer work. In the 1930s, the retirement age was set at 65, which coincided with the age used by many private and public pension plans. In the late 1950s and early 1960s, Congress changed the law to enable workers to claim benefits as early as 62. But benefits claimed before 65 were actuarially reduced, so that those who claimed at 62 and those who claimed at 65 could expect to receive about the same total amount in benefits over their lifetimes. In the early 1970s, Congress introduced the Delayed Retirement Credit, which increased monthly benefits for those who claimed after the so-called Full Retirement Age of 65. That credit, which was modest at first, now fully compensates for delayed claiming. As a result, lifetime benefits are roughly equal for any claiming age between 62 and 70, and the highest monthly benefits are available at 70. In that regard, 70 has become the new 65. Moreover, the level of monthly benefits at 70 appears appropriate given the increased deductions for Medicare premiums, the greater taxation of benefits, the declining importance of the spouses' benefit, and the diminished sources of other retirement income. This brief aims to clarify Social Security's current benefit structure. The discussion proceeds as follows. The first section describes how 70 became Social Security's new retirement age. The second section explores whether 70 is the "right" age by looking at "equivalency" to 65, the increasing dispersion in life expectancy by socioeconomic status, and actual retirement patterns. The third section looks at the Social Security replacement rates that workers will face at different retirement ages. The fourth section clarifies that with the maturation of the Delayed Retirement Credit, the "Full Retirement Age" no longer describes the benefit structure; further increases in this benchmark simply reduce replacement rates for everyone. The final section presents a threefold conclusion. First, the shift to age 70 may be appropriate given the increase in life expectancy, health, and education for the majority of workers, but will lead to low replacement rates for the many workers who retire early. Second, further cuts in benefits by extending the Full Retirement Age will lead to very low benefits for early retirees. Third, policymakers need to inform those who can work that 70 is the new retirement age and devise ways to protect those who cannot work.}
+      \field{journaltitle}{IDEAS Working Paper Series from RePEc}
+      \field{title}{Social Security's Real Retirement Age Is 70}
+      \field{year}{2013}
     \endentry
     \entry{noah_2019}{misc}{}
       \name{author}{1}{}{%
@@ -992,6 +1250,44 @@
       \field{year}{2002}
       \field{pages}{776\bibrangedash 781}
       \range{pages}{6}
+    \endentry
+    \entry{WoirolGregoryR1997Ttua}{article}{}
+      \name{author}{2}{}{%
+        {{hash=bcb49e87b501567903d587548d047b4a}{%
+           family={Woirol},
+           familyi={W\bibinitperiod},
+           given={Gregory\bibnamedelima R},
+           giveni={G\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=fac61abdb3c5fd28c9391b505ddc9e01}{%
+           family={Backhouse},
+           familyi={B\bibinitperiod},
+           given={Roger\bibnamedelima E},
+           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \strng{namehash}{e48fa8a57e8bb74aafa7e1cc5c0d3f0b}
+      \strng{fullhash}{e48fa8a57e8bb74aafa7e1cc5c0d3f0b}
+      \strng{bibnamehash}{e48fa8a57e8bb74aafa7e1cc5c0d3f0b}
+      \strng{authorbibnamehash}{e48fa8a57e8bb74aafa7e1cc5c0d3f0b}
+      \strng{authornamehash}{e48fa8a57e8bb74aafa7e1cc5c0d3f0b}
+      \strng{authorfullhash}{e48fa8a57e8bb74aafa7e1cc5c0d3f0b}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0022-0515}
+      \field{journaltitle}{Journal of economic literature}
+      \field{number}{4}
+      \field{title}{The technological unemployment and structural unemployment debates}
+      \field{volume}{XXXV}
+      \field{year}{1997}
+      \field{pages}{2075\bibrangedash 2076}
+      \range{pages}{2}
+      \keyw{Economic history ; Technological change ; Unemployment}
     \endentry
     \entry{WHO}{misc}{}
       \name{author}{1}{}{%

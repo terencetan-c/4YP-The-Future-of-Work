@@ -1,22 +1,23 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
 [0] Config.pm:314> INFO - Logfile is 'Dissertation.blg'
-[68] biber-darwin:340> INFO - === Wed Feb  8, 2023, 18:41:30
-[82] Biber.pm:415> INFO - Reading 'Dissertation.bcf'
-[168] Biber.pm:952> INFO - Found 25 citekeys in bib section 0
-[182] Biber.pm:4340> INFO - Processing section 0
-[191] Biber.pm:4531> INFO - Looking for bibtex format file 'Reference.bib' for section 0
-[192] bibtex.pm:1689> INFO - LaTeX decoding ...
+[61] biber-darwin:340> INFO - === Sat Feb 18, 2023, 22:56:13
+[74] Biber.pm:415> INFO - Reading 'Dissertation.bcf'
+[164] Biber.pm:952> INFO - Found 32 citekeys in bib section 0
+[176] Biber.pm:4340> INFO - Processing section 0
+[185] Biber.pm:4531> INFO - Looking for bibtex format file 'Reference.bib' for section 0
+[186] bibtex.pm:1689> INFO - LaTeX decoding ...
 [217] bibtex.pm:1494> INFO - Found BibTeX data source 'Reference.bib'
-[254] Utils.pm:395> WARN - legacy month field 'Oct' in entry 'WHO' is not an integer - this will probably not sort properly.
-[280] Utils.pm:395> WARN - legacy month field 'Sep' in entry 'noah_2019' is not an integer - this will probably not sort properly.
-[282] Utils.pm:395> WARN - legacy month field 'Mar' in entry 'thompson_2020' is not an integer - this will probably not sort properly.
-[284] Utils.pm:395> WARN - legacy month field 'Dec' in entry 'manning_2022' is not an integer - this will probably not sort properly.
-[336] Utils.pm:395> WARN - legacy month field 'Aug' in entry 'congresscovidunemployment' is not an integer - this will probably not sort properly.
-[336] Utils.pm:395> WARN - BibTeX subsystem: /var/folders/4p/j29f3rsn40l3qj258y9jbz180000gn/T/biber_tmp_jzJw/9e59134803c007b3985858773a1e7e27_18519.utf8, line 57, warning: 3 characters of junk seen at toplevel
-[363] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[363] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[363] Biber.pm:4168> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[363] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
-[387] bbl.pm:654> INFO - Writing 'Dissertation.bbl' with encoding 'UTF-8'
-[400] bbl.pm:757> INFO - Output to Dissertation.bbl
-[400] Biber.pm:128> INFO - WARNINGS: 6
+[249] Utils.pm:395> WARN - legacy month field 'May' in entry '10.1257/jep.33.2.229' is not an integer - this will probably not sort properly.
+[278] Utils.pm:395> WARN - legacy month field 'Oct' in entry 'WHO' is not an integer - this will probably not sort properly.
+[289] Utils.pm:395> WARN - legacy month field 'Sep' in entry 'noah_2019' is not an integer - this will probably not sort properly.
+[291] Utils.pm:395> WARN - legacy month field 'Mar' in entry 'thompson_2020' is not an integer - this will probably not sort properly.
+[293] Utils.pm:395> WARN - legacy month field 'Dec' in entry 'manning_2022' is not an integer - this will probably not sort properly.
+[351] Utils.pm:395> WARN - legacy month field 'Aug' in entry 'congresscovidunemployment' is not an integer - this will probably not sort properly.
+[351] Utils.pm:395> WARN - BibTeX subsystem: /var/folders/4p/j29f3rsn40l3qj258y9jbz180000gn/T/biber_tmp_omOQ/9e59134803c007b3985858773a1e7e27_97589.utf8, line 57, warning: 3 characters of junk seen at toplevel
+[384] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[384] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[384] Biber.pm:4168> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[384] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[411] bbl.pm:654> INFO - Writing 'Dissertation.bbl' with encoding 'UTF-8'
+[427] bbl.pm:757> INFO - Output to Dissertation.bbl
+[427] Biber.pm:128> INFO - WARNINGS: 7
