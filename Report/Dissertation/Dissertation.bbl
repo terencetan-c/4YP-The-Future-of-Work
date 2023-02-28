@@ -340,6 +340,52 @@
       \verb https://crsreports.congress.gov/product/pdf/R/R46554
       \endverb
     \endentry
+    \entry{foley_retooling_2020}{article}{}
+      \name{author}{2}{}{%
+        {{hash=958560a42c0e0ff8a1aef6783ba55c19}{%
+           family={Foley},
+           familyi={F\bibinitperiod},
+           given={Kevin\bibnamedelima T},
+           giveni={K\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=974aebf0d1ed1ae19e9bb244eb82c473}{%
+           family={Luz},
+           familyi={L\bibinitperiod},
+           given={Clare\bibnamedelima C},
+           giveni={C\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{27630f283e86d545f68ec2b1ba128729}
+      \strng{fullhash}{27630f283e86d545f68ec2b1ba128729}
+      \strng{bibnamehash}{27630f283e86d545f68ec2b1ba128729}
+      \strng{authorbibnamehash}{27630f283e86d545f68ec2b1ba128729}
+      \strng{authornamehash}{27630f283e86d545f68ec2b1ba128729}
+      \strng{authorfullhash}{27630f283e86d545f68ec2b1ba128729}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A 2008 Institute of Medicine (IoM) report outlined a vision for health care and a workforce capable of addressing health and extended care needs of our aging population. It highlighted dramatic shortages necessitating bold action and outlined recommendations aimed at building a sizable and qualified workforce. This study updates report findings and progress made on its recommendations. Through review of publicly accessible, internet-based literature and government and professional organization websites, current workforce data and recent policy changes are compared to the report's statistics and recommendations. Direct comparisons are limited by changing definitions, context, and data collection and analyses methods. Future workforce-need projections are estimated using reports from various sources. Inability to forecast medical advances, socioeconomic changes, and world events affects the accuracy of these projections. Nonetheless, clear conclusions emerge despite such limitations. Progress toward fulfilling the IoM goals is variable and insufficient. The current and projected numbers for all geriatric health providers remain inadequate compared to estimated 2030 demand. Challenges in meeting estimated needs persist essentially unchanged. The 2008 IoM framework and recommendations remain relevant and constitute an important roadmap to complete unfinished goals. Initial findings from this update provide a platform for developing practice and policy reforms.}
+      \field{issn}{0016-9013}
+      \field{journaltitle}{The Gerontologist}
+      \field{month}{10}
+      \field{note}{\_eprint: https://academic.oup.com/gerontologist/article-pdf/61/4/487/38445439/gnaa163.pdf}
+      \field{number}{4}
+      \field{title}{Retooling the {Health} {Care} {Workforce} for an {Aging} {America}: {A} {Current} {Perspective}}
+      \field{volume}{61}
+      \field{year}{2020}
+      \field{pages}{487\bibrangedash 496}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1093/geront/gnaa163
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1093/geront/gnaa163
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1093/geront/gnaa163
+      \endverb
+    \endentry
     \entry{futureofemployment}{article}{}
       \name{author}{2}{}{%
         {{hash=179dbe9d79354b9c917df61b391dfb88}{%
@@ -763,6 +809,32 @@
       \field{title}{Unemployment rate in Poland and USA during COVID-19 pandemic: a case study}
       \field{year}{2020}
     \endentry
+    \entry{krugman2019globalization}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=1dc32e0388d1f3dd99440cc8a5c3333b}{%
+           family={Krugman},
+           familyi={K\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{1dc32e0388d1f3dd99440cc8a5c3333b}
+      \strng{fullhash}{1dc32e0388d1f3dd99440cc8a5c3333b}
+      \strng{bibnamehash}{1dc32e0388d1f3dd99440cc8a5c3333b}
+      \strng{authorbibnamehash}{1dc32e0388d1f3dd99440cc8a5c3333b}
+      \strng{authornamehash}{1dc32e0388d1f3dd99440cc8a5c3333b}
+      \strng{authorfullhash}{1dc32e0388d1f3dd99440cc8a5c3333b}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Meeting Globalization’s Challenges}
+      \field{title}{Globalization: What did we miss?}
+      \field{year}{2019}
+      \field{pages}{113\bibrangedash 120}
+      \range{pages}{8}
+    \endentry
     \entry{levine2013modeling}{article}{}
       \name{author}{1}{}{%
         {{hash=38a2dbcee896b0d1e654fdc881bc36db}{%
@@ -1070,6 +1142,85 @@
       \field{pages}{149\bibrangedash 158}
       \range{pages}{10}
     \endentry
+    \entry{RoseElizabethL.2021TDoU}{article}{}
+      \name{author}{1}{}{%
+        {{hash=ad464248f5b5ff341097c162685415fb}{%
+           family={Rose},
+           familyi={R\bibinitperiod},
+           given={Elizabeth\bibnamedelima L.},
+           giveni={E\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \list{location}{1}{%
+        {New York, USA}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{ad464248f5b5ff341097c162685415fb}
+      \strng{fullhash}{ad464248f5b5ff341097c162685415fb}
+      \strng{bibnamehash}{ad464248f5b5ff341097c162685415fb}
+      \strng{authorbibnamehash}{ad464248f5b5ff341097c162685415fb}
+      \strng{authornamehash}{ad464248f5b5ff341097c162685415fb}
+      \strng{authorfullhash}{ad464248f5b5ff341097c162685415fb}
+      \field{extraname}{1}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The US Bureau of Labor Statistics (BLS), which has a mandate to provide `gold-standard data' that are `accurate, objective, relevant, timely, and accessible' (www.bls.gov), provides extensive data that can be used to gain insights into various aspects of US economic activity. Arguably more important, and quite specific to the US, were the non-wage benefits, typified by the comprehensive health insurance and pension benefits that have long been available to employees in US auto assembly plants. Contractor (2021) raises several potential causal mechanisms: globalization and the offshoring of manufacturing jobs, increases in productivity that have been enabled by automation and other technological advances (e.g., information and communications technology), and a power shift between industrial labor unions and companies. During the severe downturn in the US automotive industry of the 1980s, surprisingly large numbers of former automotive assembly workers chose to remain in the `rust belt', rather than relocating to distant states to seek employment in other industries (e.g., the then-expanding oil industry in Texas), despite very limited job options at home.}
+      \field{issn}{1740-8776}
+      \field{journaltitle}{Management and organization review}
+      \field{number}{1}
+      \field{title}{The Decline of US Manufacturing: Issues of Measurement}
+      \field{volume}{17}
+      \field{year}{2021}
+      \field{pages}{24\bibrangedash 28}
+      \range{pages}{5}
+      \keyw{Automation ; Business & Economics ; Dialogue,Debate,and Discussion ; Employees ; Employment ; Factories ; GDP ; Globalization ; Gross Domestic Product ; Labor costs ; Labor productivity ; Labor unions ; Management ; Manufacturing ; Outsourcing ; Social Sciences}
+    \endentry
+    \entry{rose_2021}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=11584b679456695717c6e694335f6c5d}{%
+           family={Rose},
+           familyi={R\bibinitperiod},
+           given={Stephen\bibnamedelima J.},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Center for Strategic}%
+        {International Studies}%
+      }
+      \strng{namehash}{11584b679456695717c6e694335f6c5d}
+      \strng{fullhash}{11584b679456695717c6e694335f6c5d}
+      \strng{bibnamehash}{11584b679456695717c6e694335f6c5d}
+      \strng{authorbibnamehash}{11584b679456695717c6e694335f6c5d}
+      \strng{authornamehash}{11584b679456695717c6e694335f6c5d}
+      \strng{authorfullhash}{11584b679456695717c6e694335f6c5d}
+      \field{extraname}{2}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{CSIS}
+      \field{month}{10}
+      \field{title}{Do not blame trade for the decline in manufacturing jobs}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://www.csis.org/analysis/do-not-blame-trade-decline-manufacturing-jobs
+      \endverb
+      \verb{url}
+      \verb https://www.csis.org/analysis/do-not-blame-trade-decline-manufacturing-jobs
+      \endverb
+    \endentry
     \entry{SOTOPEREZDECELIS2018e305}{article}{}
       \name{author}{5}{}{%
         {{hash=40c4c1d1ca7a6313f3c11e697d8490ee}{%
@@ -1127,6 +1278,46 @@
       \verb{url}
       \verb https://www.sciencedirect.com/science/article/pii/S1470204518303486
       \endverb
+    \endentry
+    \entry{SteigerwaldDavid2010WRtU}{article}{}
+      \name{author}{1}{}{%
+        {{hash=6518c72434bca9dc4a911a60a43fd02c}{%
+           family={Steigerwald},
+           familyi={S\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \list{location}{1}{%
+        {ABINGDON}%
+      }
+      \list{publisher}{1}{%
+        {Routledge}%
+      }
+      \strng{namehash}{6518c72434bca9dc4a911a60a43fd02c}
+      \strng{fullhash}{6518c72434bca9dc4a911a60a43fd02c}
+      \strng{bibnamehash}{6518c72434bca9dc4a911a60a43fd02c}
+      \strng{authorbibnamehash}{6518c72434bca9dc4a911a60a43fd02c}
+      \strng{authornamehash}{6518c72434bca9dc4a911a60a43fd02c}
+      \strng{authorfullhash}{6518c72434bca9dc4a911a60a43fd02c}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Historians have slighted the importance of automation both as a cause of organized labor's decline in America and as a lively issue among labor leaders in the early post-WWII period. In part, this disregard stems from labor's own ambivalence about technological change. This essay considers that ambivalence by looking at Walter Reuther and the United Auto Workers. Reuther and his colleagues shared widespread hopes that the new production processes would relieve the burdens of assembly-line work and increase the working class's access to cultivated leisure. At the same time, however, they recognized that unchecked technological change would generate a wave of structural unemployment by displacing experienced workers while denying new, unskilled workers necessary jobs. Reuther and his colleagues feared that automation in this form would destroy the consumer capacity that the working class had so recently acquired, and in so doing would undermine the health of the entire economy. Reuther's strategy, therefore, was not to resist automation but to manage its implementation through both collective bargaining and progressive political victories.}
+      \field{issn}{0023-656X}
+      \field{journaltitle}{Labor history}
+      \field{number}{3}
+      \field{title}{Walter Reuther, the UAW, and the dilemmas of automation}
+      \field{volume}{51}
+      \field{year}{2010}
+      \field{pages}{429\bibrangedash 453}
+      \range{pages}{25}
+      \keyw{Arts & Humanities ; Automation ; Automobile industry ; Business & Economics ; Collective bargaining ; Consumers ; History ; History Of Social Sciences ; Industrial Relations & Labor ; Labor economics ; Labor relations ; Labor unions ; Labour relations ; Leisure ; Post-war history ; Production ; Reuther,Walter ; Reuther,Walter Philip (1907-70) ; Social Sciences ; Social Sciences - Other Topics ; Studies ; Technological Change ; Technological innovations ; Technology application ; Trade unions ; U.S.A ; Unemployment ; Unions ; United States ; Workers ; Working Class}
     \endentry
     \entry{ageingculture}{book}{}
       \list{publisher}{1}{%
@@ -1320,6 +1511,27 @@
       \verb{url}
       \verb https://www.who.int/news-room/fact-sheets/detail/ageing-and-health
       \endverb
+    \endentry
+    \entry{2002Wpa1}{book}{}
+      \list{language}{1}{%
+        {eng}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {United Nations}%
+      }
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{World population ageing, 1950-2050}
+      \field{isbn}{9789210510929}
+      \field{title}{World population ageing, 1950-2050.}
+      \field{year}{2002}
+      \keyw{Aging; Older people -- Statistics; Age distribution (Demography) -- Statistics}
     \endentry
   \enddatalist
 \endrefsection
