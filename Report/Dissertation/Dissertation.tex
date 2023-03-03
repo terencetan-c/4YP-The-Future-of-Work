@@ -167,7 +167,13 @@ Having systematically gone through all the inconsistencies and indicating one of
 
 One more thing to note is that the occupations in the BLS dataset are not labelled with their respective SOC codes. This is easily rectified once the above data wrangling is completed by joining (on \emph{Occupation}) the BLS dataset with the list of SOC codes to map from occupation name to code.
 
+\subsection{Automatability Dataset}
+
+This dataset (which we shall refer to as Automatability dataset) was obtained from \cite{futureofemployment}, and features 702 Detailed Occupations. For each of these occupations, a Probability of Computerisation\footnote{Defined as 'job automation by means of computer-controlled equipment' by \cite{osborne2017future}} had been calculated. We shall refer to this probability as PCom. Other variables are included as well, such as the skills associated with each occupation and a Category Label. These were used to calculate the PCom, but we will just focus on the PCom in this paper.
+
 \section{Preliminary Findings}
+\label{sec:prelim findings}
+
 In order to make sense of how well the BLS dataset represents the US labour force, we plot the ratio of the total labour numbers provided by the BLS dataset for each year to the total US civilian labour force\footnote{https://www.bls.gov/cps/cpsaat01.htm} for that year. We do that for \emph{Major Group}, \emph{Minor Group}, \emph{Broad Group}, and \emph{Detailed Occupation} separately. The resulting plots can be seen in Figure \ref{proportion}. Clearly, \emph{Major Group} occupations are most representative of the US civilian labour force, with \emph{Minor Group} being the least. Looking through the BLS dataset, this makes sense since the BLS tended to mostly collect high-level data (\emph{Major Group}) and low-level data (\emph{Broad Group} and \emph{Detailed Occupation}). Another thing to note is that many \emph{Broad Group} occupations only contain a single \emph{Detailed Occupation} which also shares the same occupation name (for example, \emph{Chief Executives}: 11-1010 and 11-1011). Hence, it is not surprising that the ratios for \emph{Broad Group} and \emph{Detailed Occupation} are so similar.
 
 It is important to consider the fact that the US civilian labour force includes both the employed and the unemployed. In years with unusual levels of unemployment rate, the ratios will be distorted and paint a misleading picture. Indeed, we see in Figure \ref{proportion} that there is a considerable dip in the ratios in 2020 relative to other years, coinciding with the onset of the COVID-19 pandemic (\cite{covid2020unemployment})(\cite{congresscovidunemployment}). Plotting the ratios relative to the employed portion of the US civilian labour force accounts for this; as seen in Figure \ref{proportionemp}, the dip in 2020 is no longer present. We can also see that the unemployment rate did not distort the ratios significantly. Hence, our conclusion from before still holds: the \emph{Major Group} is most representative of the US civilian labour force. With that in mind, we will try to use \emph{Major Group} data as much as possible and exercise caution when using \emph{Detailed Occupation} and \emph{Broad Group} data. As for \emph{Minor Group} data, we will neglect it given its low representation of the labour force.
@@ -230,7 +236,44 @@ We can also calculate the relative change of the Elderly Ratio for each Major Gr
 	\label{fig:psrvsyear}
 \end{figure}
 
-	
+\section{Data Analysis}
+
+Now that we have our processed BLS dataset (with the calculated OP and EP), we can use \emph{Pandas.merge} to join it with the automatability dataset (which includes the Probability of Computerisation) from \cite{futureofemployment} based on the Detailed Occupation. This gives us a joint data set that we will refer to as \emph{joint\_auto}. Unfortunately, the BLS dataset does not feature a full list of all the Detailed Occupations, so we end up with a reduced set of Detailed Occupations in the \emph{joint\_auto} dataset. As can be seen in Figure \ref{fig:jointautoratio}, \emph{joint\_auto} only represents about 40\% of the total US civilian labour force, which is still a significant amount. However, there is the question of whether \emph{joint\_auto} is a representative sample of the population, i.e. the US civilian labour force. We shall analyse this question by treating it as a population sampling problem.
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=12cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/joint_auto ratio.png}
+	\caption{Plot of ratio of \emph{joint\_auto} to US civilian labour force against Year}
+	\label{fig:jointautoratio}
+\end{figure}
+
+
+\subsection{Checking biasness}
+
+As mentioned earlier, we shall treat \emph{joint\_auto} as the sample and the US civilian labour force as the population. We shall use the Major Group occupations from our processed BLS dataset to represent the US civilian labour force since we have established its high representation in Chapter \ref{sec:prelim findings}.
+
+We start off with a simple mean and variance comparison.  We find the mean and variance of the OP, EP, and PCom values for both the sample and population, which are shown in Table \ref{tab:mean and variance}. We can see that the means and variances match quite well for the PCom variable. For OP and EP, the means match quite closely, but the variances are off by an order of magnitude; the sample have a higher variance than the population for both OP and EP. This means that the sample have more spread-out values for OP and EP, so we must exercise caution when generalising any findings from the sample to the population. Otherwise, the sample seems fairly representative of the population. That being said, the mean and variance analysis is too simplistic to give us any concrete conclusions. Hence, we need a more sophisticated measure of the sample's representativeness of the population.
+
+We can look at the proportion of the total number of people employed within each Major Group with respect to the total US civilian labour force for each year. For example, Management Occupations represent 13.2\% of the US civilian labour force in 2021, 13.4\% in 2020 and so on. Transportation and Material Moving Occupations represent 6.34\% in 2011, 6.38\% in 2012 and so on. We put all of this information into one vector, which would represent the population proportion. We then map all the occupations (which are Detailed Occupations) in \emph{joint\_auto} back to their respective Major Groups, and sum up the number of people employed in each of those Detailed Occupations within the Major Groups for each year. These numbers are then divided by thr This would tell us the proportion of each of the 21 Major Groups within
+
+
+
+
+\begin{table}[]
+	\centering
+	\begin{tabular}{l|ll|ll}
+					  & \multicolumn{2}{l|}{\textbf{Population}} & \multicolumn{2}{l}{\textbf{Sample}} \\ \cline{2-5} 
+	\textbf{Variable} & Mean               & Variance            & Mean            & Variance          \\ \hline
+	EP                & 0.0578             & 0.000394            & 0.0516          & 0.00334           \\ \hline
+	OP                & 0.220              & 0.00190             & 0.223           & 0.0122            \\ \hline
+	PCom              & 0.536              & 0.136               & 0.508           & 0.143            
+	\end{tabular}
+	\caption{Population/Sample mean and variance}
+	\label{tab:mean and variance}
+\end{table}
+
+
+
 \printbibliography[heading=bibintoc]
 
 

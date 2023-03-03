@@ -408,6 +408,7 @@
       \strng{authorbibnamehash}{e3e121d7400d5936a55ef9e8d01b4b21}
       \strng{authornamehash}{e3e121d7400d5936a55ef9e8d01b4b21}
       \strng{authorfullhash}{e3e121d7400d5936a55ef9e8d01b4b21}
+      \field{extraname}{1}
       \field{sortinit}{F}
       \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
       \field{extradatescope}{labelyear}
@@ -416,6 +417,42 @@
       \field{labeltitlesource}{title}
       \field{title}{The future of employment}
       \field{year}{2013}
+    \endentry
+    \entry{osborne2017future}{article}{}
+      \name{author}{2}{}{%
+        {{hash=179dbe9d79354b9c917df61b391dfb88}{%
+           family={Frey},
+           familyi={F\bibinitperiod},
+           given={Carl\bibnamedelima Benedikt},
+           giveni={C\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=85b5589ac908024bc56d558991942806}{%
+           family={Osborne},
+           familyi={O\bibinitperiod},
+           given={Michael\bibnamedelima A},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{809a363e98e82fd6b8abb8ca6ad3c6c1}
+      \strng{fullhash}{809a363e98e82fd6b8abb8ca6ad3c6c1}
+      \strng{bibnamehash}{809a363e98e82fd6b8abb8ca6ad3c6c1}
+      \strng{authorbibnamehash}{809a363e98e82fd6b8abb8ca6ad3c6c1}
+      \strng{authornamehash}{809a363e98e82fd6b8abb8ca6ad3c6c1}
+      \strng{authorfullhash}{809a363e98e82fd6b8abb8ca6ad3c6c1}
+      \field{extraname}{2}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Technological forecasting and social change}
+      \field{title}{The future of employment: How susceptible are jobs to computerisation?}
+      \field{volume}{114}
+      \field{year}{2017}
+      \field{pages}{254\bibrangedash 280}
+      \range{pages}{27}
     \endentry
     \entry{science}{article}{}
       \name{author}{14}{}{%
