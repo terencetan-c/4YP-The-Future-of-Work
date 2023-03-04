@@ -109,7 +109,8 @@ citestyle=apa]{biblatex}
 	\thispagestyle{empty}
    I would like to express my deepest gratitude to Professor Michael Osborne for supervising me throughout this project. His insights and guidance are very much appreciated. This project would not have been possible without the dataset provided by him.
 
-   \clearpage
+
+\newpage
 
 
 \section{Introduction}
@@ -130,6 +131,7 @@ Research into the social implications of an ageing population had been carried o
 \cite{Cheng2020} conducted a global analysis of population ageing and mortality between 1990 and 2017, and concluded that there was a pattern of higher disease-related deaths due to population ageing around the world within that time period. The study recommended policies aimed at encouraging healthy ageing.
 
 \subsection*{Cross-country comparison}
+\label{subsec:crosscountrycomparison}
 In the US, there is evidence to suggest that the country's healthcare system is not prepared to meed the increasing demands of the ageing population (\cite{foley_retooling_2020}).
 
 While this paper will be focusing on the US, there are numerous other studies looking into ageing population of the US as well as other countries and regions of the world. China is expected to age rapidly over the next few decades (\cite{BeardsonTimothy2021Ag:C}), and studies such as \cite{LuoYanan2021TaCf} examined this phenomenon in the context of the country.
@@ -138,9 +140,11 @@ While this paper will be focusing on the US, there are numerous other studies lo
 \label{subsec:projectoverview}
 In this project, we aim to examine the relationship between the age distribution within occupations and the degree of automation (\cite{futureofemployment}) of those occupations. Although similar work has been done on this topic (\cite{twinthreats}), the study only looked at broad categories of employment. In this project, we will zoom in to look at specific occupations. We might also look into any correlations with the skills/knowledge required for those occupations. This will all be done using the scikit-learn library\footnote{https://scikit-learn.org/stable/} in Python. Specifically, we will look at a Bayesian non-parametric machine learning technique known as Gaussian Process (\cite{GaussianProcess}); this model was used in previous work (\cite{futureofemployment}), and so, would be a good model to start with. We will test and validate against different models and pick the best performing ones.
 
-We will be using the proportion of elderly people as a metric for measuring the `age' of occupations. We acknowledge that the definition of elderly age varies across different countries and cultures (\cite{ageingculture}), and that the ageing process varies for different people depending on a variety of factors (\cite{levine2013modeling})(\cite{hayflick2007biological}). In fact, there are studies looking into moving beyond using chronological age to define an elderly person (\cite{KotterGrhn2015})(\cite{SOTOPEREZDECELIS2018e305})(\cite{klemera2006new}). However, there are numerous issues surrounding this approach (\cite{jylhava2017biological}), such as validation of such results are often difficult (\cite{biologicalagedifficult}), resulting in little consensus on an alternative metric to chronological age. For this reason, we will stick to the conventional definition of 65 years and older as `elderly' (\cite{who2010definition})(\cite{orimo2006reviewing})(\cite{oecddata}). This definition is also convenient for us since the oldest age group featured in our datasets are 65 years and older. Hence, it would make sense to have the metric for measuring the `age' of an occupation be the ratio of people aged 65 years and older to the total number of people in that particular occupation. We will refer to this metric as the Elderly Proportion. However, we also recognise that this definition of 'elderly' coincides with the retirement age of the US (\cite{MunnellAliciaH2013SSRR}). Hence, using this metric alone might lead to misleading results since we would expect people in that age group to leave the workforce. It might be better to use the proportion of 55 years and older as a metric, i.e. the ratio of people aged 55 years and older to the total number of people, since this figure might be more robust to the effects of retirement on labour force participation. We shall refer to this metric as the Old Proportion. Having said that, the Elderly Proportion would still prove to be an interesting metric to investigate. For example, if there is a general trend of increasing Elderly Proportion over the years, that would be a sign of an ageing labour force in spite of the effects of retirement. Therefore, we shall examine both of these metric in this paper.
+We will be using the proportion of elderly people as a metric for measuring the `age' of occupations. We acknowledge that the definition of elderly age varies across different countries and cultures (\cite{ageingculture}), and that the ageing process varies for different people depending on a variety of factors (\cite{levine2013modeling})(\cite{hayflick2007biological}). In fact, there are studies looking into moving beyond using chronological age to define an elderly person (\cite{KotterGrhn2015})(\cite{SOTOPEREZDECELIS2018e305})(\cite{klemera2006new}). However, there are numerous issues surrounding this approach (\cite{jylhava2017biological}), such as validation of such results are often difficult (\cite{biologicalagedifficult}), resulting in little consensus on an alternative metric to chronological age. For this reason, we will stick to the conventional definition of 65 years and older as `elderly' (\cite{who2010definition})(\cite{orimo2006reviewing})(\cite{oecddata}). This definition is also convenient for us since the oldest age group featured in our datasets are 65 years and older. Hence, it would make sense to have the metric for measuring the `age' of an occupation be the ratio of people aged 65 years and older to the total number of people in that particular occupation. We will refer to this metric as the Elderly Proportion (EP). However, we also recognise that this definition of 'elderly' coincides with the retirement age of the US (\cite{MunnellAliciaH2013SSRR}). Hence, using this metric alone might lead to misleading results since we would expect people in that age group to leave the workforce. It might be better to use the proportion of 55 years and older as a metric, i.e. the ratio of people aged 55 years and older to the total number of people, since this figure might be more robust to the effects of retirement on labour force participation. We shall refer to this metric as the Old Proportion (OP). Having said that, the Elderly Proportion would still prove to be an interesting metric to investigate. For example, if there is a general trend of increasing EP over the years, that would be a sign of an ageing labour force in spite of the effects of retirement. Therefore, we shall examine both of these metric in this paper.
 
 \subsection*{Related Works}
+
+\newpage
 
 \section{Dataset}
 \label{sec:Dataset}
@@ -170,6 +174,8 @@ One more thing to note is that the occupations in the BLS dataset are not labell
 \subsection{Automatability Dataset}
 
 This dataset (which we shall refer to as Automatability dataset) was obtained from \cite{futureofemployment}, and features 702 Detailed Occupations. For each of these occupations, a Probability of Computerisation\footnote{Defined as 'job automation by means of computer-controlled equipment' by \cite{osborne2017future}} had been calculated. We shall refer to this probability as PCom. Other variables are included as well, such as the skills associated with each occupation and a Category Label. These were used to calculate the PCom, but we will just focus on the PCom in this paper.
+
+\newpage
 
 \section{Preliminary Findings}
 \label{sec:prelim findings}
@@ -210,31 +216,52 @@ It is important to consider the fact that the US civilian labour force includes 
     
 \subsection{General Trends}
 \label{subsec:generaltrends}
-We average the Elderly Ratio (refer to Chapter \ref{subsec:projectoverview} for definition) over the Major Groups for each year, and plot the values against the years to obtain Figure \ref{fig:averageelderlyratio}. We see a steady increase over the years, which is not surprising given the ageing population of the US.
+We average the EP (refer to Chapter \ref{subsec:projectoverview} for definition) over the Major Groups for each year, and plot the values against the years to obtain Figure \ref{fig:averageEP}. We do the same for OP, and get the plot in Figure \ref{fig:averageOP}. We see a steady increase over the years for both plots, which is not surprising given the ageing population of the US as discussed in Chapter \ref{subsec:crosscountrycomparison}. We can examine these plots in further detail by plotting the EP/OP for each of the 21 Major Groups against the years to obtain Figure \ref{fig:EP/OP against year}; we can see that there is generally an increase across the Major Groups. We do not break down the plots into further detail (for example looking at individual Detailed Occupations) since that will result in plots that are too messy to give us any useful insights.
+
+
 
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[width=12cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/average major group elderly ratio.png}
-	\caption{Plot of Elderly Ratio (averaged over the Major Groups) against Year}
-	\label{fig:averageelderlyratio}
+	\subfloat[Elderly Proportion]{\includegraphics[width=8cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Mean Major Group Elderly Proportion against Year.png}\label{fig:averageEP}}
+	\hfill
+	\subfloat[Old Proportion]{\includegraphics[width=8cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Mean Major Group Old Proportion against Year}\label{fig:averageOP}}
+	\hfill
+	\caption{Plot of EP/OP (averaged over the Major Groups) against Year}
 \end{figure}
 
-We can also calculate the relative change of the Elderly Ratio for each Major Group occupation from 2011 to 2021 to obtain Figure \ref{fig:relativechange}. The `construction and extraction occupations' has the highest relative increase while the `personal care and service occupations' features the least.
+
+\begin{figure}[!htb]
+	\centering
+	\subfloat[Elderly Proportion]{\includegraphics[width=13cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Elderly Proportion against Year}\label{fig:EP against year}}
+	\hfill
+	\subfloat[Old Proportion]{\includegraphics[width=13cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Old Proportion against Year}\label{fig:OP against year}}
+	\hfill
+	\caption{Plot of EP/OP (for each Major Groups) against Year}
+	\label{fig:EP/OP against year}
+\end{figure}
+
+That being said, it is rather tricky to make sense of Figure \ref{fig:EP/OP against year} given that there are 21 individual plots within each of the two figures. Hence, we can calculate the relative change in EP/OP each Major Group occupation from 2011 to 2021 to obtain Figure \ref{fig:relativechange}. The `construction and extraction occupations' has the highest relative increase while the `personal care and service occupations' features the least.
 
 
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[width=15cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Relative change.png}
-	\caption{Relative change of Major Groups from 2011 to 2021}
+	\subfloat[Elderly Proportion]{\includegraphics[width=13cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Relative change.png}\label{fig:Relative change of EP}}
+	\hfill
+	\subfloat[Old Proportion]{\includegraphics[width=13cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Relative change of OP}\label{fig:Relative change of OP}}
+	\hfill
+	\caption{Relative change of EP/OP for each Major Group from 2011 to 2021}
 	\label{fig:relativechange}
 \end{figure}
 
-\begin{figure}[!htb]
-	\centering
-	\includegraphics[width=17cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/PSR vs Year.png}
-	\caption{Plot of PSR vs Year for Major Groups}
-	\label{fig:psrvsyear}
-\end{figure}
+
+% \begin{figure}[!htb]
+% 	\centering
+% 	\includegraphics[width=17cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/PSR vs Year.png}
+% 	\caption{Plot of PSR vs Year for Major Groups}
+% 	\label{fig:psrvsyear}
+% \end{figure}
+
+\newpage
 
 \section{Data Analysis}
 
@@ -274,6 +301,7 @@ We can look at the proportion of the total number of people employed within each
 
 
 
+\newpage
 \printbibliography[heading=bibintoc]
 
 
