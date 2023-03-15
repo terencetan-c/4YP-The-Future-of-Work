@@ -26,7 +26,7 @@ citestyle=apa]{biblatex}
 \titlespacing\subsection{0pt}{0pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
 \titlespacing\subsubsection{0pt}{0pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
 
-
+\usepackage{amsfonts}
 
 \begin{document}
 
@@ -299,7 +299,31 @@ We can look at the proportion of the total number of people employed within each
 	\label{tab:mean and variance}
 \end{table}
 
+\subsection{Probably Approximately Correct (PAC) Learning}
+Suppose we have an unknown target set \emph{T} from which we obtained independent and identically distributed (i.i.d.) samples $\delta_{1},...,\delta_{m}$. Using the \emph{m} samples, we want to construct a hypothesis set $H_{m}$ that approximates \emph{T}. The framework we use to learn $H_{m}$ is known as PAC Learning.
 
+Of course, we want $H_{m}$ to approximate \emph{T} as close as possible, such that the probability of a new sample $\delta$ from \emph{T} not belonging in $H_{m}$ is less than or equal to an arbitrary threshold probability $\epsilon$, i.e. $\mathbb{P}(\delta \in \emph{T} \setminus H_{m}) \leq \epsilon$. Since $H_{m}$ depends on the i.d.d. random samples $\{\delta_{1},...,\delta_{m}\}$, it is also random. This means that $\mathbb{P}(\delta \in \emph{T} \setminus H_{m}) \leq \epsilon$ is itself a random variable, allowing us to quantify a confidence for it:
+\begin{equation}
+	\label{eq:1}
+	\mathbb{P}^{m} \{\delta_{1},...,\delta_{m}: \mathbb{P}(\delta \in \emph{T} \setminus H_{m}) \leq \epsilon \} \geq 1 - q(m,\epsilon),
+\end{equation}
+where $1 - q(m,\epsilon)$ is a lower bound to our confidence that the probability of a new sample not belong in $H_{m}$ is less than or equal to $\epsilon$. We refer the reader to (\cite{paclearning1}) for a more comprehensive introduction to this concept.
+
+Furthermore, consider the following scenario program:
+\begin{equation}
+	\label{eq:2}
+	\begin{array}{rrclcl}
+	\displaystyle \min_{x \in \mathbb{R}^{n_{x}}} & \multicolumn{3}{l}{c^{T}x}\\
+	\textrm{s.t.} & g(x,\delta_{i}) \leq 0, \text{for all i = 1,...,m}\\
+	\end{array}
+	\end{equation}
+Suppose $\delta_{i}$ belongs to an uncertainty space $\Delta$, i.e. $\delta_{i} \in \Delta$ for $i = 1,...,m$, and we have obtained the optimal solution $x^{*}_{m}$ to the scenario program in Equation \ref{eq:2}. If we then want to find out if a new $\delta\in \Delta$ will violate the constraint $g(x^{*},\delta) \leq 0$, we can use Equation \ref{eq:1} to quantify the probability of such a constraint violation happening. Let $T=\Delta$, $H_{m} = (\delta \in \Delta: g(x^{*}_{m},\delta) \leq 0)$, i.e. the set of samples for which $x^{*}_{m}$ remains feasible, and we get the following:
+
+\begin{equation}
+	\label{eq:3}
+	\mathbb{P}^{m} \{\delta_{1},...,\delta_{m}: \mathbb{P}(\delta \in \Delta: g(x^{*}_{m},\delta) > 0) \leq \epsilon \} \geq 1 - q(m,\epsilon),
+\end{equation}
+where $\mathbb{P}(\delta \in \Delta: g(x^{*}_{m},\delta) > 0)$ is the probability that a new sample $\delta\in \Delta$ violates the constraint $(g(x^{*}_{m},\delta) \leq 0)$. Similar to Equation \ref{eq:1}, the probability of such a constraint violation should ideally to less than or equal to an arbitrary value $\epsilon$, and our confidence of that happening is at least $1 - q(m,\epsilon)$.
 
 \newpage
 \printbibliography[heading=bibintoc]

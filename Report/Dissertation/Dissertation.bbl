@@ -94,6 +94,52 @@
       \field{year}{2021}
       \keyw{Population aging -- China; Population; Population aging; China -- Population; China}
     \endentry
+    \entry{paclearning1}{article}{}
+      \name{author}{2}{}{%
+        {{hash=689a427cc8696ea405246f276653cbb6}{%
+           family={Campi},
+           familyi={C\bibinitperiod},
+           given={M.\bibnamedelimi C.},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=b253d9ee78cd9db84b13751804aa68d9}{%
+           family={Garatti},
+           familyi={G\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {English}%
+      }
+      \strng{namehash}{d010c4f10cc148325500a020b908da38}
+      \strng{fullhash}{d010c4f10cc148325500a020b908da38}
+      \strng{bibnamehash}{d010c4f10cc148325500a020b908da38}
+      \strng{authorbibnamehash}{d010c4f10cc148325500a020b908da38}
+      \strng{authornamehash}{d010c4f10cc148325500a020b908da38}
+      \strng{authorfullhash}{d010c4f10cc148325500a020b908da38}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Many optimization problems are naturally delivered in an uncertain framework, and one would like to exercise prudence against the uncertainty elements present in the problem. In previous contributions, it has been shown that solutions to uncertain convex programs that bear a high probability to satisfy uncertain constraints can be obtained at low computational cost through constraint randomization. In this paper, we establish new feasibility results for randomized algorithms. Specifically, the exact feasibility for the class of the so-called fully-supported problems is obtained. It turns out that all fully-supported problems share the same feasibility properties, revealing a deep kinship among problems of this class. It is further proven that the feasibility of the randomized solutions for all other convex programs can be bounded based on the feasibility for the prototype class of fully-supported problems. The feasibility result of this paper outperforms previous bounds and is not improvable because it is exact for fully-supported problems.}
+      \field{isbn}{10526234}
+      \field{journaltitle}{SIAM Journal on Optimization}
+      \field{note}{Copyright - Copyright] © 2008 Society for Industrial and Applied Mathematics; Last updated - 2022-10-20}
+      \field{number}{3}
+      \field{title}{The Exact Feasibility of Randomized Solutions of Uncertain Convex Programs}
+      \field{volume}{19}
+      \field{year}{2008}
+      \field{pages}{1211\bibrangedash 20}
+      \range{pages}{11}
+      \verb{urlraw}
+      \verb https://www.proquest.com/scholarly-journals/exact-feasibility-randomized-solutions-uncertain/docview/920844687/se-2
+      \endverb
+      \verb{url}
+      \verb https://www.proquest.com/scholarly-journals/exact-feasibility-randomized-solutions-uncertain/docview/920844687/se-2
+      \endverb
+      \keyw{Mathematics; Convex analysis; Random variables; Optimization}
+    \endentry
     \entry{Cheng2020}{article}{}
       \name{author}{8}{}{%
         {{hash=ee346f9e0c250002bc7f3e209fe9385d}{%
