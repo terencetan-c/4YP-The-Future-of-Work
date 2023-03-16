@@ -236,7 +236,7 @@ We average the EP (refer to Chapter \ref{subsec:projectoverview} for definition)
 	\hfill
 	\subfloat[Old Proportion]{\includegraphics[width=13cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Old Proportion against Year}\label{fig:OP against year}}
 	\hfill
-	\caption{Plot of EP/OP (for each Major Groups) against Year}
+	\caption{Plot of EP/OP (for each Major Groups) against Year. There is a general increase across most of the Major Group occupations, which is expected given the ageing population in the United States.}
 	\label{fig:EP/OP against year}
 \end{figure}
 
@@ -249,7 +249,7 @@ That being said, it is rather tricky to make sense of Figure \ref{fig:EP/OP agai
 	\hfill
 	\subfloat[Old Proportion]{\includegraphics[width=13cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Relative change of OP}\label{fig:Relative change of OP}}
 	\hfill
-	\caption{Relative change of EP/OP for each Major Group from 2011 to 2021}
+	\caption{Relative change of EP/OP for each Major Group from 2011 to 2021. This shows us which occupations experienced the most and least rapid ageing during the time period of 2011 to 2021.}
 	\label{fig:relativechange}
 \end{figure}
 
@@ -270,21 +270,16 @@ Now that we have our processed BLS dataset (with the calculated OP and EP), we c
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=12cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/joint_auto ratio.png}
-	\caption{Plot of ratio of \emph{joint\_auto} to US civilian labour force against Year}
+	\caption{Plot of ratio of \emph{joint\_auto} to US civilian labour force against Year. We can see that our \emph(joint\_auto) dataset represents a significant proportion of the total labour force, but not enough for us to generalise any trends we may find in our dataset. We will have to investigate how well our dataset represents the actual US civilian labour force.}
 	\label{fig:jointautoratio}
 \end{figure}
 
 
 \subsection{Checking biasness}
-
+\label{subsec:Checking biasness}
 As mentioned earlier, we shall treat \emph{joint\_auto} as the sample and the US civilian labour force as the population. We shall use the Major Group occupations from our processed BLS dataset to represent the US civilian labour force since we have established its high representation in Chapter \ref{sec:prelim findings}.
 
 We start off with a simple mean and variance comparison.  We find the mean and variance of the OP, EP, and PCom values for both the sample and population, which are shown in Table \ref{tab:mean and variance}. We can see that the means and variances match quite well for the PCom variable. For OP and EP, the means match quite closely, but the variances are off by an order of magnitude; the sample have a higher variance than the population for both OP and EP. This means that the sample have more spread-out values for OP and EP, so we must exercise caution when generalising any findings from the sample to the population. Otherwise, the sample seems fairly representative of the population. That being said, the mean and variance analysis is too simplistic to give us any concrete conclusions. Hence, we need a more sophisticated measure of the sample's representativeness of the population.
-
-We can look at the proportion of the total number of people employed within each Major Group with respect to the total US civilian labour force for each year. For example, Management Occupations represent 13.2\% of the US civilian labour force in 2021, 13.4\% in 2020 and so on. Transportation and Material Moving Occupations represent 6.34\% in 2011, 6.38\% in 2012 and so on. We put all of this information into one vector, which would represent the population proportion. We then map all the occupations (which are Detailed Occupations) in \emph{joint\_auto} back to their respective Major Groups, and sum up the number of people employed in each of those Detailed Occupations within the Major Groups for each year. These numbers are then divided by thr This would tell us the proportion of each of the 21 Major Groups within
-
-
-
 
 \begin{table}[]
 	\centering
@@ -295,9 +290,67 @@ We can look at the proportion of the total number of people employed within each
 	OP                & 0.220              & 0.00190             & 0.223           & 0.0122            \\ \hline
 	PCom              & 0.536              & 0.136               & 0.508           & 0.143            
 	\end{tabular}
-	\caption{Population/Sample mean and variance}
+	\caption{Population/Sample mean and variance. We can see that the means and variances are very similar between the sample and the population. However, we note that the EP/OP values for the sample have higher variances compared to that of the population.}
 	\label{tab:mean and variance}
 \end{table}
+
+
+We can look at the proportion of the total number of people employed within each Major Group with respect to the total US civilian labour force for each year. For example, Management Occupations represent 13.2\% of the US civilian labour force in 2021, 13.4\% in 2020 and so on. Transportation and Material Moving Occupations represent 6.34\% in 2011, 6.38\% in 2012 and so on. We put all of this information into one vector, which would represent the population proportion. We then map all the occupations (which are Detailed Occupations) in \emph{joint\_auto} back to their respective Major Groups, and sum up the number of people employed in each of those Detailed Occupations within the Major Groups for each year. These numbers are then divided by the total number of people employed in \emph{joint\_auto} for each year. This would tell us the proportion of each of the 21 Major Groups within \emph{joint\_auto} for each year; this sample proportion information would be placed in another vector. We want to see how well the sample proportion vector matches the population proportion vector, so we subtract the former from the latter and plot the result in Figure \ref{fig:relativeweightage}. We can see that the values along the y-axis are all fairly small. Hence, the sample has a similar makeup to the population in terms of the relative weightage of each of the Major Groups.
+
+Given our above biasness tests, we can make the reasonable assumption that our sample is fairly representative of the population, and any findings obtained from the sample can be generalised to the population to a certain extent.
+
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=12cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/sample test.png}
+	\caption{Plot of the difference between the population proportion and the sample proportion against Year. The low values along the y-axis shows that the relative weightage of each of the Major Groups within the sample is similar to that of the population. Hence, the sample has a similar makeup to the population in terms of the Major Groups.}
+	\label{fig:relativeweightage}
+\end{figure}
+
+\subsection{Exploration of Data}
+Now that we have established the representativeness of the sample, we can go about exploring the dataset. The first thing we do is to create a scatterplot of the Detailed Occupations within \emph{joint\_auto}, with the EP/OP values on the y-axis and the PCom values on the x-axis. We also scale each data point relative to the total number of people employed within that occupation, i.e. occupations with more people will be bigger on the plot. This gives us Figure \ref{fig:EP/OP against PCom}, which we can see has no obvious trends. Just to make sure, we calculate the correlation coefficients, which is given in table. We do note that the majority of employed workers are concentrated in either the low PCom region or the high PCom region, with relatively few in between. This is consistent with the findings from \cite{osborne2017future}, and is another piece of evidence that our assumption that \emph{joint\_auto} is fairly representative of the US civilian labour force is reasonable as discussed in Chapter \ref{subsec:Checking biasness}. 
+
+
+% \begin{table}[]
+% 	\centering
+% 	\begin{tabular}{l|ll|ll}
+% 					  & \multicolumn{2}{l|}{\textbf{Population}} & \multicolumn{2}{l}{\textbf{Sample}} \\ \cline{2-5} 
+% 	\textbf{Variable} & Mean               & Variance            & Mean            & Variance          \\ \hline
+% 	EP                & 0.0578             & 0.000394            & 0.0516          & 0.00334           \\ \hline
+% 	OP                & 0.220              & 0.00190             & 0.223           & 0.0122            \\ \hline
+% 	PCom              & 0.536              & 0.136               & 0.508           & 0.143            
+% 	\end{tabular}
+% 	\caption{Population/Sample mean and variance. We can see that the means and variances are very similar between the sample and the population. However, we note that the EP/OP values for the sample have higher variances compared to that of the population.}
+% 	\label{tab:mean and variance}
+% \end{table}
+
+
+
+
+\begin{figure}[!htb]
+	\centering
+	\subfloat[Elderly Proportion]{\includegraphics[width=15cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Scatterplot of EP for DO}\label{fig:EP against PCom}}
+	\hfill
+	\subfloat[Old Proportion]{\includegraphics[width=15cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Scatterplot of OP for DO}\label{fig:OP against PCom}}
+	\hfill
+	\caption{Plot of EP/OP (for each Detailed Occupation) against PCom. There seems to be no obvious patterns or trends present.}
+	\label{fig:EP/OP against PCom}
+\end{figure}
+
+
+\begin{figure}[!htb]
+	\centering
+	\subfloat[Elderly Proportion]{\includegraphics[width=15cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Scatterplot of log(EP) for DO}\label{fig:logEP against PCom}}
+	\hfill
+	\subfloat[Old Proportion]{\includegraphics[width=15cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Scatterplot of log(OP) for DO}\label{fig:logOP against PCom}}
+	\hfill
+	\caption{Plot of $\log_{10}$(EP)/$\log_{10}$(OP) (for each Detailed Occupation) against $\log_{10}$(PCom). There seems to be no obvious patterns or trends present.}
+	\label{fig:logEP/OP against PCom}
+\end{figure}
+
+
+
+\subsection{Linear Regression}
 
 \subsection{Probably Approximately Correct (PAC) Learning}
 Suppose we have an unknown target set \emph{T} from which we obtained independent and identically distributed (i.i.d.) samples $\delta_{1},...,\delta_{m}$. Using the \emph{m} samples, we want to construct a hypothesis set $H_{m}$ that approximates \emph{T}. The framework we use to learn $H_{m}$ is known as PAC Learning.
