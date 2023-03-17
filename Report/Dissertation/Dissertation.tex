@@ -232,9 +232,9 @@ We average the EP (refer to Chapter \ref{subsec:projectoverview} for definition)
 
 \begin{figure}[!htb]
 	\centering
-	\subfloat[Elderly Proportion]{\includegraphics[width=13cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Elderly Proportion against Year}\label{fig:EP against year}}
+	\subfloat[Elderly Proportion]{\includegraphics[width=12cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Elderly Proportion against Year}\label{fig:EP against year}}
 	\hfill
-	\subfloat[Old Proportion]{\includegraphics[width=13cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Old Proportion against Year}\label{fig:OP against year}}
+	\subfloat[Old Proportion]{\includegraphics[width=12cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Old Proportion against Year}\label{fig:OP against year}}
 	\hfill
 	\caption{Plot of EP/OP (for each Major Groups) against Year. There is a general increase across most of the Major Group occupations, which is expected given the ageing population in the United States.}
 	\label{fig:EP/OP against year}
@@ -295,7 +295,7 @@ We start off with a simple mean and variance comparison.  We find the mean and v
 \end{table}
 
 
-We can look at the proportion of the total number of people employed within each Major Group with respect to the total US civilian labour force for each year. For example, Management Occupations represent 13.2\% of the US civilian labour force in 2021, 13.4\% in 2020 and so on. Transportation and Material Moving Occupations represent 6.34\% in 2011, 6.38\% in 2012 and so on. We put all of this information into one vector, which would represent the population proportion. We then map all the occupations (which are Detailed Occupations) in \emph{joint\_auto} back to their respective Major Groups, and sum up the number of people employed in each of those Detailed Occupations within the Major Groups for each year. These numbers are then divided by the total number of people employed in \emph{joint\_auto} for each year. This would tell us the proportion of each of the 21 Major Groups within \emph{joint\_auto} for each year; this sample proportion information would be placed in another vector. We want to see how well the sample proportion vector matches the population proportion vector, so we subtract the former from the latter and plot the result in Figure \ref{fig:relativeweightage}. We can see that the values along the y-axis are all fairly small. Hence, the sample has a similar makeup to the population in terms of the relative weightage of each of the Major Groups.
+We can look at the proportion of the total number of people employed within each Major Group with respect to the total US civilian labour force for each year. For example, Management Occupations represent 13.2\% of the US civilian labour force in 2021, 13.4\% in 2020 and so on. Transportation and Material Moving Occupations represent 6.34\% in 2011, 6.38\% in 2012 and so on. We put all of this information into one vector, which would represent the population proportion. We then map all the occupations (which are Detailed Occupations) in \emph{joint\_auto} back to their respective Major Groups, and sum up the number of people employed in each of those Detailed Occupations within the Major Groups for each year. These numbers are then divided by the total number of people employed in \emph{joint\_auto} for each year. This would tell us the proportion of each of the 21 Major Groups within \emph{joint\_auto} for each year; this sample proportion information would be placed in another vector. We want to see how well the sample proportion vector matches the population proportion vector, so we subtract the former from the latter and plot the result in Figure \ref{fig:relativeweightage}. We can see that the values along the y-axis are all fairly small. Just to illustrate this point further, we plot the sample proportion against the population proportion in Figure \ref{fig:sampleprop vs popprop}. Ideally, we would like the plot to be a straight line with a gradient of 1 and a y-intercept of 0, and we can see that our plot does closely resemble such a line. Indeed, fitting a best-fit line to the plot confirms this as well, with the best-fit line having a gradient of 1.18 and a y-intercept of -0.00862. Hence, the sample has a similar makeup to the population in terms of the relative weightage of each of the Major Groups.
 
 Given our above biasness tests, we can make the reasonable assumption that our sample is fairly representative of the population, and any findings obtained from the sample can be generalised to the population to a certain extent.
 
@@ -303,30 +303,23 @@ Given our above biasness tests, we can make the reasonable assumption that our s
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=12cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/sample test.png}
-	\caption{Plot of the difference between the population proportion and the sample proportion against Year. The low values along the y-axis shows that the relative weightage of each of the Major Groups within the sample is similar to that of the population. Hence, the sample has a similar makeup to the population in terms of the Major Groups.}
+	\caption{Plot of the difference between the population proportion and the sample proportion against Year. The different colours represent different Major Groups. The low values along the y-axis shows that the relative weightage of each of the Major Groups within the sample is similar to that of the population. Hence, the sample has a similar makeup to the population in terms of the Major Groups.}
 	\label{fig:relativeweightage}
 \end{figure}
 
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=12cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Sample Proportion against Population Proportion.png}
+	\caption{Plot of the sample proportion against population proportion (with a best-fit line). We can see that our plot roughly follows a straight line with a gradient of 1 and y-intercept of 0.}
+	\label{fig:sampleprop vs popprop}
+\end{figure}
+
 \subsection{Exploration of Data}
-Now that we have established the representativeness of the sample, we can go about exploring the dataset. The first thing we do is to create a scatterplot of the Detailed Occupations within \emph{joint\_auto}, with the EP/OP values on the y-axis and the PCom values on the x-axis. We also scale each data point relative to the total number of people employed within that occupation, i.e. occupations with more people will be bigger on the plot. This gives us Figure \ref{fig:EP/OP against PCom}, which we can see has no obvious trends. Zooming in on specific regions of the scatterplot (e.g. the region of high PCom) also yields no significant patterns. We do note that the majority of employed workers are concentrated in either the low PCom region or the high PCom region, with relatively few in between. This is consistent with the findings from \cite{osborne2017future}, and is another piece of evidence that our assumption that \emph{joint\_auto} is fairly representative of the US civilian labour force is reasonable as discussed in Chapter \ref{subsec:Checking biasness}. 
+Now that we have established the representativeness of the sample, we can go about exploring the dataset. 
 
-Our next step of exploration is to take the base 10 logarithmic of EP/OP and PCom, and plot the former against the latter in a scatterplot, as shown in Figure \ref{fig:logEP/OP against PCom}. Interestingly, the $\log_{10}$(OP) plot in Figure \ref{fig:logOP against PCom} seems to show a slight downward trend as $\log_{10}$(PCom) increases; plotting the scatterplot on a logarithmic scale seems to have revealed a previously hard-to-spot trend. This trend suggests that 'older' occupations tend to be less likely to be computerised. This makes intuitive sense for occupations such as management; \cite{osborne2017future} notes that management occupations tend to be at low risk of computerisation due to the high degree of social intelligence required for them, and people in management positions would also tend to be older since such occupations (especially the ones like Chief Executive Officer) would be biased towards those with more work experience. There is also some evidence that high skilled workers, who would generally be less likely to have their jobs computerised, tend to retire later than low skilled workers (\cite{HimmelreicherRalfK.2009Saao}).
+\subsubsection*{EP/OP against PCom}
 
-% \begin{table}[]
-% 	\centering
-% 	\begin{tabular}{l|ll|ll}
-% 					  & \multicolumn{2}{l|}{\textbf{Population}} & \multicolumn{2}{l}{\textbf{Sample}} \\ \cline{2-5} 
-% 	\textbf{Variable} & Mean               & Variance            & Mean            & Variance          \\ \hline
-% 	EP                & 0.0578             & 0.000394            & 0.0516          & 0.00334           \\ \hline
-% 	OP                & 0.220              & 0.00190             & 0.223           & 0.0122            \\ \hline
-% 	PCom              & 0.536              & 0.136               & 0.508           & 0.143            
-% 	\end{tabular}
-% 	\caption{Population/Sample mean and variance. We can see that the means and variances are very similar between the sample and the population. However, we note that the EP/OP values for the sample have higher variances compared to that of the population.}
-% 	\label{tab:mean and variance}
-% \end{table}
-
-
-
+The first thing we do is to create a scatterplot of the Detailed Occupations within \emph{joint\_auto}, with the EP/OP values (for 2012 only since the PCom values were calculated based on 2012 data) on the y-axis and the PCom values on the x-axis. We also scale each data point relative to the total number of people employed within that occupation, i.e. occupations with more people will be bigger on the plot. This gives us Figure \ref{fig:EP/OP against PCom}, which we can see has no obvious trends. Zooming in on specific regions of the scatterplot (e.g. the region of high PCom) also yields no significant patterns. We also calculated the correlation coefficients, which can be found in Table \ref{tab:correlation}. We do note that the majority of employed workers are concentrated in either the low PCom region or the high PCom region, with relatively few in between. This is consistent with the findings from \cite{osborne2017future}, and is another piece of evidence that our assumption that \emph{joint\_auto} is fairly representative of the US civilian labour force is reasonable as discussed in Chapter \ref{subsec:Checking biasness}. 
 
 \begin{figure}[!htb]
 	\centering
@@ -337,6 +330,34 @@ Our next step of exploration is to take the base 10 logarithmic of EP/OP and PCo
 	\caption{Plot of EP/OP (for each Detailed Occupation) against PCom. There seems to be no obvious patterns or trends present.}
 	\label{fig:EP/OP against PCom}
 \end{figure}
+
+\begin{table}[]
+	\centering
+	\begin{tabular}{l|ll|ll}
+	\textbf{Type of correlation} & \multicolumn{2}{l|}{\textbf{EP}} & \multicolumn{2}{l}{\textbf{OP}} \\ \hline
+	Pearson                      & \multicolumn{2}{l|}{-0.00889}     & \multicolumn{2}{l}{0.00551}      \\ \hline
+	Spearman                     & \multicolumn{2}{l|}{0.0346}      & \multicolumn{2}{l}{-0.00769}    \\ \hline
+	Kendall                      & \multicolumn{2}{l|}{0.0232}      & \multicolumn{2}{l}{-0.00751}   
+	\end{tabular}
+	\caption{Correlation coefficients for Figure \ref{fig:EP/OP against PCom}}
+	\label{tab:correlation}
+	\end{table}
+
+
+Our next step of exploration is to take the base 10 logarithmic\footnote{as can be seen in Figure \ref{fig:EP/OP against PCom}, the occupations with zero values for EP/OP have relatively few people employed within them, and we can remove them beforehand to avoid negative infinite values without affecting the representativeness of our dataset too much} of EP/OP and PCom, and plot the former against the latter in a scatterplot, as shown in Figure \ref{fig:logEP/OP against PCom}. Interestingly, the $\log_{10}$(OP) plot in Figure \ref{fig:logOP against PCom} seems to show a slight downward trend as $\log_{10}$(PCom) increases; plotting the scatterplot on a logarithmic scale seems to have revealed a previously hard-to-spot trend. We also calculated the correlation coefficients for this particular plot (along with the corresponding plot for EP), which is given in Table \ref{tab:logcorrelation}. This trend suggests that 'older' occupations tend to be less likely to be computerised. This makes intuitive sense for occupations such as management; \cite{osborne2017future} notes that management occupations tend to be at low risk of computerisation due to the high degree of social intelligence required for them, and people in management positions would also tend to be older since such occupations (especially the ones like Chief Executive Officer) would be biased towards those with more work experience. There is also some evidence that high skilled workers, who would generally be less likely to have their jobs computerised, tend to retire later than low skilled workers (\cite{HimmelreicherRalfK.2009Saao}).
+
+
+\begin{table}[]
+	\centering
+	\begin{tabular}{l|ll|ll}
+	\textbf{Type of correlation} & \multicolumn{2}{l|}{\textbf{EP}} & \multicolumn{2}{l}{\textbf{OP}} \\ \hline
+	Pearson                      & \multicolumn{2}{l|}{$1.92\times10^{-6}$}     & \multicolumn{2}{l}{-0.0697}      \\ \hline
+	Spearman                     & \multicolumn{2}{l|}{0.0346}      & \multicolumn{2}{l}{-0.00769}    \\ \hline
+	Kendall                      & \multicolumn{2}{l|}{0.0232}      & \multicolumn{2}{l}{-0.00751}   
+	\end{tabular}
+	\caption{Correlation coefficients for Figure \ref{fig:logEP/OP against PCom}}
+	\label{tab:logcorrelation}
+	\end{table}
 
 
 \begin{figure}[!htb]
@@ -350,8 +371,42 @@ Our next step of exploration is to take the base 10 logarithmic of EP/OP and PCo
 \end{figure}
 
 
+Plotting the dataset grouped by Category Labels or Major Groups do not seem to yield any interesting results either. In fact, there are too few datapoints for some of the Labels and Major Groups for us to draw any meaningful conclusions.
+
+\subsubsection*{Relative change of EP/OP against PCom}
+In the previous section, we plotted EP/OP values for 2012 against PCom on a scatterplot. It seems like a waste to not use more of the EP/OP values for the other years given all our efforts to clean the dataset in Chapter \ref{sec:Dataset}. We can use the EP/OP values for 2011 and 2021 to calculate the relative change of EP/OP for the Detailed Occupations from 2011 to 2021, similar to what we did in Figure \ref{fig:relativechange}. Plotting the relative change values against PCom in a scatter plot gives us Figure \ref{fig:Relative change against PCom}. We also calculated the correlation coefficients, which can be found in Table \ref{tab:correlation for relative}. Although there seems to be no obvious trends in Figure \ref{fig:Relative change against PCom}, the Pearson correlation coefficient for the relative change of OP with PCom is relatively high.
+
+Due to the fact that the relative change of EP/OP could be negative, taking the logarithmic would prove to be tricky. It is hard to justify simply removing negative values from the dataset because we would be ignoring all occupations which became 'younger' from 2011 to 2021 and they are an essential part of the dataset. Hence, we will not plot a logarithmic scale scatterplot as we had done in the previous section.
+
+
+\begin{figure}[!htb]
+	\centering
+	\subfloat[Elderly Proportion]{\includegraphics[width=15cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Scatter Relative change of EP for DO.png}\label{fig:relativeEP against PCom}}
+	\hfill
+	\subfloat[Old Proportion]{\includegraphics[width=15cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Scatter Relative change of OP for DO.png}\label{fig:relativeOP against PCom}}
+	\hfill
+	\caption{Plot of relative change of EP/OP from 2011 to 2021 (for each Detailed Occupation) against PCom. There does not appear to be any noticeable trends.}
+	\label{fig:Relative change against PCom}
+\end{figure}
+
+\begin{table}[]
+	\centering
+	\begin{tabular}{l|ll|ll}
+	\textbf{Type of correlation} & \multicolumn{2}{l|}{\textbf{EP}} & \multicolumn{2}{l}{\textbf{OP}} \\ \hline
+	Pearson                      & \multicolumn{2}{l|}{0.0143}     & \multicolumn{2}{l}{0.180}      \\ \hline
+	Spearman                     & \multicolumn{2}{l|}{0.0247}      & \multicolumn{2}{l}{0.190}    \\ \hline
+	Kendall                      & \multicolumn{2}{l|}{0.0191}      & \multicolumn{2}{l}{0.128}   
+	\end{tabular}
+	\caption{Correlation coefficients for Figure \ref{fig:Relative change against PCom}}
+	\label{tab:correlation for relative}
+	\end{table}
+
+\subsection{Conclusion}
+We did not find any strong trends despite using different metrics and plot scales. The most interesting results arose from the OP values, specifically the relationships of $\log_{10}$(OP) and relative change of OP with respect to $\log_{10}$(PCom) and PCom respectively. The latter has a particularly high (relative to the others) Pearson correlation coefficient, while the former has a more obvious trend in the scatterplot. We should note that the each datapoint in the scatterplots had its size scaled relative to the number of people employed within that particular occupation. On the other hand, our correlation coefficients were calculated without regard for this scaling. Hence, it might be worth investigating the weighted correlation coefficients. Given that both of the interesting relationships seem to be somewhat linear in nature, we shall focus on the weighted Pearson correlation. Calculating it gives us 
 
 \subsection{Linear Regression}
+
+\subsubsection*{Weighted Least Squares}
 
 \subsection{Probably Approximately Correct (PAC) Learning}
 Suppose we have an unknown target set \emph{T} from which we obtained independent and identically distributed (i.i.d.) samples $\delta_{1},...,\delta_{m}$. Using the \emph{m} samples, we want to construct a hypothesis set $H_{m}$ that approximates \emph{T}. The framework we use to learn $H_{m}$ is known as PAC Learning.
