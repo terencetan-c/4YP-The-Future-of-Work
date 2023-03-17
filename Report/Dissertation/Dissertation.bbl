@@ -653,6 +653,56 @@
       \field{pages}{1\bibrangedash 13}
       \range{pages}{13}
     \endentry
+    \entry{HimmelreicherRalfK.2009Saao}{article}{}
+      \name{author}{3}{}{%
+        {{hash=5ac29363f1a11176030b35ca2c2b9d7a}{%
+           family={Himmelreicher},
+           familyi={H\bibinitperiod},
+           given={Ralf\bibnamedelima K.},
+           giveni={R\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=bf3e405dd16ac235d499c493bfa7eda1}{%
+           family={Hagen},
+           familyi={H\bibinitperiod},
+           given={Christine},
+           giveni={C\bibinitperiod}}}%
+        {{hash=79341db4d33a429bc5e2da68782d013a}{%
+           family={Clemens},
+           familyi={C\bibinitperiod},
+           given={Wolfgang},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {ger}%
+      }
+      \list{location}{1}{%
+        {WIESBADEN}%
+      }
+      \list{publisher}{1}{%
+        {Springer Nature}%
+      }
+      \strng{namehash}{3a703d2fe09d17a49f32cd245a70b039}
+      \strng{fullhash}{3a703d2fe09d17a49f32cd245a70b039}
+      \strng{bibnamehash}{3a703d2fe09d17a49f32cd245a70b039}
+      \strng{authorbibnamehash}{3a703d2fe09d17a49f32cd245a70b039}
+      \strng{authornamehash}{3a703d2fe09d17a49f32cd245a70b039}
+      \strng{authorfullhash}{3a703d2fe09d17a49f32cd245a70b039}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{On the basis of administrative data from the Research Data Centre (FDZ-RV) of the German Federal Pension Insurance, we examine the effects education has on the timing of retirement for employees in East and West Germany in 2007. The large sample size of the Scientific Use File of the pension inflow statistics (n = 29933) allows a differentiated analysis considering multiple dimensions. Using key demographic indicators such as sex, region, length of career and pension payments, we demonstrate the effects of the level of education on the age of retirement, measured in years between 60 and 65 or older. Our analysis shows that high skilled retire later than low skilled employees. The difference is smaller than one year. But the beginning of the high skilled careers is round about two years later, with higher pension payments. Based on this findings, we discuss to which extent skills can lengthen the lifetime career with respect to pull and push factors.}
+      \field{issn}{0023-2653}
+      \field{journaltitle}{Kölner Zeitschrift für Soziologie und Sozialpsychologie}
+      \field{number}{3}
+      \field{title}{Skills and age of retirement: Have high skilled the highest age of retirement?}
+      \field{volume}{61}
+      \field{year}{2009}
+      \field{pages}{437\bibrangedash 452}
+      \range{pages}{16}
+      \keyw{Age ; Education Work Relationship ; Federal Republic of Germany ; Life Stage Transitions ; Pensions ; Psychology ; Psychology,Social ; Retirement ; Social Sciences ; Sociodemographic Characteristics ; Sociology ; Work Skills}
+    \endentry
     \entry{10.1257/jep.33.2.229}{article}{}
       \name{author}{1}{}{%
         {{hash=4841661682a6ef4fa0925868f85ccec2}{%
