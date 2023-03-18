@@ -1,25 +1,25 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
 [0] Config.pm:314> INFO - Logfile is 'Dissertation.blg'
-[63] biber-darwin:340> INFO - === Thu Mar 16, 2023, 23:41:17
-[76] Biber.pm:415> INFO - Reading 'Dissertation.bcf'
-[165] Biber.pm:952> INFO - Found 41 citekeys in bib section 0
-[177] Biber.pm:4340> INFO - Processing section 0
-[186] Biber.pm:4531> INFO - Looking for bibtex format file 'Reference.bib' for section 0
-[189] bibtex.pm:1689> INFO - LaTeX decoding ...
-[232] bibtex.pm:1494> INFO - Found BibTeX data source 'Reference.bib'
-[267] Utils.pm:395> WARN - legacy month field 'May' in entry '10.1257/jep.33.2.229' is not an integer - this will probably not sort properly.
-[288] Utils.pm:395> WARN - legacy month field 'Oct' in entry 'rose_2021' is not an integer - this will probably not sort properly.
-[306] Utils.pm:395> WARN - legacy month field 'Oct' in entry 'WHO' is not an integer - this will probably not sort properly.
-[316] Utils.pm:395> WARN - legacy month field 'Sep' in entry 'noah_2019' is not an integer - this will probably not sort properly.
-[319] Utils.pm:395> WARN - legacy month field 'Mar' in entry 'thompson_2020' is not an integer - this will probably not sort properly.
-[321] Utils.pm:395> WARN - legacy month field 'Dec' in entry 'manning_2022' is not an integer - this will probably not sort properly.
-[385] Utils.pm:395> WARN - legacy month field 'Aug' in entry 'congresscovidunemployment' is not an integer - this will probably not sort properly.
-[391] Utils.pm:395> WARN - ISBN '10526234' in entry 'paclearning1' is invalid - run biber with '--validate_datamodel' for details.
-[392] Utils.pm:395> WARN - BibTeX subsystem: /var/folders/4p/j29f3rsn40l3qj258y9jbz180000gn/T/biber_tmp_bCzX/9e59134803c007b3985858773a1e7e27_98918.utf8, line 67, warning: 3 characters of junk seen at toplevel
-[432] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[432] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[432] Biber.pm:4168> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[432] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
-[466] bbl.pm:654> INFO - Writing 'Dissertation.bbl' with encoding 'UTF-8'
-[486] bbl.pm:757> INFO - Output to Dissertation.bbl
-[486] Biber.pm:128> INFO - WARNINGS: 9
+[66] biber-darwin:340> INFO - === Sat Mar 18, 2023, 19:11:05
+[79] Biber.pm:415> INFO - Reading 'Dissertation.bcf'
+[167] Biber.pm:952> INFO - Found 44 citekeys in bib section 0
+[181] Biber.pm:4340> INFO - Processing section 0
+[190] Biber.pm:4531> INFO - Looking for bibtex format file 'Reference.bib' for section 0
+[192] bibtex.pm:1689> INFO - LaTeX decoding ...
+[237] bibtex.pm:1494> INFO - Found BibTeX data source 'Reference.bib'
+[271] Utils.pm:395> WARN - legacy month field 'May' in entry '10.1257/jep.33.2.229' is not an integer - this will probably not sort properly.
+[293] Utils.pm:395> WARN - legacy month field 'Oct' in entry 'rose_2021' is not an integer - this will probably not sort properly.
+[310] Utils.pm:395> WARN - legacy month field 'Oct' in entry 'WHO' is not an integer - this will probably not sort properly.
+[320] Utils.pm:395> WARN - legacy month field 'Sep' in entry 'noah_2019' is not an integer - this will probably not sort properly.
+[322] Utils.pm:395> WARN - legacy month field 'Mar' in entry 'thompson_2020' is not an integer - this will probably not sort properly.
+[324] Utils.pm:395> WARN - legacy month field 'Dec' in entry 'manning_2022' is not an integer - this will probably not sort properly.
+[388] Utils.pm:395> WARN - legacy month field 'Aug' in entry 'congresscovidunemployment' is not an integer - this will probably not sort properly.
+[399] Utils.pm:395> WARN - ISBN '10526234' in entry 'paclearning1' is invalid - run biber with '--validate_datamodel' for details.
+[405] Utils.pm:395> WARN - BibTeX subsystem: /var/folders/4p/j29f3rsn40l3qj258y9jbz180000gn/T/biber_tmp_zagd/9e59134803c007b3985858773a1e7e27_9005.utf8, line 67, warning: 3 characters of junk seen at toplevel
+[447] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[447] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[447] Biber.pm:4168> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[447] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[484] bbl.pm:654> INFO - Writing 'Dissertation.bbl' with encoding 'UTF-8'
+[505] bbl.pm:757> INFO - Output to Dissertation.bbl
+[505] Biber.pm:128> INFO - WARNINGS: 9

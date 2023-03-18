@@ -27,6 +27,7 @@ citestyle=apa]{biblatex}
 \titlespacing\subsubsection{0pt}{0pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
 
 \usepackage{amsfonts}
+\newtheorem{theorem}{Definition}
 
 \begin{document}
 
@@ -335,9 +336,9 @@ The first thing we do is to create a scatterplot of the Detailed Occupations wit
 	\centering
 	\begin{tabular}{l|ll|ll}
 	\textbf{Type of correlation} & \multicolumn{2}{l|}{\textbf{EP}} & \multicolumn{2}{l}{\textbf{OP}} \\ \hline
-	Pearson                      & \multicolumn{2}{l|}{-0.00889}     & \multicolumn{2}{l}{0.00551}      \\ \hline
-	Spearman                     & \multicolumn{2}{l|}{0.0346}      & \multicolumn{2}{l}{-0.00769}    \\ \hline
-	Kendall                      & \multicolumn{2}{l|}{0.0232}      & \multicolumn{2}{l}{-0.00751}   
+	Pearson                      & \multicolumn{2}{l|}{-0.00363}     & \multicolumn{2}{l}{-0.0321}      \\ \hline
+	Spearman                     & \multicolumn{2}{l|}{-0.0151}      & \multicolumn{2}{l}{-0.0661}    \\ \hline
+	Kendall                      & \multicolumn{2}{l|}{-0.00881}      & \multicolumn{2}{l}{-0.0429}   
 	\end{tabular}
 	\caption{Correlation coefficients for Figure \ref{fig:EP/OP against PCom}}
 	\label{tab:correlation}
@@ -351,9 +352,9 @@ Our next step of exploration is to take the base 10 logarithmic\footnote{as can 
 	\centering
 	\begin{tabular}{l|ll|ll}
 	\textbf{Type of correlation} & \multicolumn{2}{l|}{\textbf{EP}} & \multicolumn{2}{l}{\textbf{OP}} \\ \hline
-	Pearson                      & \multicolumn{2}{l|}{$1.92\times10^{-6}$}     & \multicolumn{2}{l}{-0.0697}      \\ \hline
-	Spearman                     & \multicolumn{2}{l|}{0.0346}      & \multicolumn{2}{l}{-0.00769}    \\ \hline
-	Kendall                      & \multicolumn{2}{l|}{0.0232}      & \multicolumn{2}{l}{-0.00751}   
+	Pearson                      & \multicolumn{2}{l|}{0.00579}     & \multicolumn{2}{l}{-0.113}      \\ \hline
+	Spearman                     & \multicolumn{2}{l|}{-0.0151}      & \multicolumn{2}{l}{-0.0661}    \\ \hline
+	Kendall                      & \multicolumn{2}{l|}{-0.00881}      & \multicolumn{2}{l}{-0.0429}   
 	\end{tabular}
 	\caption{Correlation coefficients for Figure \ref{fig:logEP/OP against PCom}}
 	\label{tab:logcorrelation}
@@ -402,28 +403,57 @@ Due to the fact that the relative change of EP/OP could be negative, taking the 
 	\end{table}
 
 \subsection{Conclusion}
-We did not find any strong trends despite using different metrics and plot scales. The most interesting results arose from the OP values, specifically the relationships of $\log_{10}$(OP) and relative change of OP with respect to $\log_{10}$(PCom) and PCom respectively. The latter has a particularly high (relative to the others) Pearson correlation coefficient, while the former has a more obvious trend in the scatterplot. We should note that the each datapoint in the scatterplots had its size scaled relative to the number of people employed within that particular occupation. On the other hand, our correlation coefficients were calculated without regard for this scaling. Hence, it might be worth investigating the weighted correlation coefficients. Given that both of the interesting relationships seem to be somewhat linear in nature, we shall focus on the weighted Pearson correlation. Calculating it gives us 
+We did not find any strong trends despite using different metrics and plot scales. The most interesting results arose from the OP values, specifically the relationships of $\log_{10}$(OP) and relative change of OP with respect to $\log_{10}$(PCom) and PCom respectively. The latter has a particularly high (relative to the others) Pearson correlation coefficient, while the former has a more obvious trend in the scatterplot. We should note that the each datapoint in the scatterplots had its size scaled relative to the number of people employed within that particular occupation. On the other hand, our correlation coefficients were calculated without regard for this scaling. Hence, it might be worth investigating the weighted correlation coefficients. Given that both of the interesting relationships seem to be somewhat linear in nature, we shall focus on the weighted Pearson correlation. To calculate the weighted Pearson correlation between two vectors $x$ and $y$ with weight vector $w$ (all three vectors must have the same dimensions), we can use the following equations (\cite{bailey2018weighted}):
+
+\begin{equation} \label{eq1}
+	\begin{split}
+		\text{Weighted mean}: m(x; w) & = \frac{\sum_{i}w_{i}x_{i}}{\sum_{i}w_{i}}. \\
+		\text{Weighted covariance}: cov(x, y; w) & = \frac{\sum_{i}w_{i}(x_{i}-m(x; w))(y_{i}-m(y; w))}{\sum_{i}w_{i}}. \\
+		\text{Weighted correlation}: corr(x, y; w) & = \frac{cov(x, y; w)}{\sqrt{cov(x, x; w)cov(y, y; w)}}.
+	\end{split}
+	\end{equation}
+
+Applying these equations on our data would give us the values in Table \ref{tab:weightedpearson}. The weighted correlation for $\log_{10}$(OP) and $\log_{10}$(PCom) is much larger (in absolute terms) than the unweighted correlation, and better matches what we see in Figure \ref{fig:logOP against PCom}. It's absolute value is also larger than the weighted correlation for relative change of OP and PCom.
+
+
+\begin{table}[]
+	\centering
+	\begin{tabular}{l|l}
+	\textbf{Variables}                                              & \textbf{Weighted Pearson Correlation} \\ \hline
+	\begin{tabular}[c]{@{}l@{}}Relative change of OP\\ vs\\ PCom\end{tabular} & 0.198                                 \\ \hline
+	\begin{tabular}[c]{@{}l@{}}$\log_{10}$(OP)\\ vs\\ $\log_{10}$(PCom)\end{tabular}               & -0.434                              
+	\end{tabular}
+	\caption{Weighted Pearson Correlation showing that the strongest trend we have found so far is the relationship between the $\log_{10}$(OP) for 2012 and $\log_{10}$(PCom).}
+	\label{tab:weightedpearson}
+	\end{table}
+
+Hence, the strongest trend so far is the relationship between OP and PCom. In addition, it appears to be a somewhat linear trend. Hence, we will be focus on applying linear regression to this set of variables in the next section.
+
 
 \subsection{Linear Regression}
+In this section, we will be applying a number of linear regression techniques on the OP and PCom values, specifically weighted linear regression techniques given that we got the highest correlation when weights were taken into account. That being said, all of the following techniques can be applied on the other data values; we only picked the $\log_{10}$(OP) vs $\log_{10}$(PCom) relationship because that is the one that displayed the strongest trend so far. Another caveat is that this particular trend is not that strong, and further analysis should be conducted to determine whether it is actually statistically significant. We will further elaborate on this point in the \textbf{FUTURE WORK SECTION}.
 
 \subsubsection*{Weighted Least Squares}
+\subsubsection*{Conclusion}
+Having tried various linear regression methods, we obtain very similar results for all of them. These results could be used to predict the OP values of the occupations missing from our \emph{joint\_auto} dataset. However, we note that there is a high level of variance around our linear regression lines. Hence, any predicted values we get might not be that useful. Instead, it might be better if we could define a minimum region which contains most if not all of our known datapoints, and has a low chance of not encompassing any unknown datapoints. We would ideally also like to quantify our confidence in such a region. We shall explore this idea in the next section.
+
 
 \subsection{Probably Approximately Correct (PAC) Learning}
 Suppose we have an unknown target set \emph{T} from which we obtained independent and identically distributed (i.i.d.) samples $\delta_{1},...,\delta_{m}$. Using the \emph{m} samples, we want to construct a hypothesis set $H_{m}$ that approximates \emph{T}. The framework we use to learn $H_{m}$ is known as PAC Learning.
 
-Of course, we want $H_{m}$ to approximate \emph{T} as close as possible, such that the probability of a new sample $\delta$ from \emph{T} not belonging in $H_{m}$ is less than or equal to an arbitrary threshold probability $\epsilon$, i.e. $\mathbb{P}(\delta \in \emph{T} \setminus H_{m}) \leq \epsilon$. Since $H_{m}$ depends on the i.d.d. random samples $\{\delta_{1},...,\delta_{m}\}$, it is also random. This means that $\mathbb{P}(\delta \in \emph{T} \setminus H_{m}) \leq \epsilon$ is itself a random variable, allowing us to quantify a confidence for it:
+Of course, we want $H_{m}$ to approximate \emph{T} as close as possible, such that the probability of a new sample $\delta$ from \emph{T} not belonging in $H_{m}$ is less than or equal to an arbitrary threshold probability $\epsilon$, i.e. $\mathbb{P}(\delta \in \emph{T} \setminus H_{m}) \leq \epsilon$. Since $H_{m}$ depends on the set of i.d.d. random samples $S = \{\delta_{1},...,\delta_{m}\}$, it is also random. This means that $\mathbb{P}(\delta \in \emph{T} \setminus H_{m}) \leq \epsilon$ is itself a random variable, allowing us to quantify a confidence for it:
 \begin{equation}
 	\label{eq:1}
 	\mathbb{P}^{m} \{\delta_{1},...,\delta_{m}: \mathbb{P}(\delta \in \emph{T} \setminus H_{m}) \leq \epsilon \} \geq 1 - q(m,\epsilon),
 \end{equation}
-where $1 - q(m,\epsilon)$ is a lower bound to our confidence that the probability of a new sample not belong in $H_{m}$ is less than or equal to $\epsilon$. We refer the reader to (\cite{paclearning1}) for a more comprehensive introduction to this concept.
+where $1 - q(m,\epsilon)$ is a lower bound to our confidence that the probability of a new sample not belong in $H_{m}$ is less than or equal to $\epsilon$. We refer the reader to (\cite{paclearning1}) for a more comprehensive introduction to this concept. In fact, this entire section on PAC Learning is heavily based on the work done by (\cite{paclearning1}), (\cite{romao2021tight}), and (\cite{9750913}).
 
-Furthermore, consider the following scenario program:
+Furthermore, consider the following convex scenario program:
 \begin{equation}
 	\label{eq:2}
 	\begin{array}{rrclcl}
 	\displaystyle \min_{x \in \mathbb{R}^{n_{x}}} & \multicolumn{3}{l}{c^{T}x}\\
-	\textrm{s.t.} & g(x,\delta_{i}) \leq 0, \text{for all i = 1,...,m}\\
+	\textrm{s.t.} & g(x,\delta_{i}) \leq 0, \text{for all i = 1,...,m}.\\
 	\end{array}
 	\end{equation}
 Suppose $\delta_{i}$ belongs to an uncertainty space $\Delta$, i.e. $\delta_{i} \in \Delta$ for $i = 1,...,m$, and we have obtained the optimal solution $x^{*}_{m}$ to the scenario program in Equation \ref{eq:2}. If we then want to find out if a new $\delta\in \Delta$ will violate the constraint $g(x^{*},\delta) \leq 0$, we can use Equation \ref{eq:1} to quantify the probability of such a constraint violation happening. Let $T=\Delta$, $H_{m} = (\delta \in \Delta: g(x^{*}_{m},\delta) \leq 0)$, i.e. the set of samples for which $x^{*}_{m}$ remains feasible, and we get the following:
@@ -432,7 +462,55 @@ Suppose $\delta_{i}$ belongs to an uncertainty space $\Delta$, i.e. $\delta_{i} 
 	\label{eq:3}
 	\mathbb{P}^{m} \{\delta_{1},...,\delta_{m}: \mathbb{P}(\delta \in \Delta: g(x^{*}_{m},\delta) > 0) \leq \epsilon \} \geq 1 - q(m,\epsilon),
 \end{equation}
-where $\mathbb{P}(\delta \in \Delta: g(x^{*}_{m},\delta) > 0)$ is the probability that a new sample $\delta\in \Delta$ violates the constraint $(g(x^{*}_{m},\delta) \leq 0)$. Similar to Equation \ref{eq:1}, the probability of such a constraint violation should ideally to less than or equal to an arbitrary value $\epsilon$, and our confidence of that happening is at least $1 - q(m,\epsilon)$.
+where $\mathbb{P}(\delta \in \Delta: g(x^{*}_{m},\delta) > 0)$ is the probability that a new sample $\delta\in \Delta$ violates the constraint $(g(x^{*}_{m},\delta) \leq 0)$. Similar to Equation \ref{eq:1}, the probability of such a constraint violation should ideally to less than or equal to an arbitrary value $\epsilon$, and our confidence of that happening is at least $1 - q(m,\epsilon)$. Note that we did not specify a probability distribution for $T=\Delta$. This means that PAC Learning is a distribution-free technique, and we do not need to make any prior assumptions about the distribution of $\Delta$.
+
+Before further elaborating on the $q(m,\epsilon)$ function, we want to first establish a few definitions.
+
+
+\begin{theorem}
+	A constraint is considered a support constraint if its removal changes the optimiser $x^{*}_{m}$. The support set of $x^{*}_{m}$, denoted by supp($x^{*}_{m}$), is the collection of support constraints for $x^{*}_{m}$.
+\end{theorem}
+
+\begin{theorem}
+	We say that the convex scenario program \ref{eq:2} is fully-supported if, for any $S$ with $\abs{S} = m$ and $m > n_{x}$, $\abs{\text{supp}(x^{*}_{m})} = n_{x}$.
+\end{theorem}
+
+\begin{theorem}
+	We say that the convex scenario program \ref{eq:2} is non-degenerate if, solving the program with only the support constraints in the support set supp($x^{*}_{m}$) gives us the same optimiser $x^{*}_{m}$ as when solving the program with all constraints (constructed with all the samples in $S$).
+\end{theorem}
+
+Assuming $x^{*}_{m}$ exists and is unique, we can define $q(m,\epsilon)$ as:
+
+\begin{equation}
+	\label{eq:4}
+	q(m,\epsilon) = \sum_{i=0}^{n_{x}-1}{m \choose i}\epsilon^{i}(1-\epsilon)^{m-i}.
+\end{equation}
+
+Note that this holds with equality for fully-supported programs.
+
+Now that we have established the basics of PAC Learning, we can return to our original problem of defining a minimum region for our datapoints. We shall denote the $i^{th} \log_{10}(PCom)$ and $i^{th} \log_{10}(OP)$ values as $u_{i}$ and $y_{i}$ respectively. Each set of our datapoints $(u_{i}, y_{i})$ can be considered a sample $\delta_{i}$ for $i=1,...,m$. Hence, out entire dataset can be considered as the set $S$.  We are trying to define a region $H_{m}$ that approximates our unknown space $T=\Delta$ (unknown since we do not have a complete set of data nor do we have the data for any new occupations that may exist in the future). Since the data exhibits a fairly linear relationship, it makes sense to have a minimum vertical width strip as the region. To define such a region, we need variables $x_{2}, x_{3}$ to encode the median line (as the gradient and y-intercept respectively), and a variable $x_{1}$ to denote the semi-width length. To ensure all of our datapoints are contained within this region $H_{m}$, we have to set up constraints for all $m$ datapoints. Finally, we minimise the semi-width length $x_{1}$ to give a minimum region. Putting everything together gives us the following optimisation problem.
+
+\begin{align}
+	\label{eq:5}
+	\begin{array}{rrclcl}
+	\displaystyle \min_{x_{1} \in \mathbb{R},x_{2} \in \mathbb{R},x_{3} \in \mathbb{R}}&  \multicolumn{3}{l}{x_{1}}&\\
+	\textrm{s.t.}\  y_{i} - x_{2}u_{i} - x_{3} &\leq x_{1}, \text{for all i = 1,...,m}&\\
+	y_{i} - x_{2}u_{i} - x_{3} &\geq -x_{1}, \text{for all i = 1,...,m}.&\\
+	\end{array}
+\end{align}
+
+On first glance, this might seem different from the convex scenario program \ref{eq:2}. However, by placing $x_{1},x_{2},x_{3}$ into a vector $x \in \mathbb{R}^{3}$, and rearranging all the constraints into a matrix inequality constraint, we can see that both programs are of the same form. Additionally, $\mathbb{R}^{3}$ is a convex set, and our objective function and constraints are all convex (since they are just linear). Hence, this problem is actually a convex scenario program, making it equivalent to scenario program \ref{eq:2}. Solving this program and plotting our minimum vertical width strip $H_{m}$ gives Figure \ref{fig:pac}.
+
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=12cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/pac.png}
+	\caption{Plot of $\log_{10}$(EP)/$\log_{10}$(OP) (for each Detailed Occupation) against $\log_{10}$(PCom) with PAC Learning applied. The red lines represents the boundaries of $H_{m}$. We can see that $H_{m}$ contains all of our datapoints while ensuring that the vertical width is minimised.}
+	\label{fig:pac}
+\end{figure}
+
+While $H_{m}$ contains all of our datapoints while keeping $x_{1}$ minimised, it is not very useful since it ignores the underlying downward trend. In fact, $H_{m}$ would suggest a slight upward trend. This is because we have included the outlier datapoints (relative to the downward trend) in our set $S$. Hence, it would be useful to be able to apply PAC Learning to a dataset with discarded samples. Fortunately, \cite{9750913} details such an approach.
+
 
 \newpage
 \printbibliography[heading=bibintoc]

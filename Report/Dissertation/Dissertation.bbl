@@ -19,6 +19,53 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
+    \entry{bailey2018weighted}{article}{}
+      \name{author}{5}{}{%
+        {{hash=605634a52be986ca3db3666b5368bbc5}{%
+           family={Bailey},
+           familyi={B\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+        {{hash=97d2f4198f668aa706bc86dcce4f3408}{%
+           family={Emad},
+           familyi={E\bibinitperiod},
+           given={Ahmad},
+           giveni={A\bibinitperiod}}}%
+        {{hash=532f45e63f404c93fcc530704019db4d}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Ting},
+           giveni={T\bibinitperiod}}}%
+        {{hash=6f300ad32dad97e078586ef77c23faf4}{%
+           family={Xie},
+           familyi={X\bibinitperiod},
+           given={Qingshu},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=bd54ab163b32ef4f78dfb169e2883f04}{%
+           family={Sikali},
+           familyi={S\bibinitperiod},
+           given={Emmanuel},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ERIC}%
+      }
+      \strng{namehash}{e0e7a589ab8da578b7ceadd15721ee99}
+      \strng{fullhash}{2eb8d820da69463bb4af6e9baf9c7b07}
+      \strng{bibnamehash}{e0e7a589ab8da578b7ceadd15721ee99}
+      \strng{authorbibnamehash}{e0e7a589ab8da578b7ceadd15721ee99}
+      \strng{authornamehash}{e0e7a589ab8da578b7ceadd15721ee99}
+      \strng{authorfullhash}{2eb8d820da69463bb4af6e9baf9c7b07}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American Institutes for Research}
+      \field{title}{Weighted and Unweighted Correlation Methods for Large-Scale Educational Assessment: wCorr Formulas. AIR--NAEP Working Paper No. 2018-01. NCES Data R Project Series\# 02.}
+      \field{year}{2018}
+    \endentry
     \entry{twinthreats}{article}{}
       \name{author}{4}{}{%
         {{hash=a33c8ff08edacb119119ed9413bf85b0}{%
@@ -1274,6 +1321,84 @@
       \field{year}{2006}
       \field{pages}{149\bibrangedash 158}
       \range{pages}{10}
+    \endentry
+    \entry{romao2021tight}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=5ca8c3c62535845e8b6c55cf5fa7a429}{%
+           family={Romao},
+           familyi={R\bibinitperiod},
+           given={Licio},
+           giveni={L\bibinitperiod}}}%
+        {{hash=f4dfa8378f9dfc6446ba223082d5f25a}{%
+           family={Margellos},
+           familyi={M\bibinitperiod},
+           given={Kostas},
+           giveni={K\bibinitperiod}}}%
+        {{hash=c7d8601032b943a2c36310cb60892859}{%
+           family={Papachristodoulou},
+           familyi={P\bibinitperiod},
+           given={Antonis},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {PMLR}%
+      }
+      \strng{namehash}{63788edda09115938a8d95a85f61ff62}
+      \strng{fullhash}{63788edda09115938a8d95a85f61ff62}
+      \strng{bibnamehash}{63788edda09115938a8d95a85f61ff62}
+      \strng{authorbibnamehash}{63788edda09115938a8d95a85f61ff62}
+      \strng{authornamehash}{63788edda09115938a8d95a85f61ff62}
+      \strng{authorfullhash}{63788edda09115938a8d95a85f61ff62}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Learning for Dynamics and Control}
+      \field{title}{Tight sampling and discarding bounds for scenario programs with an arbitrary number of removed samples}
+      \field{year}{2021}
+      \field{pages}{312\bibrangedash 323}
+      \range{pages}{12}
+    \endentry
+    \entry{9750913}{article}{}
+      \name{author}{3}{}{%
+        {{hash=5ca8c3c62535845e8b6c55cf5fa7a429}{%
+           family={Romao},
+           familyi={R\bibinitperiod},
+           given={Licio},
+           giveni={L\bibinitperiod}}}%
+        {{hash=c7d8601032b943a2c36310cb60892859}{%
+           family={Papachristodoulou},
+           familyi={P\bibinitperiod},
+           given={Antonis},
+           giveni={A\bibinitperiod}}}%
+        {{hash=f4dfa8378f9dfc6446ba223082d5f25a}{%
+           family={Margellos},
+           familyi={M\bibinitperiod},
+           given={Kostas},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{663a6af7d3437bb1c39ff0d43ea5e745}
+      \strng{fullhash}{663a6af7d3437bb1c39ff0d43ea5e745}
+      \strng{bibnamehash}{663a6af7d3437bb1c39ff0d43ea5e745}
+      \strng{authorbibnamehash}{663a6af7d3437bb1c39ff0d43ea5e745}
+      \strng{authornamehash}{663a6af7d3437bb1c39ff0d43ea5e745}
+      \strng{authorfullhash}{663a6af7d3437bb1c39ff0d43ea5e745}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Automatic Control}
+      \field{title}{On the exact feasibility of convex scenario programs with discarded constraints}
+      \field{year}{2022}
+      \field{pages}{1\bibrangedash 1}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1109/TAC.2022.3165320
+      \endverb
     \endentry
     \entry{RoseElizabethL.2021TDoU}{article}{}
       \name{author}{1}{}{%

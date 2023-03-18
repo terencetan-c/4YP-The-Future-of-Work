@@ -2392,7 +2392,12 @@
     <bcf:citekey order="45">osborne2017future</bcf:citekey>
     <bcf:citekey order="46">osborne2017future</bcf:citekey>
     <bcf:citekey order="47">HimmelreicherRalfK.2009Saao</bcf:citekey>
-    <bcf:citekey order="48">paclearning1</bcf:citekey>
+    <bcf:citekey order="48">bailey2018weighted</bcf:citekey>
+    <bcf:citekey order="49">paclearning1</bcf:citekey>
+    <bcf:citekey order="50">paclearning1</bcf:citekey>
+    <bcf:citekey order="51">romao2021tight</bcf:citekey>
+    <bcf:citekey order="52">9750913</bcf:citekey>
+    <bcf:citekey order="53">9750913</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
