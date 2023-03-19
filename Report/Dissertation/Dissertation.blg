@@ -1,9 +1,9 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
 [0] Config.pm:314> INFO - Logfile is 'Dissertation.blg'
-[62] biber-darwin:340> INFO - === Sun Mar 19, 2023, 16:37:24
-[74] Biber.pm:415> INFO - Reading 'Dissertation.bcf'
-[162] Biber.pm:952> INFO - Found 44 citekeys in bib section 0
-[175] Biber.pm:4340> INFO - Processing section 0
-[183] Biber.pm:4531> INFO - Looking for bibtex format file 'Reference.bib' for section 0
-[185] bibtex.pm:1689> INFO - LaTeX decoding ...
-[231] bibtex.pm:1494> INFO - Found BibTeX data source 'Reference.bib'
+[73] biber-darwin:340> INFO - === Sun Mar 19, 2023, 16:43:33
+[87] Biber.pm:415> INFO - Reading 'Dissertation.bcf'
+[175] Biber.pm:952> INFO - Found 41 citekeys in bib section 0
+[188] Biber.pm:4340> INFO - Processing section 0
+[197] Biber.pm:4531> INFO - Looking for bibtex format file 'Reference.bib' for section 0
+[199] bibtex.pm:1689> INFO - LaTeX decoding ...
+[243] bibtex.pm:1494> INFO - Found BibTeX data source 'Reference.bib'
