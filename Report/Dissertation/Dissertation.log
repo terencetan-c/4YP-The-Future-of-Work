@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.14)  18 MAR 2023 19:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.14)  19 MAR 2023 16:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -647,7 +647,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 69.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-</Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/logo.png, id=64, 402.50375pt x 126.4725pt>
+</Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/logo.png, id=60, 402.50375pt x 126.4725pt>
 File: /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/logo.png Graphic file (type png)
 <use /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/logo.png>
 Package pdftex.def Info: /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/logo.png  used on input line 96.
@@ -658,90 +658,241 @@ Package pdftex.def Info: /Users/terencetan/Documents/Uni stuff/Engineering Scien
 <to be read again> 
                    \relax 
 l.114 \newpage
-               [1] [2] [3] [4]
-</Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/BLS dataset (before).png, id=177, 1067.99pt x 430.60875pt>
+               [1]
+
+LaTeX Warning: Citation 'RePEc:ssa:lembks:dosietal-1988' on page 2 undefined on input line 120.
+
+
+LaTeX Warning: Citation 'WoirolGregoryR1997Ttua' on page 2 undefined on input line 120.
+
+
+LaTeX Warning: Citation '10.1257/jep.33.2.229' on page 2 undefined on input line 120.
+
+
+LaTeX Warning: Citation 'Keynes2010' on page 2 undefined on input line 120.
+
+
+LaTeX Warning: Citation 'SteigerwaldDavid2010WRtU' on page 2 undefined on input line 120.
+
+
+LaTeX Warning: Citation 'rose_2021' on page 2 undefined on input line 120.
+
+
+LaTeX Warning: Citation 'RoseElizabethL.2021TDoU' on page 2 undefined on input line 120.
+
+
+LaTeX Warning: Citation 'krugman2019globalization' on page 2 undefined on input line 120.
+
+
+LaTeX Warning: Citation '2002Wpa1' on page 2 undefined on input line 122.
+
+
+LaTeX Warning: Citation 'science' on page 2 undefined on input line 127.
+
+
+LaTeX Warning: Citation 'WHO' on page 2 undefined on input line 127.
+
+
+LaTeX Warning: Citation 'publicservicesstrain' on page 2 undefined on input line 127.
+
+
+LaTeX Warning: Citation 'futureofemployment' on page 2 undefined on input line 127.
+
+
+LaTeX Warning: Citation 'tinker2002social' on page 2 undefined on input line 130.
+
+
+LaTeX Warning: Citation 'Munger+2022' on page 2 undefined on input line 130.
+
+
+LaTeX Warning: Citation 'noah_2019' on page 2 undefined on input line 130.
+
+
+LaTeX Warning: Citation 'thompson_2020' on page 2 undefined on input line 130.
+
+
+LaTeX Warning: Citation 'manning_2022' on page 2 undefined on input line 130.
+
+[2]
+
+LaTeX Warning: Citation 'Cheng2020' on page 3 undefined on input line 132.
+
+
+LaTeX Warning: Citation 'foley_retooling_2020' on page 3 undefined on input line 136.
+
+
+LaTeX Warning: Citation 'BeardsonTimothy2021Ag:C' on page 3 undefined on input line 138.
+
+
+LaTeX Warning: Citation 'LuoYanan2021TaCf' on page 3 undefined on input line 138.
+
+
+LaTeX Warning: Citation 'futureofemployment' on page 3 undefined on input line 142.
+
+
+LaTeX Warning: Citation 'twinthreats' on page 3 undefined on input line 142.
+
+
+LaTeX Warning: Citation 'GaussianProcess' on page 3 undefined on input line 142.
+
+
+LaTeX Warning: Citation 'futureofemployment' on page 3 undefined on input line 142.
+
+
+LaTeX Warning: Citation 'ageingculture' on page 3 undefined on input line 144.
+
+
+LaTeX Warning: Citation 'levine2013modeling' on page 3 undefined on input line 144.
+
+
+LaTeX Warning: Citation 'hayflick2007biological' on page 3 undefined on input line 144.
+
+
+LaTeX Warning: Citation 'KotterGrhn2015' on page 3 undefined on input line 144.
+
+
+LaTeX Warning: Citation 'SOTOPEREZDECELIS2018e305' on page 3 undefined on input line 144.
+
+
+LaTeX Warning: Citation 'klemera2006new' on page 3 undefined on input line 144.
+
+
+LaTeX Warning: Citation 'jylhava2017biological' on page 3 undefined on input line 144.
+
+
+LaTeX Warning: Citation 'biologicalagedifficult' on page 3 undefined on input line 144.
+
+
+LaTeX Warning: Citation 'who2010definition' on page 3 undefined on input line 144.
+
+
+LaTeX Warning: Citation 'orimo2006reviewing' on page 3 undefined on input line 144.
+
+
+LaTeX Warning: Citation 'oecddata' on page 3 undefined on input line 144.
+
+
+LaTeX Warning: Citation 'MunnellAliciaH2013SSRR' on page 3 undefined on input line 144.
+
+
+Overfull \hbox (180.20572pt too wide) in paragraph at lines 144--145
+\OT1/cmr/m/n/10.95 be-yond us-ing chrono-log-i-cal age to de-fine an el-derly per-son ([])([])([]).
+ []
+
+[3] [4]
+
+LaTeX Warning: Citation 'futureofemployment' on page 5 undefined on input line 152.
+
+
+Overfull \hbox (24.83665pt too wide) in paragraph at lines 152--153
+\OT1/cmr/m/n/10.95 tion within oc-cu-pa-tions. The dataset for the for-mer is pro-vided in an ear-lier work by [].
+ []
+
+</Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/BLS dataset (before).png, id=97, 1067.99pt x 430.60875pt>
 File: /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/BLS dataset (before).png Graphic file (type png)
 <use /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/BLS dataset (before).png>
 Package pdftex.def Info: /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/BLS dataset (before).png  used on input line 160.
 (pdftex.def)             Requested size: 341.43306pt x 137.6662pt.
- [5 </Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/BLS dataset (before).png>] [6] [7]
-</Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Major.png, id=212, 867.24pt x 578.16pt>
+[5 </Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/BLS dataset (before).png>] [6]
+
+LaTeX Warning: Citation 'futureofemployment' on page 7 undefined on input line 177.
+
+
+LaTeX Warning: Citation 'osborne2017future' on page 7 undefined on input line 177.
+
+
+Overfull \hbox (35.91551pt too wide) in paragraph at lines 177--178
+[]\OT1/cmr/m/n/10.95 This dataset (which we shall re-fer to as Au-tomata-bil-ity dataset) was ob-tained from [],
+ []
+
+[7]
+
+LaTeX Warning: Citation 'covid2020unemployment' on page 8 undefined on input line 186.
+
+
+LaTeX Warning: Citation 'congresscovidunemployment' on page 8 undefined on input line 186.
+
+</Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Major.png, id=128, 867.24pt x 578.16pt>
 File: /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Major.png Graphic file (type png)
 <use /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Major.png>
 Package pdftex.def Info: /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Major.png  used on input line 192.
 (pdftex.def)             Requested size: 241.84842pt x 161.23087pt.
-</Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Minor.png, id=213, 867.24pt x 578.16pt>
+</Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Minor.png, id=129, 867.24pt x 578.16pt>
 File: /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Minor.png Graphic file (type png)
 <use /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Minor.png>
 Package pdftex.def Info: /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Minor.png  used on input line 194.
 (pdftex.def)             Requested size: 241.84842pt x 161.23087pt.
-</Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Broad.png, id=214, 867.24pt x 578.16pt>
+</Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Broad.png, id=130, 867.24pt x 578.16pt>
 File: /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Broad.png Graphic file (type png)
 <use /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Broad.png>
 Package pdftex.def Info: /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Broad.png  used on input line 196.
 (pdftex.def)             Requested size: 241.84842pt x 161.23087pt.
-</Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Detailed.png, id=215, 867.24pt x 578.16pt>
+</Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Detailed.png, id=131, 867.24pt x 578.16pt>
 File: /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Detailed.png Graphic file (type png)
 <use /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Detailed.png>
 Package pdftex.def Info: /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Detailed.png  used on input line 198.
 (pdftex.def)             Requested size: 241.84842pt x 161.23087pt.
-</Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Major (employed).png, id=216, 867.24pt x 578.16pt>
+</Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Major (employed).png, id=132, 867.24pt x 578.16pt>
 File: /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Major (employed).png Graphic file (type png)
 <use /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Major (employed).png>
 Package pdftex.def Info: /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Major (employed).png  used on input line 206.
 (pdftex.def)             Requested size: 241.84842pt x 161.23087pt.
-</Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Minor (employed).png, id=217, 867.24pt x 578.16pt>
+</Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Minor (employed).png, id=133, 867.24pt x 578.16pt>
 File: /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Minor (employed).png Graphic file (type png)
 <use /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Minor (employed).png>
 Package pdftex.def Info: /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Minor (employed).png  used on input line 208.
 (pdftex.def)             Requested size: 241.84842pt x 161.23087pt.
-</Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Broad (employed).png, id=218, 867.24pt x 578.16pt>
+</Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Broad (employed).png, id=134, 867.24pt x 578.16pt>
 File: /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Broad (employed).png Graphic file (type png)
 <use /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Broad (employed).png>
 Package pdftex.def Info: /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Broad (employed).png  used on input line 210.
 (pdftex.def)             Requested size: 241.84842pt x 161.23087pt.
-</Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Detailed (employed).png, id=219, 867.24pt x 578.16pt>
+</Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Detailed (employed).png, id=135, 867.24pt x 578.16pt>
 File: /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Detailed (employed).png Graphic file (type png)
 <use /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Detailed (employed).png>
 Package pdftex.def Info: /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Detailed (employed).png  used on input line 212.
 (pdftex.def)             Requested size: 241.84842pt x 161.23087pt.
-</Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Mean Major Group Elderly Proportion against Year.png, id=225, 505.89pt x 361.35pt>
+</Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Mean Major Group Elderly Proportion against Year.png, id=141, 505.89pt x 361.35pt>
 File: /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Mean Major Group Elderly Proportion against Year.png Graphic file (type png)
 <use /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Mean Major Group Elderly Proportion against Year.png>
 Package pdftex.def Info: /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Mean Major Group Elderly Proportion against Year.png  used on input line 226.
 (pdftex.def)             Requested size: 227.62204pt x 162.58945pt.
-</Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Mean Major Group Old Proportion against Year.png, id=226, 505.89pt x 361.35pt>
+</Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Mean Major Group Old Proportion against Year.png, id=142, 505.89pt x 361.35pt>
 File: /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Mean Major Group Old Proportion against Year.png Graphic file (type png)
 <use /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Mean Major Group Old Proportion against Year.png>
 Package pdftex.def Info: /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Mean Major Group Old Proportion against Year.png  used on input line 228.
 (pdftex.def)             Requested size: 227.62204pt x 162.58945pt.
-</Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Elderly Proportion against Year.png, id=227, 1300.86pt x 1156.32pt>
+</Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Elderly Proportion against Year.png, id=143, 1300.86pt x 1156.32pt>
 File: /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Elderly Proportion against Year.png Graphic file (type png)
 <use /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Elderly Proportion against Year.png>
 Package pdftex.def Info: /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Elderly Proportion against Year.png  used on input line 236.
 (pdftex.def)             Requested size: 341.43306pt x 303.49443pt.
-</Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Old Proportion against Year.png, id=228, 1300.86pt x 1156.32pt>
+</Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Old Proportion against Year.png, id=144, 1300.86pt x 1156.32pt>
 File: /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Old Proportion against Year.png Graphic file (type png)
 <use /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Old Proportion against Year.png>
 Package pdftex.def Info: /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Old Proportion against Year.png  used on input line 238.
 (pdftex.def)             Requested size: 341.43306pt x 303.49443pt.
- [8]
-</Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Relative change.png, id=243, 741.77126pt x 497.86pt>
+[8]
+</Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Relative change.png, id=157, 741.77126pt x 497.86pt>
 File: /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Relative change.png Graphic file (type png)
 <use /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Relative change.png>
 Package pdftex.def Info: /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Relative change.png  used on input line 249.
 (pdftex.def)             Requested size: 369.88582pt x 248.26086pt.
-</Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Relative change of OP.png, id=244, 722.7pt x 505.89pt>
+</Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Relative change of OP.png, id=158, 722.7pt x 505.89pt>
 File: /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Relative change of OP.png Graphic file (type png)
 <use /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Relative change of OP.png>
 Package pdftex.def Info: /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Relative change of OP.png  used on input line 251.
 (pdftex.def)             Requested size: 369.88582pt x 258.91907pt.
- [9 </Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Major.png> </Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Minor.png> </Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Broad.png> </Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Detailed.png>] [10 </Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Major (employed).png> </Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Minor (employed).png> </Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Broad (employed).png> </Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Detailed (employed).png> </Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Mean Major Group Elderly Proportion against Year.png> </Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Mean Major Group Old Proportion against Year.png>]
+ [9 </Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Major.png> </Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Minor.png> </Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Broad.png> </Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Detailed.png>]
+
+LaTeX Warning: Citation 'futureofemployment' on page 10 undefined on input line 269.
+
+[10 </Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Major (employed).png> </Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Minor (employed).png> </Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Broad (employed).png> </Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Detailed (employed).png> </Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Mean Major Group Elderly Proportion against Year.png> </Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Mean Major Group Old Proportion against Year.png>]
 
 LaTeX Warning: Text page 11 contains only floats.
 
 [11 </Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Elderly Proportion against Year.png> </Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Old Proportion against Year.png>]
-</Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/joint_auto ratio.png, id=283, 867.24pt x 578.16pt>
+</Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/joint_auto ratio.png, id=197, 867.24pt x 578.16pt>
 File: /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/joint_auto ratio.png Graphic file (type png)
 <use /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/joint_auto ratio.png>
 Package pdftex.def Info: /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/joint_auto ratio.png  used on input line 273.
@@ -752,53 +903,61 @@ LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 285.
 
 [13 </Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/joint_auto ratio.png>]
-</Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/sample test.png, id=304, 497.86pt x 281.05pt>
+</Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/sample test.png, id=218, 497.86pt x 281.05pt>
 File: /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/sample test.png Graphic file (type png)
 <use /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/sample test.png>
 Package pdftex.def Info: /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/sample test.png  used on input line 306.
 (pdftex.def)             Requested size: 341.43306pt x 192.74965pt.
-</Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Sample Proportion against Population Proportion.png, id=305, 714.67pt x 497.86pt>
+</Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Sample Proportion against Population Proportion.png, id=219, 714.67pt x 497.86pt>
 File: /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Sample Proportion against Population Proportion.png Graphic file (type png)
 <use /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Sample Proportion against Population Proportion.png>
 Package pdftex.def Info: /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Sample Proportion against Population Proportion.png  used on input line 313.
 (pdftex.def)             Requested size: 341.43306pt x 237.85336pt.
  [14 </Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/sample test.png>]
-</Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Scatterplot of EP for DO.png, id=317, 867.24pt x 578.16pt>
+
+LaTeX Warning: Citation 'osborne2017future' on page 15 undefined on input line 323.
+
+</Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Scatterplot of EP for DO.png, id=230, 867.24pt x 578.16pt>
 File: /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Scatterplot of EP for DO.png Graphic file (type png)
 <use /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Scatterplot of EP for DO.png>
 Package pdftex.def Info: /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Scatterplot of EP for DO.png  used on input line 327.
 (pdftex.def)             Requested size: 426.79134pt x 284.52713pt.
-</Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Scatterplot of OP for DO.png, id=318, 867.24pt x 578.16pt>
+</Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Scatterplot of OP for DO.png, id=231, 867.24pt x 578.16pt>
 File: /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Scatterplot of OP for DO.png Graphic file (type png)
 <use /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Scatterplot of OP for DO.png>
 Package pdftex.def Info: /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Scatterplot of OP for DO.png  used on input line 329.
 (pdftex.def)             Requested size: 426.79134pt x 284.52713pt.
 
-
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 335.
+
+
+LaTeX Warning: Citation 'osborne2017future' on page 15 undefined on input line 348.
+
+
+LaTeX Warning: Citation 'HimmelreicherRalfK.2009Saao' on page 15 undefined on input line 348.
 
 [15 </Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Sample Proportion against Population Proportion.png>] [16 </Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Scatterplot of EP for DO.png> </Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Scatterplot of OP for DO.png>]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 351.
 
-</Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Scatterplot of log(EP) for DO.png, id=346, 867.24pt x 578.16pt>
+</Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Scatterplot of log(EP) for DO.png, id=257, 867.24pt x 578.16pt>
 File: /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Scatterplot of log(EP) for DO.png Graphic file (type png)
 <use /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Scatterplot of log(EP) for DO.png>
 Package pdftex.def Info: /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Scatterplot of log(EP) for DO.png  used on input line 366.
 (pdftex.def)             Requested size: 426.79134pt x 284.52713pt.
-</Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Scatterplot of log(OP) for DO.png, id=347, 867.24pt x 578.16pt>
+</Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Scatterplot of log(OP) for DO.png, id=258, 867.24pt x 578.16pt>
 File: /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Scatterplot of log(OP) for DO.png Graphic file (type png)
 <use /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Scatterplot of log(OP) for DO.png>
 Package pdftex.def Info: /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Scatterplot of log(OP) for DO.png  used on input line 368.
 (pdftex.def)             Requested size: 426.79134pt x 284.52713pt.
-</Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Scatter Relative change of EP for DO.png, id=353, 867.24pt x 578.16pt>
+</Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Scatter Relative change of EP for DO.png, id=264, 867.24pt x 578.16pt>
 File: /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Scatter Relative change of EP for DO.png Graphic file (type png)
 <use /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Scatter Relative change of EP for DO.png>
 Package pdftex.def Info: /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Scatter Relative change of EP for DO.png  used on input line 385.
 (pdftex.def)             Requested size: 426.79134pt x 284.52713pt.
-</Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Scatter Relative change of OP for DO.png, id=354, 867.24pt x 578.16pt>
+</Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Scatter Relative change of OP for DO.png, id=265, 867.24pt x 578.16pt>
 File: /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Scatter Relative change of OP for DO.png Graphic file (type png)
 <use /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Scatter Relative change of OP for DO.png>
 Package pdftex.def Info: /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Scatter Relative change of OP for DO.png  used on input line 387.
@@ -806,6 +965,9 @@ Package pdftex.def Info: /Users/terencetan/Documents/Uni stuff/Engineering Scien
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 393.
+
+
+LaTeX Warning: Citation 'bailey2018weighted' on page 17 undefined on input line 406.
 
 [17]
 Overfull \vbox (3.4842pt too high) has occurred while \output is active []
@@ -815,53 +977,62 @@ Overfull \vbox (3.4842pt too high) has occurred while \output is active []
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 419.
 
-[20] [21]
+[20]
+
+LaTeX Warning: Citation 'paclearning1' on page 21 undefined on input line 449.
+
+
+LaTeX Warning: Citation 'paclearning1' on page 21 undefined on input line 449.
+
+
+LaTeX Warning: Citation 'romao2021tight' on page 21 undefined on input line 449.
+
+
+LaTeX Warning: Citation '9750913' on page 21 undefined on input line 449.
+
+[21]
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
 (amsmath)                 on input line 486.
 
 [22]
-</Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/pac.png, id=431, 731.73375pt x 481.8pt>
+</Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/pac.png, id=332, 731.73375pt x 481.8pt>
 File: /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/pac.png Graphic file (type png)
 <use /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/pac.png>
 Package pdftex.def Info: /Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/pac.png  used on input line 507.
 (pdftex.def)             Requested size: 341.43306pt x 224.81395pt.
- [23 </Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/pac.png>] [24]
-Overfull \hbox (65.2578pt too wide) in paragraph at lines 516--516
-\OT1/cmr/m/n/10.95 ica: A Cur-rent Per-spec-tive''. In: \OT1/cmr/m/it/10.95 The Geron-tol-o-gist \OT1/cmr/m/n/10.95 61.4. []eprint: https://academic.oup.com/gerontologist/article-
- []
 
 
-Overfull \hbox (8.43085pt too wide) in paragraph at lines 516--516
-\OT1/cmr/m/n/10.95 pdf/61/4/487/38445439/gnaa163.pdf, pp. 487{496. \OT1/cmr/m/sc/10.95 issn\OT1/cmr/m/n/10.95 : 0016-9013. \OT1/cmr/m/sc/10.95 doi\OT1/cmr/m/n/10.95 : []$\OT1/cmtt/m/n/10.95 10 . 1093 / geront / gnaa163$[]\OT1/cmr/m/n/10.95 .
- []
+LaTeX Warning: Citation '9750913' on page 23 undefined on input line 512.
 
-[25]
-Overfull \hbox (4.62564pt too wide) in paragraph at lines 516--516
-[][]\OT1/cmr/m/n/10.95 Jylh^^?av^^?a, Ju-u-lia, Nancy L Ped-er-sen, and Sara H^^?agg (2017). ``Bi-o-log-i-cal age pre-dic-tors''. In: \OT1/cmr/m/it/10.95 EBioMedicine
- []
+[23 </Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/pac.png>] [24]
 
-[26]
-Overfull \hbox (1.57945pt too wide) in paragraph at lines 516--516
-[][]\OT1/cmr/m/n/10.95 Noah, Tim-o-thy (Sept. 2019). \OT1/cmr/m/it/10.95 Amer-ica, the geron-toc-racy\OT1/cmr/m/n/10.95 . \OT1/cmr/m/sc/10.95 url\OT1/cmr/m/n/10.95 : []$\OT1/cmtt/m/n/10.95 https : / / www . politico . com / magazine /
- []
+LaTeX Warning: Empty bibliography on input line 518.
 
-[27] [28] (/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Dissertation/Dissertation.aux)
+(/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Dissertation/Dissertation.aux)
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `Dissertation.out' has not changed.
-(rerunfilecheck)             Checksum: E58CD2AA708BEE971CFB0834A812FC24;2100.
+(rerunfilecheck)             Checksum: 9545033B08151BFC42EB91B4A1CDC968;1998.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                Dissertation
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'Dissertation.run.xml'.
 \openout1 = `Dissertation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 19616 strings out of 478994
- 351687 string characters out of 5858184
- 1068603 words of memory out of 5000000
- 36708 multiletter control sequences out of 15000+600000
- 415807 words of font info for 72 fonts, out of 8000000 for 9000
+ 19335 strings out of 478994
+ 342924 string characters out of 5858184
+ 1067971 words of memory out of 5000000
+ 36476 multiletter control sequences out of 15000+600000
+ 415606 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 81i,17n,89p,3111b,1324s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 81i,17n,89p,3111b,788s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.8} has been referenced but does not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.7} has been referenced but does not exist, replaced by a fixed one
@@ -878,11 +1049,11 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist,
 
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
-{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on "/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Dissertation/Dissertation.pdf" (29 pages, 1529046 bytes).
+</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on "/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Dissertation/Dissertation.pdf" (25 pages, 1499746 bytes).
 PDF statistics:
- 598 PDF objects out of 1000 (max. 8388607)
- 488 compressed objects within 5 object streams
- 142 named destinations out of 1000 (max. 500000)
- 251 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 425 PDF objects out of 1000 (max. 8388607)
+ 321 compressed objects within 4 object streams
+ 94 named destinations out of 1000 (max. 500000)
+ 243 words of extra memory for PDF output out of 10000 (max. 10000000)
 
