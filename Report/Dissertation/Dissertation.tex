@@ -1,8 +1,10 @@
 \documentclass[11pt]{article}
 \usepackage[a4paper, margin=20mm]{geometry}
 \usepackage{hyperref}
+
 \usepackage{amsmath}
 \usepackage{physics}
+
 \usepackage{graphicx}
 \graphicspath{ {./figs/} }
 \usepackage{subfig}
@@ -19,15 +21,13 @@ citestyle=apa]{biblatex}
 \addbibresource{Reference.bib} % The filename of the bibliography
 
 \usepackage{enumitem}
-%\newtheorem{theorem}{Definition}
 
 \titlespacing\section{0pt}{0pt plus 0pt minus 0pt}{0pt plus 2pt minus 2pt}
 \titlespacing\subsection{0pt}{0pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
 \titlespacing\subsubsection{0pt}{0pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
 
-
 \usepackage{amsfonts}
-
+\newtheorem{theorem}{Definition}
 
 \begin{document}
 
@@ -93,7 +93,7 @@ citestyle=apa]{biblatex}
 	%------------------------------------------------
 	
 	\vfill\vfill
-	\includegraphics[width=0.5\textwidth]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/logo.png}\\[1cm] % Include a department/university logo - this will require the graphicx package
+	\includegraphics[width=0.5\textwidth]{Figures/logo.png}\\[1cm] % Include a department/university logo - this will require the graphicx package
 	 
 	%----------------------------------------------------------------------------------------
 	
@@ -102,16 +102,18 @@ citestyle=apa]{biblatex}
 \end{titlepage}
 
 \begin{abstract}
-	I would like to express my deepest gratitude to Professor Michael Osborne for supervising me throughout this project. His insights and guidance are very much appreciated. This project would not have been possible without the dataset provided by him.
-   \end{abstract}
+We took data from the US Bureau of Labor Statistics\footnote{https://www.bls.gov} (BLS) regarding age distribution within occupations in the United States from the year 2011 to 2021, and preprocessed it according to the 2018 Standard Occupational Classification System so as to standardise the data across the years. We then explore trends within this dataset before merging it with an automatability dataset containing information about the Probability of Computerisation for occupations. We found no correlations between the rate of ageing in occupations and their Probability of Computerisation. However, we did find a promising relationship between the proportion of 55 years and older in occupations and the Probability of Computerisation. Assuming this trend is statistically significant, it suggests that occupations at higher risk of automation tend to have a lower proportion of workers who are 55 years and older. We applied a number of linear regression techniques on the joint dataset to further investigate this trend. We then used Probably Approximately Correct Learning in a novel way to perform statistical analysis on the joint dataset, which acts as a proof of concept of using such a technique in combination with a scenario discarding scheme to deal with outliers in datasets. That being said, more needs to be done to determine the statistical significance of this trend. Hence, we offer no guarantees that automation can make up for the shrinking labour force due to an ageing population, and recommend governments take a more active approach in managing the effects of automation and an ageing population.
+\end{abstract}
+
+   
 
 \section*{Acknowledgements}
 
 	\thispagestyle{empty}
-   I would like to express my deepest gratitude to Professor Michael Osborne for supervising me throughout this project. His insights and guidance are very much appreciated. This project would not have been possible without the dataset provided by him.
+   I would like to express my deepest gratitude to Professor Michael Osborne for supervising me throughout this project. His insights and guidance are very much appreciated. This project would also not have been possible without the automatability dataset provided by him. Also special thanks to my fellow colleagues who read my drafts and provided invaluable feedback.
 
 
-\newpage
+\clearpage
 
 
 \section{Introduction}
@@ -119,37 +121,57 @@ citestyle=apa]{biblatex}
 
 Technological advancement is widely believed to be the primary driving force behind economic growth (\cite{RePEc:ssa:lembks:dosietal-1988}). At the same time, there is potential for technological displacement of labour. This concept of 'technological unemployment' was first introduced by David Ricardo in the 19th century (\cite{WoirolGregoryR1997Ttua}), who wrote that he had become "convinced that the substitution of machinery for human labour, is often very injurious to the interests of the class of labourers" (\cite{10.1257/jep.33.2.229}). This idea was further explored by John Maynard Keynes, who blamed "our discovery of means of economising the use of labour outrunning the pace at which we can find new uses for labour" for potential widespread technological unemployment (\cite{Keynes2010}). However, there are those that are cautiously optimistic of the impact of technological advances on labour. Prominent member of the United Automobile Workers union Walter Reuther and his colleague had hopes that automation could eliminate the drudgery of industrial work and ultimately allow workers to pursue leisurely interests. Yet, even they shared fears that automation could lead to widespread structural unemployment if not managed properly (\cite{SteigerwaldDavid2010WRtU}). Alas, history seems to have validated their fears; the proportion of manufacturing employment in the US among non-agricultural workers decreased from 32\% in 1955 to 8\% in 2019 (\cite{rose_2021}). That being said, there is no consensus on the impact of technological advances on the decline of the manufacturing sector relative to other factors such as globalisation and offshoring (\cite{RoseElizabethL.2021TDoU}) (\cite{krugman2019globalization}).
 
-At the same time, ageing population is a social issue that has become increasingly relevant all over the world (\cite{2002Wpa1}).
+At the same time, ageing population is a social issue that has become increasingly relevant all over the world (\cite{2002Wpa1}). It is expected to lead to a reduction in the labour force of countries, and an increase in social spending \cite{marevsova2015economics}. Given the loss of jobs due to automation and the shrinking of the labour force in many countries, a question naturally arises: can we expect automation to make up for the lack of workers in most jobs?
 
 \subsection{Ageing Population}
 \label{subsec:ageingpopulation}
 
-The world population is ageing over the next few decades (\cite{science}). The rising elderly to working age population ratio is increasing and will continue to do so (\cite{WHO}). This trend is known as an ageing population, and will strain the public and social services of many countries around the world (\cite{publicservicesstrain}). As one of the key social challenges facing the world for the next few decades, it would be interesting to examine how an ageing population will affect the economy, and in particular, the job market and the interplay with automation in the workplace. As more workers age out of the workforce, automation is expected to make up for it (\cite{futureofemployment}).
+The world population is ageing over the next few decades (\cite{science}). The rising elderly to working age population ratio is increasing and will continue to do so (\cite{WHO}). This trend is known as an ageing population, and will strain the public and social services of many countries around the world (\cite{publicservicesstrain}). As one of the key social challenges facing the world for the next few decades, it would be interesting to examine how an ageing population will affect the economy, and in particular, the job market and the interplay with automation in the workplace. As more workers age out of the workforce, automation is expected to make up for it (\cite{futureofemployment}). In the following sections, we shall first examine the ageing trends in the US as well as other countries, and look into related works on ageing population.
+
+\subsection*{Cross-country comparison}
+\label{subsec:crosscountrycomparison}
+
+The United States Census Bureau provides a comprehensive report regarding ageing trends in the US in \cite{vespa2018demographic}. From 2030 onwards, all baby boomers will be over the age of 65. Population growth of the country will also be primarily driven by immigration rather than natural increase (number of births minus number of deaths) beginning that year. The number of people aged 65 and older in the US is expected to increase from 49 million in 2016 to 95 million in 2060. This represents an increase in the share of people aged 65 and older from 15\% in 2016 to nearly 25\% of the total US population in 2060. By 2030, 20\% of the US population will be 65 years and older. The number of people aged 85 and older is expected to increase from 6.4 million in 2016 to 19 million in 2060. This represents an increase in the share of people aged 85 and older from about 2\% in 2016 to about 4.7\% of the total US population in 2060.
+
+China is currently home to the largest population of older people in the world (\cite{lancet2022population}), and is expected to age rapidly over the next few decades (\cite{BeardsonTimothy2021Ag:C}). The number of people aged 60 and older will increase from 254 million people in 2019 to 402 million people in 2040; this would be about 28\% of the population in China. (\cite{whochina}). Given that \cite{whochina} showed that around 75\% of people aged 60 and older in China suffer from noncommunicable diseases such as diabetes, the healthcare system in the country can be expected to be put under increasing pressure in the coming decades. Indeed,  \cite{LuoYanan2021TaCf} recommended pushing for more flexible and innovative population health strategies. That being said, the same study also provided some evidence of declining disease burden as well as healthy ageing.
+
+Japan currently has the highest proportion of elderly citizens in the world (\cite{kyodo_2019}). In fact, 28\% of the population is 65 and older. By 2036, this age group will represent about 33\% of the population in Japan (\cite{d2020japan}). \cite{d2020japan} also highights the various socioeconomic impacts of an ageing population in Japan, including a worsening economy and higher expenditure on healthcare. \cite{ParsonsAlexanderJ.Q.2018Aeof} provides evidence that fertility- and migration-based policies are unlikely to reverse the ageing trend in Japan significantly, and recommends improving work productivity of its population and increasing participation rate of senior citizens in the labour force.
+
+The above three countries are currently the three largest economies in the world (\cite{worldbankgdp}). The effects of an ageing population in these countries on their economies will be felt by the world. As it stands, Japan is currently the most 'aged' society among the three, with the US being the 'youngest'. As the country most ahead of the curve in terms of an ageing society, Japan will be closely observed by other countries as a case study of what will transpire in the coming decades.
+
 
 \subsection*{Related Works}
 Research into the social implications of an ageing population had been carried out as far back as 2002. \cite{tinker2002social} outlined the demographic trends around the turn of the millennium that pointed to the future of an ageing world, and highlighted the falling potential support ratio (ratio of people aged 15-64 to people aged 65 and above) around the world, which will affect the distribution of resources, such as in the case of pensions, of a country. This study also talked about the relative power between the young and old, and pointed out that the older generation will have larger share of votes, potentially wielding more political power. Indeed, contemporary authors, such as \cite{Munger+2022}, have noted this power struggle between the older and younger generations. The US government has also been described as a gerontocracy (\cite{noah_2019}) (\cite{thompson_2020}) in modern times. The numbers back this up, with the average age of a US senator being 64 in 2021 (\cite{manning_2022}).
 
-\cite{Cheng2020} conducted a global analysis of population ageing and mortality between 1990 and 2017, and concluded that there was a pattern of higher disease-related deaths due to population ageing around the world within that time period. The study recommended policies aimed at encouraging healthy ageing.
+\cite{Cheng2020} conducted a global analysis of population ageing and mortality between 1990 and 2017, and concluded that there was a pattern of higher disease-related deaths due to population ageing around the world within that time period. The study recommended policies aimed at encouraging healthy ageing. Indeed, there is evidence to suggest that the healthcare system in the US is not prepared to meet the increasing demands of the ageing population (\cite{foley_retooling_2020}).
 
-\subsection*{Cross-country comparison}
-\label{subsec:crosscountrycomparison}
-In the US, there is evidence to suggest that the country's healthcare system is not prepared to meed the increasing demands of the ageing population (\cite{foley_retooling_2020}).
 
-While this paper will be focusing on the US, there are numerous other studies looking into ageing population of the US as well as other countries and regions of the world. China is expected to age rapidly over the next few decades (\cite{BeardsonTimothy2021Ag:C}), and studies such as \cite{LuoYanan2021TaCf} examined this phenomenon in the context of the country.
+
+% While this paper will be focusing on the US, there are numerous other studies looking into ageing population of the US as well as other countries and regions of the world. China is expected to age rapidly over the next few decades (\cite{BeardsonTimothy2021Ag:C}), and studies such as \cite{LuoYanan2021TaCf} examined this phenomenon in the context of the country.
 
 \subsection{Project Overview}
 \label{subsec:projectoverview}
-In this project, we aim to examine the relationship between the age distribution within occupations and the degree of automation (\cite{futureofemployment}) of those occupations. Although similar work has been done on this topic (\cite{twinthreats}), the study only looked at broad categories of employment. In this project, we will zoom in to look at specific occupations. We might also look into any correlations with the skills/knowledge required for those occupations. This will all be done using the scikit-learn library\footnote{https://scikit-learn.org/stable/} in Python. Specifically, we will look at a Bayesian non-parametric machine learning technique known as Gaussian Process (\cite{GaussianProcess}); this model was used in previous work (\cite{futureofemployment}), and so, would be a good model to start with. We will test and validate against different models and pick the best performing ones.
+In this project, we aim to examine the relationship between the age distribution within occupations and the Probability of Computerisation\footnote{Defined as 'job automation by means of computer-controlled equipment' by \cite{osborne2017future}} (calculated by \cite{futureofemployment}) of those occupations, and apply statistical techniques on any significant trends that we may find. This project is motivated by the question of whether automation can solve the problem of ageing population and vice versa. We will go into further detail about the data and where we got them from in Chapter \ref{sec:Dataset}. Although similar work has been done on this topic (\cite{twinthreats}), the study only looked at broad categories of employment. In this project, we zoomed in to look at specific occupations. Other papers (\cite{10.1257/aer.p20171101})(\cite{10.1371/journal.pone.0263704}) examined the effects of ageing population and automation on the labour market. In particular, \cite{10.1371/journal.pone.0263704} went one step further and took into account the interaction effects of ageing population and automation as well. However, as far as we can tell, we are the first to directly examine the relationship between automation and distribution of age within occupations at such a detailed scale. This was all be done using Python, with the statistical models implemented using the scikit-learn library\footnote{https://scikit-learn.org/stable/}. Specifically, we used a number of linear regression models in Chapter \ref{subsec:Linear Regression}, and applied a Probably Approximately Correct Learning model in a novel manner on a set of data in Chapter \ref{subsec:PAC}.
 
-We will be using the proportion of elderly people as a metric for measuring the `age' of occupations. We acknowledge that the definition of elderly age varies across different countries and cultures (\cite{ageingculture}), and that the ageing process varies for different people depending on a variety of factors (\cite{levine2013modeling})(\cite{hayflick2007biological}). In fact, there are studies looking into moving beyond using chronological age to define an elderly person (\cite{KotterGrhn2015})(\cite{SOTOPEREZDECELIS2018e305})(\cite{klemera2006new}). However, there are numerous issues surrounding this approach (\cite{jylhava2017biological}), such as validation of such results are often difficult (\cite{biologicalagedifficult}), resulting in little consensus on an alternative metric to chronological age. For this reason, we will stick to the conventional definition of 65 years and older as `elderly' (\cite{who2010definition})(\cite{orimo2006reviewing})(\cite{oecddata}). This definition is also convenient for us since the oldest age group featured in our datasets are 65 years and older. Hence, it would make sense to have the metric for measuring the `age' of an occupation be the ratio of people aged 65 years and older to the total number of people in that particular occupation. We will refer to this metric as the Elderly Proportion (EP). However, we also recognise that this definition of 'elderly' coincides with the retirement age of the US (\cite{MunnellAliciaH2013SSRR}). Hence, using this metric alone might lead to misleading results since we would expect people in that age group to leave the workforce. It might be better to use the proportion of 55 years and older as a metric, i.e. the ratio of people aged 55 years and older to the total number of people, since this figure might be more robust to the effects of retirement on labour force participation. We shall refer to this metric as the Old Proportion (OP). Having said that, the Elderly Proportion would still prove to be an interesting metric to investigate. For example, if there is a general trend of increasing EP over the years, that would be a sign of an ageing labour force in spite of the effects of retirement. Therefore, we shall examine both of these metric in this paper.
+%look at a Bayesian non-parametric machine learning technique known as Gaussian Process (\cite{GaussianProcess}); this model was used in previous work (\cite{futureofemployment}), and so, would be a good model to start with. We will test and validate against different models and pick the best performing ones.
+
+We will be using the proportion of elderly people as a metric for measuring the `age' of occupations. We acknowledge that the definition of elderly age varies across different countries and cultures (\cite{ageingculture}), and that the ageing process varies for different people depending on a variety of factors (\cite{levine2013modeling})(\cite{hayflick2007biological}). In fact, there are studies looking into moving beyond using chronological age to define an elderly person (\cite{KotterGrhn2015})(\cite{SOTOPEREZDECELIS2018e305})(\cite{klemera2006new}). However, there are numerous issues surrounding this approach (\cite{jylhava2017biological}), such as validation of such results are often difficult (\cite{biologicalagedifficult}), resulting in little consensus on an alternative metric to chronological age. For this reason, we will stick to the conventional definition of 65 years and older as `elderly' (\cite{who2010definition})(\cite{orimo2006reviewing})(\cite{oecddata}). This definition is also convenient for us since the oldest age group featured in our datasets are 65 years and older. Hence, it would make sense to have the metric for measuring the `age' of an occupation be the ratio of people aged 65 years and older to the total number of people in that particular occupation. We will refer to this metric as the Elderly Proportion (EP). However, we also recognise that this definition of 'elderly' coincides with the retirement age of the US (\cite{MunnellAliciaH2013SSRR}). Hence, using this metric alone might lead to misleading results since we would expect people in that age group to leave the workforce. It might be better to use the proportion of 55 years and older as a metric, i.e. the ratio of people aged 55 years and older to the total number of people, since this figure might be more robust to the effects of retirement on labour force participation. We shall refer to this metric as the Old Proportion (OP). Having said that, the Elderly Proportion would still prove to be an interesting metric to investigate. For example, if there is a general trend of increasing EP over the years, that would be a sign of an ageing labour force in spite of the effects of retirement. Therefore, we shall examine both of these metrics in this paper.
 
 \subsection*{Related Works}
+
+\cite{futureofemployment} and \cite{osborne2017future} used data from the Occupational Information Network\footnote{https://www.onetonline.org} (O*NET) as well as hand-labelled data by experts to calculate the Probability of Computerisation for 702 detailed occupations. It was also predicted that 47\% of employment in the US were at risk of computerisation. \cite{pajarinen2015computerization} used the same methodology to show that about 33\% of employment in Finland and Norway are at risk of computerisation. \cite{fuei2017automation} did the same for Singapore, and found that 25\% of employment in the city-state were at high risk of computerisation. Similarly, \cite{brzeski2015roboter} extended the analysis to Germany and concluded that 59\% of employment are at risk of computerisation.
+
+\cite{10.1257/aer.p20171101} showed that there is no inverse relationship between ageing population and economic growth, i.e. an ageing population does not negatively affect the economy. The paper argues that countries that are ageing more rapidly tend to embrace and faster implement automation technologies.
+
+\cite{twinthreats} mapped data from \cite{osborne2017future} to occupations defined under the United Nations' International Standard Classification of Occupations\footnote{https://www.ilo.org/public/english/bureau/stat/isco/} (ISCO), in order to estimate the risk of automation to older workers across 15 countries. The report found that older workers were at medium to high risk of being displaced by automation in several countries. Countries with higher rates of ageing also face the highest risk of automation. Ultimately, the paper encourages discussions around the challenges faced by older workers, in order to enable them to remain in the labour force in light of the decreasing proportion of younger workers.
+
+\cite{10.1371/journal.pone.0263704} used the Probability of Computerisation data calculated by \cite{osborne2017future} and data about age-related abilities from O*NET to examine the interaction effects of computerisation and ageing population on the US labour market in terms of employment growth and earnings growth. The latter two are obtained from the Bureau of Labor Statistics, giving a complete dataset consisting of 501 occupations. The paper found that both computerisation and ageing population have significant effects on employment growth but not earnings growth. Specifically, the higher the Probability of Computerisation, the lower the employment growth. This is also supported by \cite{graetz2018robots} and \cite{acemoglu2020robots}. The paper also found that the strength of the relationship between the Probability of Computerisation and employment  growth is dependent on age-related abilities required for the particular occupation.
 
 \newpage
 
 \section{Dataset}
 \label{sec:Dataset}
-We used two main metrics for this project: the automatability of occupations, and the age distribution within occupations. The dataset for the former is provided in an earlier work by \cite{futureofemployment}. The latter can be found in datasets provided by the US Bureau of Labour Statistics\footnote{https://www.bls.gov} (BLS); there is one dataset for each year from 2011 to 2021. All the datasets mentioned above use the Standard Occupational Classification (SOC) to classify the occupations, which means that we can map from one dataset to the another using the SOC codes\footnote{https://www.bls.gov/soc/2018/soc\_structure\_2018.pdf}. However, it is necessary to perform some data wrangling before we can proceed with the mapping. Additionally, changes were made to the SOC in 2018, so we would have to standardise all the datasets. In the following sections, we shall examine the datasets and the required data wrangling in more detail.
+We used two main metrics for this project: the Probability of Computerisation of occupations, and the age distribution within occupations. The dataset for the former is provided in an earlier work by \cite{futureofemployment}. The latter can be found in datasets provided by the US Bureau of Labour Statistics; there is one dataset for each year from 2011 to 2021. All the datasets mentioned above use the Standard Occupational Classification (SOC) to classify the occupations, which means that we can map from one dataset to the another using the SOC codes\footnote{https://www.bls.gov/soc/2018/soc\_structure\_2018.pdf}. However, it is necessary to perform some data wrangling before we can proceed with the mapping. Additionally, changes were made to the SOC in 2018, so we would have to standardise all the datasets. In the following sections, we shall examine the datasets and the required data wrangling in more detail.
 
 \subsection{BLS Dataset}
 \label{subsec: BLS}
@@ -157,7 +179,7 @@ As mentioned in Chapter \ref{sec:Dataset}, the BLS provides one dataset for each
 
 \begin{figure}[!htb]
     \centering
-    \includegraphics[width=12cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/BLS dataset (before).png}
+    \includegraphics[width=12cm]{Figures/BLS dataset (before).png}
     \caption{BLS dataset (before processing)}
 	\label{fig:df}
 \end{figure}
@@ -174,7 +196,7 @@ One more thing to note is that the occupations in the BLS dataset are not labell
 
 \subsection{Automatability Dataset}
 
-This dataset (which we shall refer to as Automatability dataset) was obtained from \cite{futureofemployment}, and features 702 Detailed Occupations. For each of these occupations, a Probability of Computerisation\footnote{Defined as 'job automation by means of computer-controlled equipment' by \cite{osborne2017future}} had been calculated. We shall refer to this probability as PCom. Other variables are included as well, such as the skills associated with each occupation and a Category Label. These were used to calculate the PCom, but we will just focus on the PCom in this paper.
+This dataset (which we shall refer to as Automatability dataset) was obtained from \cite{futureofemployment}, and features 702 Detailed Occupations. For each of these occupations, a Probability of Computerisation had been calculated. We shall refer to this probability as PCom. Other variables are included as well, such as the skills associated with each occupation and a Category Label. These were used to calculate the PCom, but we will just focus on the PCom in this paper.
 
 \newpage
 
@@ -189,13 +211,13 @@ It is important to consider the fact that the US civilian labour force includes 
 
 \begin{figure}[!htb]
 	\centering
-	\subfloat[Major Group]{\includegraphics[width=8.5cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Major.png}\label{fig:promajor}}
+	\subfloat[Major Group]{\includegraphics[width=8.5cm]{Figures/Proportion Major.png}\label{fig:promajor}}
 	  \hfill
-	\subfloat[Minor Group]{\includegraphics[width=8.5cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Minor.png}\label{fig:prominor}}
+	\subfloat[Minor Group]{\includegraphics[width=8.5cm]{Figures/Proportion Minor.png}\label{fig:prominor}}
 	\hfill
-	\subfloat[Broad Group]{\includegraphics[width=8.5cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Broad.png}\label{fig:probroad}}
+	\subfloat[Broad Group]{\includegraphics[width=8.5cm]{Figures/Proportion Broad.png}\label{fig:probroad}}
 	\hfill
-	\subfloat[Detailed Occupation]{\includegraphics[width=8.5cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Detailed.png}\label{fig:prodetailed}}
+	\subfloat[Detailed Occupation]{\includegraphics[width=8.5cm]{Figures/Proportion Detailed.png}\label{fig:prodetailed}}
 	\hfill
 	\caption{Ratio of the various SOC categories to the US civilian labour force}
 	\label{proportion}
@@ -203,13 +225,13 @@ It is important to consider the fact that the US civilian labour force includes 
   
 \begin{figure}[!htb]
 	\centering
-	\subfloat[Major Group]{\includegraphics[width=8.5cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Major (employed).png}\label{fig:empmajor}}
+	\subfloat[Major Group]{\includegraphics[width=8.5cm]{Figures/Proportion Major (employed).png}\label{fig:empmajor}}
 	\hfill
-	\subfloat[Minor Group]{\includegraphics[width=8.5cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Minor (employed).png}\label{fig:empminor}}
+	\subfloat[Minor Group]{\includegraphics[width=8.5cm]{Figures/Proportion Minor (employed).png}\label{fig:empminor}}
 	\hfill
-	\subfloat[Broad Group]{\includegraphics[width=8.5cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Broad (employed).png}\label{fig:empbroad}}
+	\subfloat[Broad Group]{\includegraphics[width=8.5cm]{Figures/Proportion Broad (employed).png}\label{fig:empbroad}}
 	\hfill
-	\subfloat[Detailed Occupation]{\includegraphics[width=8.5cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Proportion Detailed (employed).png}\label{fig:empdetailed}}
+	\subfloat[Detailed Occupation]{\includegraphics[width=8.5cm]{Figures/Proportion Detailed (employed).png}\label{fig:empdetailed}}
 	\hfill
 	\caption{Ratio of the various SOC categories to the US civilian labour force (employed)}
 	\label{proportionemp}
@@ -223,9 +245,9 @@ We average the EP (refer to Chapter \ref{subsec:projectoverview} for definition)
 
 \begin{figure}[!htb]
 	\centering
-	\subfloat[Elderly Proportion]{\includegraphics[width=8cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Mean Major Group Elderly Proportion against Year.png}\label{fig:averageEP}}
+	\subfloat[Elderly Proportion]{\includegraphics[width=8cm]{Figures/Mean Major Group Elderly Proportion against Year.png}\label{fig:averageEP}}
 	\hfill
-	\subfloat[Old Proportion]{\includegraphics[width=8cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Mean Major Group Old Proportion against Year}\label{fig:averageOP}}
+	\subfloat[Old Proportion]{\includegraphics[width=8cm]{Figures/Mean Major Group Old Proportion against Year}\label{fig:averageOP}}
 	\hfill
 	\caption{Plot of EP/OP (averaged over the Major Groups) against Year}
 \end{figure}
@@ -233,22 +255,24 @@ We average the EP (refer to Chapter \ref{subsec:projectoverview} for definition)
 
 \begin{figure}[!htb]
 	\centering
-	\subfloat[Elderly Proportion]{\includegraphics[width=12cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Elderly Proportion against Year}\label{fig:EP against year}}
+	\subfloat[Elderly Proportion]{\includegraphics[width=12cm]{Figures/Elderly Proportion against Year}\label{fig:EP against year}}
 	\hfill
-	\subfloat[Old Proportion]{\includegraphics[width=12cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Old Proportion against Year}\label{fig:OP against year}}
+	\subfloat[Old Proportion]{\includegraphics[width=12cm]{Figures/Old Proportion against Year}\label{fig:OP against year}}
 	\hfill
 	\caption{Plot of EP/OP (for each Major Groups) against Year. There is a general increase across most of the Major Group occupations, which is expected given the ageing population in the United States.}
 	\label{fig:EP/OP against year}
 \end{figure}
 
-That being said, it is rather tricky to make sense of Figure \ref{fig:EP/OP against year} given that there are 21 individual plots within each of the two figures. Hence, we can calculate the relative change in EP/OP each Major Group occupation from 2011 to 2021 to obtain Figure \ref{fig:relativechange}. The `construction and extraction occupations' has the highest relative increase while the `personal care and service occupations' features the least.
+That being said, it is rather tricky to make sense of Figure \ref{fig:EP/OP against year} given that there are 21 individual plots within each of the two figures. Hence, we can calculate the relative change in EP/OP each Major Group occupation from 2011 to 2021 to obtain Figure \ref{fig:relativechange}. With regards to EP, the `construction and extraction occupations' had the highest relative increase while the `personal care and service occupations' had the least. When we look at OP, 'farming, fishing, and forestry occupations' had the highest relative increase, while there are some occupations that had a relative decrease. The 'life, physical, and social science occupations' had the largest relative decrease. However, this relative decrease is still merely about 4\%, so it is accurate to say that there is a general trend of ageing across the occupations.
+
+These findings are not surprising given what was discussed in Chapter \ref{subsec:ageingpopulation}. We expect that an ageing population would lead to an ageing labour force. In fact, we can expect that these occupations will age even more over the next few decades.
 
 
 \begin{figure}[!htb]
 	\centering
-	\subfloat[Elderly Proportion]{\includegraphics[width=13cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Relative change.png}\label{fig:Relative change of EP}}
+	\subfloat[Elderly Proportion]{\includegraphics[width=13cm]{Figures/Relative change of EP.png}\label{fig:Relative change of EP}}
 	\hfill
-	\subfloat[Old Proportion]{\includegraphics[width=13cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Relative change of OP}\label{fig:Relative change of OP}}
+	\subfloat[Old Proportion]{\includegraphics[width=13cm]{Figures/Relative change of OP}\label{fig:Relative change of OP}}
 	\hfill
 	\caption{Relative change of EP/OP for each Major Group from 2011 to 2021. This shows us which occupations experienced the most and least rapid ageing during the time period of 2011 to 2021.}
 	\label{fig:relativechange}
@@ -262,7 +286,7 @@ That being said, it is rather tricky to make sense of Figure \ref{fig:EP/OP agai
 % 	\label{fig:psrvsyear}
 % \end{figure}
 
-\newpage
+\clearpage
 
 \section{Data Analysis}
 
@@ -270,7 +294,7 @@ Now that we have our processed BLS dataset (with the calculated OP and EP), we c
 
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[width=12cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/joint_auto ratio.png}
+	\includegraphics[width=12cm]{Figures/joint_auto ratio.png}
 	\caption{Plot of ratio of \emph{joint\_auto} to US civilian labour force against Year. We can see that our \emph(joint\_auto) dataset represents a significant proportion of the total labour force, but not enough for us to generalise any trends we may find in our dataset. We will have to investigate how well our dataset represents the actual US civilian labour force.}
 	\label{fig:jointautoratio}
 \end{figure}
@@ -303,14 +327,14 @@ Given our above biasness tests, we can make the reasonable assumption that our s
 
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[width=12cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/sample test.png}
+	\includegraphics[width=12cm]{Figures/sample test.png}
 	\caption{Plot of the difference between the population proportion and the sample proportion against Year. The different colours represent different Major Groups. The low values along the y-axis shows that the relative weightage of each of the Major Groups within the sample is similar to that of the population. Hence, the sample has a similar makeup to the population in terms of the Major Groups.}
 	\label{fig:relativeweightage}
 \end{figure}
 
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[width=12cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Sample Proportion against Population Proportion.png}
+	\includegraphics[width=12cm]{Figures/Sample Proportion against Population Proportion.png}
 	\caption{Plot of the sample proportion against population proportion (with a best-fit line). We can see that our plot roughly follows a straight line with a gradient of 1 and y-intercept of 0.}
 	\label{fig:sampleprop vs popprop}
 \end{figure}
@@ -324,9 +348,9 @@ The first thing we do is to create a scatterplot of the Detailed Occupations wit
 
 \begin{figure}[!htb]
 	\centering
-	\subfloat[Elderly Proportion]{\includegraphics[width=15cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Scatterplot of EP for DO}\label{fig:EP against PCom}}
+	\subfloat[Elderly Proportion]{\includegraphics[width=15cm]{Figures/Scatterplot of EP for DO}\label{fig:EP against PCom}}
 	\hfill
-	\subfloat[Old Proportion]{\includegraphics[width=15cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Scatterplot of OP for DO}\label{fig:OP against PCom}}
+	\subfloat[Old Proportion]{\includegraphics[width=15cm]{Figures/Scatterplot of OP for DO}\label{fig:OP against PCom}}
 	\hfill
 	\caption{Plot of EP/OP (for each Detailed Occupation) against PCom. There seems to be no obvious patterns or trends present.}
 	\label{fig:EP/OP against PCom}
@@ -336,9 +360,9 @@ The first thing we do is to create a scatterplot of the Detailed Occupations wit
 	\centering
 	\begin{tabular}{l|ll|ll}
 	\textbf{Type of correlation} & \multicolumn{2}{l|}{\textbf{EP}} & \multicolumn{2}{l}{\textbf{OP}} \\ \hline
-	Pearson                      & \multicolumn{2}{l|}{-0.00889}     & \multicolumn{2}{l}{0.00551}      \\ \hline
-	Spearman                     & \multicolumn{2}{l|}{0.0346}      & \multicolumn{2}{l}{-0.00769}    \\ \hline
-	Kendall                      & \multicolumn{2}{l|}{0.0232}      & \multicolumn{2}{l}{-0.00751}   
+	Pearson                      & \multicolumn{2}{l|}{-0.00363}     & \multicolumn{2}{l}{-0.0321}      \\ \hline
+	Spearman                     & \multicolumn{2}{l|}{-0.0151}      & \multicolumn{2}{l}{-0.0661}    \\ \hline
+	Kendall                      & \multicolumn{2}{l|}{-0.00881}      & \multicolumn{2}{l}{-0.0429}   
 	\end{tabular}
 	\caption{Correlation coefficients for Figure \ref{fig:EP/OP against PCom}}
 	\label{tab:correlation}
@@ -352,9 +376,9 @@ Our next step of exploration is to take the base 10 logarithmic\footnote{as can 
 	\centering
 	\begin{tabular}{l|ll|ll}
 	\textbf{Type of correlation} & \multicolumn{2}{l|}{\textbf{EP}} & \multicolumn{2}{l}{\textbf{OP}} \\ \hline
-	Pearson                      & \multicolumn{2}{l|}{$1.92\times10^{-6}$}     & \multicolumn{2}{l}{-0.0697}      \\ \hline
-	Spearman                     & \multicolumn{2}{l|}{0.0346}      & \multicolumn{2}{l}{-0.00769}    \\ \hline
-	Kendall                      & \multicolumn{2}{l|}{0.0232}      & \multicolumn{2}{l}{-0.00751}   
+	Pearson                      & \multicolumn{2}{l|}{0.00579}     & \multicolumn{2}{l}{-0.113}      \\ \hline
+	Spearman                     & \multicolumn{2}{l|}{-0.0151}      & \multicolumn{2}{l}{-0.0661}    \\ \hline
+	Kendall                      & \multicolumn{2}{l|}{-0.00881}      & \multicolumn{2}{l}{-0.0429}   
 	\end{tabular}
 	\caption{Correlation coefficients for Figure \ref{fig:logEP/OP against PCom}}
 	\label{tab:logcorrelation}
@@ -363,9 +387,9 @@ Our next step of exploration is to take the base 10 logarithmic\footnote{as can 
 
 \begin{figure}[!htb]
 	\centering
-	\subfloat[Elderly Proportion]{\includegraphics[width=15cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Scatterplot of log(EP) for DO}\label{fig:logEP against PCom}}
+	\subfloat[Elderly Proportion]{\includegraphics[width=15cm]{Figures/Scatterplot of log(EP) for DO}\label{fig:logEP against PCom}}
 	\hfill
-	\subfloat[Old Proportion]{\includegraphics[width=15cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Scatterplot of log(OP) for DO}\label{fig:logOP against PCom}}
+	\subfloat[Old Proportion]{\includegraphics[width=15cm]{Figures/Scatterplot of log(OP) for DO}\label{fig:logOP against PCom}}
 	\hfill
 	\caption{Plot of $\log_{10}$(EP)/$\log_{10}$(OP) (for each Detailed Occupation) against $\log_{10}$(PCom). There seems to be a slight downward trend for the $\log_{10}$(OP) plot. This suggests that occupations that are less susceptible to computerisation tend to have a higher proportion of old people.}
 	\label{fig:logEP/OP against PCom}
@@ -382,9 +406,9 @@ Due to the fact that the relative change of EP/OP could be negative, taking the 
 
 \begin{figure}[!htb]
 	\centering
-	\subfloat[Elderly Proportion]{\includegraphics[width=15cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Scatter Relative change of EP for DO.png}\label{fig:relativeEP against PCom}}
+	\subfloat[Elderly Proportion]{\includegraphics[width=15cm]{Figures/Scatter Relative change of EP for DO.png}\label{fig:relativeEP against PCom}}
 	\hfill
-	\subfloat[Old Proportion]{\includegraphics[width=15cm]{/Users/terencetan/Documents/Uni stuff/Engineering Science/4YP/4YP-The-Future-of-Work/Report/Figures/Scatter Relative change of OP for DO.png}\label{fig:relativeOP against PCom}}
+	\subfloat[Old Proportion]{\includegraphics[width=15cm]{Figures/Scatter Relative change of OP for DO.png}\label{fig:relativeOP against PCom}}
 	\hfill
 	\caption{Plot of relative change of EP/OP from 2011 to 2021 (for each Detailed Occupation) against PCom. There does not appear to be any noticeable trends.}
 	\label{fig:Relative change against PCom}
@@ -403,13 +427,117 @@ Due to the fact that the relative change of EP/OP could be negative, taking the 
 	\end{table}
 
 \subsection{Conclusion}
-We did not find any strong trends despite using different metrics and plot scales. The most interesting results arose from the OP values, specifically the relationships of $\log_{10}$(OP) and relative change of OP with respect to $\log_{10}$(PCom) and PCom respectively. The latter has a particularly high (relative to the others) Pearson correlation coefficient, while the former has a more obvious trend in the scatterplot. We should note that the each datapoint in the scatterplots had its size scaled relative to the number of people employed within that particular occupation. On the other hand, our correlation coefficients were calculated without regard for this scaling. Hence, it might be worth investigating the weighted correlation coefficients. Given that both of the interesting relationships seem to be somewhat linear in nature, we shall focus on the weighted Pearson correlation. Calculating it gives us 
+We did not find any strong trends despite using different metrics and plot scales. The most interesting results arose from the OP values, specifically the relationships of $\log_{10}$(OP) and relative change of OP with respect to $\log_{10}$(PCom) and PCom respectively. The latter has a particularly high (relative to the others) Pearson correlation coefficient, while the former has a more obvious trend in the scatterplot. We should note that the each datapoint in the scatterplots had its size scaled relative to the number of people employed within that particular occupation. On the other hand, our correlation coefficients were calculated without regard for this scaling. Hence, it might be worth investigating the weighted correlation coefficients. Given that both of the interesting relationships seem to be somewhat linear in nature, we shall focus on the weighted Pearson correlation. To calculate the weighted Pearson correlation between two vectors $x$ and $y$ with weight vector $w$ (all three vectors must have the same dimensions), we can use the following equations (\cite{bailey2018weighted}):
+
+\begin{equation} \label{eq1}
+	\begin{split}
+		\text{Weighted mean}: m(x; w) & = \frac{\sum_{i}w_{i}x_{i}}{\sum_{i}w_{i}}. \\
+		\text{Weighted covariance}: cov(x, y; w) & = \frac{\sum_{i}w_{i}(x_{i}-m(x; w))(y_{i}-m(y; w))}{\sum_{i}w_{i}}. \\
+		\text{Weighted correlation}: corr(x, y; w) & = \frac{cov(x, y; w)}{\sqrt{cov(x, x; w)cov(y, y; w)}}.
+	\end{split}
+	\end{equation}
+
+Applying these equations on our data would give us the values in Table \ref{tab:weightedpearson}. The weighted correlation for $\log_{10}$(OP) and $\log_{10}$(PCom) is much larger (in absolute terms) than the unweighted correlation, and better matches what we see in Figure \ref{fig:logOP against PCom}. It's absolute value is also larger than the weighted correlation for relative change of OP and PCom.
+
+
+\begin{table}[]
+	\centering
+	\begin{tabular}{l|l}
+	\textbf{Variables}                                              & \textbf{Weighted Pearson Correlation} \\ \hline
+	\begin{tabular}[c]{@{}l@{}}Relative change of OP\\ vs\\ PCom\end{tabular} & 0.198                                 \\ \hline
+	\begin{tabular}[c]{@{}l@{}}$\log_{10}$(OP)\\ vs\\ $\log_{10}$(PCom)\end{tabular}               & -0.434                              
+	\end{tabular}
+	\caption{Weighted Pearson Correlation showing that the strongest trend we have found so far is the relationship between the $\log_{10}$(OP) for 2012 and $\log_{10}$(PCom).}
+	\label{tab:weightedpearson}
+	\end{table}
+
+Hence, the strongest trend so far is the relationship between OP and PCom. In addition, it appears to be a somewhat linear trend. Hence, we will be focus on applying linear regression to this set of variables in the next section.
+
 
 \subsection{Linear Regression}
+\label{subsec:Linear Regression}
+In this section, we will be applying a number of linear regression techniques (using the Scikit\-learn package\footnote{https://scikit-learn.org} for Python) on the OP and PCom values, specifically weighted least squares, weighted Bayesian ridge, weighted Huber, and RANdom SAmple Consensus (RANSAC). We use take the weights into account for most of the models since we got the highest correlation when weights were taken into account. All of the mentioned techniques can be applied on the other data values; we only picked the $\log_{10}$(OP) vs $\log_{10}$(PCom) relationship because that is the one that displayed the strongest trend so far. Another caveat is that this particular trend is not that strong, and further analysis should be conducted to determine whether it is actually statistically significant. We will further elaborate on this point in the \textbf{FUTURE WORK SECTION}.
+
+In a least squares model, the dependent variable is a linear combination of the independent variables along with an error term:
+
+\begin{equation}
+	\label{eq:LS}
+    y_{i}=x^{T}_{i}\beta + \epsilon_{i} \quad \textrm{for} \quad i=1,...,m,
+\end{equation}
+where $m$ is the number of samples, $y_{i}$ is the $i^{th}$ observation of the dependent variable, $x^{T}_{i}$ is the corresponding row vector of all the independent variables, and $\epsilon_{i}$ is the corresponding error term. In our case, $x_{i}$ and $\beta$ are both just $2\times1$ vectors since we only have the one independent variable PCom (the second element of the vectors corresponds to the y-intercept of the linear model). We also define the vector and matrix $y = [y_{1},...,y_{m}]^{T}$ and $X^{T} = [x_{1},...,x_{m}]$ respectively.
+
 
 \subsubsection*{Weighted Least Squares}
 
+In a weighted least squares model, we aim to minimise (with respect to $\beta$) the following function:
+
+\begin{equation}
+	\label{eq:WLS}
+    S=\sum^{m}_{i=1} w_{i}(y_{i}-x^{T}_{i}\beta)^{2},
+\end{equation}
+
+where $w_{i}$ is the corresponding $i^{th}$ scalar weight.
+
+Doing so gives us the plot in Figure \ref{fig:WLS}, which we can see fits the downward trend fairly well. Note that ordinary least squares is a special case of weighted least squares with all weights being equal to unity.
+
+\subsubsection*{Bayesian Ridge}
+For a Bayesian approach, we implement linear regression using probability distributions rather than point estimates like with the weighted least squares method. We model our observation $y$ as follows:
+
+\begin{equation}
+	\label{eq:likelihood}
+    \mathcal{P}(y | \beta, X, \alpha) = \mathcal{N}(y | X\beta, \alpha),
+\end{equation}
+
+where $\alpha$ is a hyper parameter.
+
+We also model the prior for the coefficients $\beta$ as follows:
+
+\begin{equation}
+	\label{eq:prior}
+    \mathcal{P}(\beta | \lambda) = \mathcal{N}(\beta | 0, \lambda^{-1}I),
+\end{equation}
+
+where $\lambda$ is another hyper parameter and $I$ is a $2\times2$ identity matrix.
+
+Additionally, we model the priors for $\alpha$ and $\lambda$ as gamma distributions. We then write out the posterior distribution as follows:
+
+\begin{equation}
+	\label{eq:posterior}
+    \mathcal{P}(\beta | y,X,\lambda,\alpha) = \frac{\mathcal{P}(y | \beta, X, \lambda, \alpha)\mathcal{P}(\beta | X, \lambda, \alpha)}{\mathcal{P}y | X, \lambda, \alpha)}.
+\end{equation}
+
+The hyper parameters $\alpha$ and $\lambda$ are estimated by maximising the log marginal likelihood (method for doing so is described in \cite{tipping2001sparse}). Using these estimates and the above probability distributions, we can obtain an estimate for $\beta$ by taking the mean of the posterior distribution in Equation \ref{eq:posterior}. Note that the Scikit\-learn implementation\footnote{https://github.com/scikit-learn/scikit-learn/blob/9aaed4987/sklearn/linear\_model/\_bayes.py} of Bayesian Ridge involves an iterative process of updating the posterior mean and calculating the corresponding the root mean square error between the predicted values of $y$ and the actual values of $y$, and then updating the estimates of the hyper parameters $\alpha$ and $\lambda$ using the calculated root mean square error. The weights of each datapoint is taken into account in this implementation by scaling each datapoint $(x_{i}, y_{i})$ by the square root of the corresponding weight $w_{i}$ to get $(scaled\_x_{i}, scaled\_y_{i}) = (\sqrt{w_{i}} x_{i}, \sqrt{w_{i}} y_{i})$ \footnote{Calculating the root mean square error with this scaling is equivalent to using the weighted root mean square $S$ defined in Equation \ref{eq:WLS}.}. By doing so, datapoints with a higher weight will contribute more to the root mean square error, thereby having a bigger effect on the update of the hyper parameters and consequently the update of the posterior mean.
+
+%$$\displaystyle{\displaylines{\sqrt{w_{i}}x_{i}}}$$
+
+\subsubsection*{RANdom SAmple Consensus (RANSAC)}
+Unlike the previous two regression models, RANSAC models attempt to identify the inliers and outliers, and then completely ignore the outliers.
+
+The RANSAC algorithm has two main steps. Firstly, a subset of the datapoints are randomly chosen to construct a model along with the model parameters. Secondly, the algorithm then tests all datapoints against this model. Datapoints which exceed a certain error threshold would be labelled as outliers while the rest would be inliers. These two steps are then repeated until the number of inliers exceed a certain selected threshold. In our case, the model constructed is restricted to a linear model, and the error is calculated using Equation \ref{eq:WLS} (thereby allowing us to incorporate the weights into the training process of the model).
+
+Applying RANSAC on our datapoints give us Figure \ref{fig:RANSAC}. We can see that the algorithm correctly identifies the outliers and give a regression line that is very similar to the ones predicted by weighted least square and Bayesian ridge.
+
+\begin{figure}[!htb]
+	\centering
+	\subfloat[Weighted least squares (gradient: -0.103, y-intercept: -0.793)]{\includegraphics[width=11cm]{Figures/Weighted Least Squares.png}\label{fig:WLS}}
+	\hfill
+	\subfloat[Bayesian ridge (gradient: -0.101, y-intercept: -0.791)]{\includegraphics[width=11cm]{Figures/Bayesian ridge}\label{fig:bayesian ridge}}
+	\hfill
+ 	\subfloat[RANSAC (gradient: -0.110, y-intercept: -0.782]{\includegraphics[width=11cm]{Figures/RANSAC.png}\label{fig:RANSAC}}
+	\hfill
+	\caption{Plot of $\log_{10}$(OP) against $\log_{10}$(PCom). The red lines represent the respective linear regressors.}
+	\label{fig:RANSAC}
+\end{figure}
+
+
+
+
+\subsubsection*{Conclusion}
+Having tried various linear regression methods, we obtain very similar results for all of them. These results could be used to predict the OP values of the occupations missing from our \emph{joint\_auto} dataset. However, we note that there is a high level of variance around our linear regression lines. Hence, any predicted values we get might not be that useful. Instead, it might be better if we could define a minimum region which contains most if not all of our known datapoints, and has a low chance of not encompassing any unknown datapoints. We would ideally also like to quantify our confidence in such a region. We shall explore this idea in the next section.
+
+
 \subsection{Probably Approximately Correct (PAC) Learning}
+\label{subsec:PAC}
 Suppose we have an unknown target set \emph{T} from which we obtained independent and identically distributed (i.i.d.) samples $\delta_{1},...,\delta_{m}$. Using the \emph{m} samples, we want to construct a hypothesis set $H_{m}$ that approximates \emph{T}. The framework we use to learn $H_{m}$ is known as PAC Learning.
 
 Of course, we want $H_{m}$ to approximate \emph{T} as close as possible, such that the probability of a new sample $\delta$ from \emph{T} not belonging in $H_{m}$ is less than or equal to an arbitrary threshold probability $\epsilon$, i.e. $\mathbb{P}(\delta \in \emph{T} \setminus H_{m}) \leq \epsilon$. Since $H_{m}$ depends on the set of i.d.d. random samples $S = \{\delta_{1},...,\delta_{m}\}$, it is also random. This means that $\mathbb{P}(\delta \in \emph{T} \setminus H_{m}) \leq \epsilon$ is itself a random variable, allowing us to quantify a confidence for it:
@@ -424,7 +552,7 @@ Furthermore, consider the following convex scenario program:
 	\label{eq:2}
 	\begin{array}{rrclcl}
 	\displaystyle \min_{x \in \mathbb{R}^{n_{x}}} & \multicolumn{3}{l}{c^{T}x}\\
-	\textrm{s.t.} & g(x,\delta_{i}) \leq 0, \text{for all i = 1,...,m}.\\
+	\textrm{s.t.} & g(x,\delta_{i}) \leq 0, \quad \textrm{for all i = 1,...,m}.\\
 	\end{array}
 	\end{equation}
 Suppose $\delta_{i}$ belongs to an uncertainty space $\Delta$, i.e. $\delta_{i} \in \Delta$ for $i = 1,...,m$, and we have obtained the optimal solution $x^{*}_{m}$ to the scenario program in Equation \ref{eq:2}. If we then want to find out if a new $\delta\in \Delta$ will violate the constraint $g(x^{*},\delta) \leq 0$, we can use Equation \ref{eq:1} to quantify the probability of such a constraint violation happening. Let $T=\Delta$, $H_{m} = (\delta \in \Delta: g(x^{*}_{m},\delta) \leq 0)$, i.e. the set of samples for which $x^{*}_{m}$ remains feasible, and we get the following:
@@ -477,8 +605,8 @@ On first glance, this might seem different from the convex scenario program \ref
 
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[width=12cm]{Report/Figures/pac.png}
-	\caption{Plot of $\log_{10}$(EP)/$\log_{10}$(OP) (for each Detailed Occupation) against $\log_{10}$(PCom) with PAC Learning applied. The red lines represents the boundaries of $H_{m}$. We can see that $H_{m}$ contains all of our datapoints while ensuring that the vertical width is minimised.}
+	\includegraphics[width=15cm]{Figures/pac.png}
+	\caption{Plot of $\log_{10}$(EP)/$\log_{10}$(OP) (for each Detailed Occupation) against $\log_{10}$(PCom) with PAC Learning applied ($x_{1}=0.485, x_{2}=0.0153, x_{3}=-0.785$). The red solid lines represents the boundaries of $H_{m}$ while the red dotted line is the median line. We can see that $H_{m}$ contains all of our datapoints while ensuring that the vertical width is minimised.}
 	\label{fig:pac}
 \end{figure}
 
@@ -506,28 +634,32 @@ Using scenario program \ref{eq:2} as reference, let us assume that $x^{*}_{m}$ e
 	q(m,\epsilon) = \sum_{i=0}^{r+n_{x}-1}{m \choose i}\epsilon^{i}(1-\epsilon)^{m-i}.
 \end{equation}
 
-Note that we assumed above that all $k$ new scenario programs obtained through this discarding scheme are assumed to be fully-supported. Even if this assumption does not hold, we can introduce a lexicographic order as a way to select which constraints to discard, in which case we can still use the above result provided all the $k$ new scenario programs as well as the original program are non-degenerate (recall that fully-supported implies non-degenerate, but not the other way around).
+Note that we assumed above that all $k$ new scenario programs obtained through this discarding scheme are fully-supported. Even if this assumption does not hold, we can introduce a lexicographic order as a way to select which constraints to discard, in which case we can still use the above result provided that all the $k$ new scenario programs as well as the original program are non-degenerate (recall that fully-supported implies non-degenerate, but not the other way around).
+
+By assuming $x^{*}_{m-j}$ for our scenario program \ref{eq:5} is unique for $j=n_{x},2n_{x},...,kn_{x}$, and that the scenario program is at least non-degenerate, we can apply the above scenario discarding scheme as a way of excluding outlier datapoints. Figure \ref{fig:pac2} shows the plots for various values of $r$.
 
 
 
 \begin{figure}[!htb]
 	\centering
-	\subfloat[$r=15$]{\includegraphics[width=15cm]{Report/Figures/pac5.png}\label{fig:pac5}}
+	\subfloat[$r=15 (x_{1}=0.386, x_{2}=-0.0292, x_{3}=-0.774)$]{\includegraphics[width=15cm]{Figures/pac5.png}\label{fig:pac5}}
 	\hfill
-	\subfloat[$r=30$]{\includegraphics[width=15cm]{Report/Figures/pac10}\label{fig:pac10}}
+	\subfloat[$r=30$ $(x_{1}=0.274,x_{2}=0.0140,x_{3}=-0.716)$]{\includegraphics[width=15cm]{Figures/pac10}\label{fig:pac10}}
 	\hfill
 \end{figure}
 
 \begin{figure}[!htb]
     \ContinuedFloat
- 	\subfloat[$r=45$]{\includegraphics[width=15cm]{Report/Figures/pac15}\label{fig:pac15}}
+ 	\subfloat[$r=45$ $(x_{1}=0.242, x_{2}=-0.0142, x_{3}=-0.730)$]{\includegraphics[width=15cm]{Figures/pac15}\label{fig:pac15}}
 	\hfill	
-    \subfloat[$r=60$]{\includegraphics[width=15cm]{Report/Figures/pac20}\label{fig:pac20}}
+    \subfloat[$r=60$ $(x_{1}=0.208, x_{2}=-0.0304, x_{3}=-0.737)$]{\includegraphics[width=15cm]{Figures/pac20}\label{fig:pac20}}
 	\hfill
-	\caption{Plot of $\log_{10}$(EP)/$\log_{10}$(OP) (for each Detailed Occupation) against $\log_{10}$(PCom) with PAC Learning and scenario discarding scheme applied. We can see $H_{m}$ starts to reflect the downward trend that we identified in the data.}
+	\caption{Plot of $\log_{10}$(EP)/$\log_{10}$(OP) (for each Detailed Occupation) against $\log_{10}$(PCom) with PAC Learning and scenario discarding scheme applied. The red solid lines represents the boundaries of $H_{m}$ while the red dotted line is the median line. We can see $H_{m}$ starts to reflect the downward trend that we identified in the data. $x_{1}$ also gets smaller as $r$ increases, which corresponds to the decreasing vertical distance between the two red boundary lines.}
 	\label{fig:pac2}
 \end{figure}
 
+
+For $r=60$, we can see that $H_{m-60}$ has been constrained to the collection of datapoints that we think are inliers. 60 discarded datapoints may seem like a lot, but those 60 occupations only represent $12.9\%$ of the total number of employed people present in \emph{joint\_auto} in 2012. This means that a large proportion of the employed people represented in our dataset are captured within $H_{m-60}$. Using Equation \ref{eq:6}, we can calculate the lower bounds for our confidence for various values of $\epsilon$ when $r=60$ (Table \ref{tab:confidence2}).
 
 \begin{table}[]
 \centering
@@ -540,16 +672,27 @@ Note that we assumed above that all $k$ new scenario programs obtained through t
 0.20             & 0.999988
 \end{tabular}
 \caption{Confidence lower bound for corresponding $\epsilon$ values when $r=60$.}
-\label{tab:confidence}
+\label{tab:confidence2}
 \end{table}
 
+While we can be almost 100\% certain that at least 99\% of new datapoints will lie outside $H_{m-60}$ (which is not great), we can be at least 50\% sure that at most 10\% of new datapoints will lie outside $H_{m-60}$ and pretty much 100\% confident that at most 15\% of new datapoint will lie outside $H_{m-60}$.
+
+\subsubsection*{Conclusion}
+In this section, we discussed the basic theory behind PAC Learning, and applied it on our dataset. We then noted that the presence of potential outliers were affecting the performance of our PAC Learning model and introduced the concept of a scenario discarding scheme that was devised for control problems. We then used this scheme as a way of excluding outliers from our model and showed that some of our confidence lower bounds were still decent. In doing so, we have demonstrated the viability of using these techniques to build a minimum region of confidence for any dataset (recall that nowhere have we made any assumptions about the underlying probability distribution).
+
+\clearpage
+
+\section{Conclusion}
+In this report, we attempt to examine the relationship between automation and age distribution within occupations. To do so, we took age distribution data from the US Bureau of Labor Statistics and standardised all of it according to the 2018 Standard Occupational Classification system, and mapped it to the dataset containing Probability of Computerisation values from \cite{osborne2017future}. This gave us a joint standardised dataset covering the year 2011 to 2021, which may be useful to others doing related works. We also found that there was a general trend of ageing across most occupations. We then explored trends within this joint dataset but found no significant trends for the most part. Based on this, we conclude that governments cannot expect that the loss of jobs from automation will cancel out the lack of workers in the labour force due to an ageing population, and we recommend that they take more active steps towards addressing these issues.
+
+That being said, we did discover a possible trend: an inverse relationship between the proportion of 55 and older workers within an occupation and the Probability of Computerisation of that occupation. We applied weighted least squares, Bayesian ridge, and Random Sample Consensus regression to this set of variables. Given the high variance around the regression lines, we wondered if we could instead construct a region that we have high confidence would contain a high percentage of new datapoints. To do so, we turned to Probably Approximately Correct learning, and used it in conjunction with a scenario discarding scheme originally devised for optimisation programs within control problems. This allowed us to construct the region while excluding some outliers. We concluded that it was possible to construct a region for which we are almost 100\% confident would contain at least 85\% of new datapoints. This also acts as a proof of concept of using such a technique on datasets with high variance.
 
 
+\subsection*{Future extensions}
 
-\newpage
+\clearpage
 
 \printbibliography[heading=bibintoc]
 
 
 \end{document}
-
